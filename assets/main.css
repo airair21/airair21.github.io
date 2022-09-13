@@ -1,0 +1,16 @@
+h1 {
+  color: #C82003;
+background: #F9DD94;
+border: 1px solid #F9BB79;
+margin: 23px;
+padding: 9px;
+font-family: 'Karla', sans-serif;
+font-size: 56px;
+
+}
+
+h3 {
+  color: navy;
+  font-family: 'Karla', sans-serif;
+  padding: 9px;
+}
