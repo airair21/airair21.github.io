@@ -14,3 +14,21 @@ h3 {
   font-family: 'Karla', sans-serif;
   padding: 9px;
 }
+
+
+/* .cursor {
+  cursor: url('assets/imgs/fire1.pn'), url('https://cdn.custom-cursor.com/packs/1094/pack1322.png') default;
+} */
+
+
+.fillrect {
+  border: 1px solid #F9BB79;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.fillrect:hover {
+  background-color: #F9DD94;
+  border: 1px solid #F9DD94;
+  cursor: url('/assets/imgs/fire2.png') pointer;
+}
