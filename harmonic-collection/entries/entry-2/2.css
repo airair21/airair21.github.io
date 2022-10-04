@@ -20,16 +20,20 @@ h3 {
 
 body {
   /* background-color: #F5E4A1; */
-  /* background-color: #35342C; */
-  /* background-image: url("assets/sword-belt.jpg");
-  filter: opacity(20%);
+  /* background-color: #35342C;
+  filter: opacity(20%); */
+  background-image: url("assets/sword-belt.jpg");
   background-position: center;
-  background-size: cover;
-  background-repeat: repeat; */
+  background-size: contain;
+  background-repeat: repeat;
   background-color: #281714;
   font-family: 'Black Ops One', cursive;
   cursor: url("assets/arrowhead.png") 25 20, auto;
   color: #EBEBEB
+}
+
+.text {
+  background-color: #281714;
 }
 
 a {
@@ -56,13 +60,17 @@ a:hover {
   font-size: 12px;
 }
 
-.background {
+/* .background {
+-webkit-backdrop-filter: opacity(40%);
+backdrop-filter: opacity(40%);
   background-image: url("assets/sword-belt.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat;
   background-color: #281714;
-}
+} */
+
+
 
 .helmet {
   animation-duration: 3s;
@@ -115,9 +123,16 @@ a:hover {
   }
 }
 
-/* .costume {
+.costume {
   transform: scale(.5);
-} */
+
+}
+
+.costume:hover {
+  transform: rotate(50deg);
+  transition: 5s ease;
+  cursor: url("assets/sword-small.png") 25 15, pointer;
+}
 
 .row {
   display: flex;
@@ -150,11 +165,11 @@ a:hover {
   cursor: url("assets/sword-small.png") 25 15, pointer;
 }
 
-img.sticky {
+/* img.sticky {
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+  /* position: sticky;
   top: 0;
-}
+} */
 
 .container {
   position: relative;
@@ -261,3 +276,13 @@ img.sticky {
   filter: blur(5px);
 cursor: url("/assets/sword.png"), auto;
 } */
+
+
+/* just another link
+<p>
+<a href="https://www.metmuseum.org/art/collection/search/24860?sortBy=Relevance&amp;deptids=4&amp;high=on&amp;showOnly=openAccess&amp;ft=*&amp;offset=0&amp;rpp=40&amp;pos=14">
+  Rapier of Prince-Elector Christian II of Saxony (1583–1611)
+</a>
+dated 1606 // German and Spanish
+</p>
+*/
