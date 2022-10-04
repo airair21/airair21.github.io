@@ -259,6 +259,13 @@ backdrop-filter: opacity(40%);
   top: -100px;
 }
 
+.salletfront:hover {
+  -webkit-transition: all 5s ease-in-out;
+  cursor: url("assets/sword-small.png") 25 15, pointer;
+  transform: scale(.1, .1);
+  transform: translate(-50%, -50%);
+}
+
 /*
 .imgfilters img {
   display: block;
