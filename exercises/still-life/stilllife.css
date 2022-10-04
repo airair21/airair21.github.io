@@ -154,6 +154,17 @@ div {
   z-index: 0;
 }
 
+#rect-small-paper {
+  width: 45px;
+  height: 70px;
+  background: #EEE1C3;
+  position: absolute;
+  margin-top: 582px;
+  margin-left: 635px;
+  transform: rotate(60deg);
+  z-index: 0;
+}
+
 body {
   background-color: #BBA87C;
 }
