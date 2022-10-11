@@ -2764,12 +2764,22 @@ color: #FFE0A4;
 
 h2:hover {
   font-size: 200px;
+  line-height: 56px;
     transition: all 0.5s ease;
-    background: -webkit-radial-gradient(#40ff00, #7d81ff, #00ed8a);
+    background: -webkit-radial-gradient(#FFE0A4, #F1C877, #FFE0A4);
+    background-size: 50%;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 h3:hover {
   font-size: 150px;
+  line-height: 56px;
     transition: all 0.5s ease;
-    background: -webkit-radial-gradient(#40ff00, #7d81ff, #00ed8a);
+    background: -webkit-radial-gradient(#FFE0A4, #F1C877, #FFE0A4);
+    background-size: 800px;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
