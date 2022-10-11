@@ -2640,7 +2640,9 @@ background: #FFE0A4;
 #rect18 {
 position: absolute;
 width: 281px;
-height: 721px;
+/*
+height: 721px; */
+height: 866px;
 left: 0px;
 top: 0px;
 
