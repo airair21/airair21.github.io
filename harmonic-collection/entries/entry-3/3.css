@@ -2639,13 +2639,13 @@ background: #FFE0A4;
 /* Rectangle 3 */
 
 #rect18 {
-position: sticky;
+position: static;
 width: 281px;
-/*
-height: 721px; */
+
+/* height: 721px; */
+
 height: 866px;
 left: 0px;
-position: fixed;
 top: 0px;
 
 background: #252524;
