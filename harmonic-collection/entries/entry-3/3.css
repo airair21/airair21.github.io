@@ -604,7 +604,8 @@ height: 39.58px;
 left: 675.95px;
 top: 149.64px;
 
-background: #F1C877;
+/* background: #F1C877; */
+background: black;
 transform: rotate(-116.87deg);
 }
 
@@ -1292,7 +1293,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 position: absolute;
 width: 144px;
 height: 125px;
-left: 1083.39px;
+left: 1053.39px;
 top: 439px;
 
 background: #48463D;
@@ -1985,7 +1986,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 position: absolute;
 width: 144px;
 height: 125px;
-left: 665.39px;
+left: 652.39px;
 top: 487px;
 
 background: #FFE0A4;
