@@ -7,7 +7,7 @@ body {
 
 #ellipse1 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 552.83px;
@@ -21,7 +21,7 @@ background: #48463D;
 
 #ellipse2 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 544.51px;
@@ -34,7 +34,7 @@ background: #48463D;
 
 #ellipse3 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 568.28px;
@@ -48,7 +48,7 @@ background: #F1C877;
 
 #ellipse4 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 494.6px;
@@ -62,7 +62,7 @@ background: #F1C877;
 
 #ellipse5 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 564.72px;
@@ -76,7 +76,7 @@ background: #F1C877;
 
 #ellipse6 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 576.6px;
@@ -90,7 +90,7 @@ background: #48463D;
 
 #ellipse7 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 101.36px;
 height: 106.67px;
 left: 501.79px;
@@ -105,7 +105,7 @@ transform: rotate(34.37deg);
 
 #ellipse8 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 513.91px;
@@ -120,7 +120,7 @@ transform: rotate(34.37deg);
 
 #ellipse9 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 502.64px;
@@ -135,7 +135,7 @@ transform: rotate(34.37deg);
 
 #ellipse10 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 676.66px;
@@ -149,7 +149,7 @@ transform: rotate(-18.47deg);
 
 #ellipse11 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 686.09px;
@@ -163,7 +163,7 @@ transform: rotate(-18.47deg);
 
 #ellipse12 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 691.32px;
@@ -177,7 +177,7 @@ transform: rotate(-18.47deg);
 
 #ellipse13 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 639.49px;
@@ -191,7 +191,7 @@ transform: rotate(-18.47deg);
 
 #ellipse14 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 710.15px;
@@ -205,7 +205,7 @@ transform: rotate(-18.47deg);
 
 #ellipse15 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 722.55px;
@@ -219,7 +219,7 @@ transform: rotate(-18.47deg);
 
 #ellipse16 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 512.15px;
@@ -233,7 +233,7 @@ transform: rotate(36.06deg);
 
 #ellipse17 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 473.24px;
@@ -247,7 +247,7 @@ transform: rotate(36.06deg);
 
 #ellipse18 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 524.64px;
@@ -261,7 +261,7 @@ transform: rotate(36.06deg);
 
 #ellipse19 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 431.49px;
@@ -275,7 +275,7 @@ transform: rotate(36.06deg);
 
 #ellipse20 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 480.48px;
@@ -288,7 +288,7 @@ transform: rotate(36.06deg);
 /* Rectangle 2 */
 
 #rect1 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 487.99px;
@@ -303,7 +303,7 @@ transform: rotate(36.06deg);
 
 #ellipse21 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 729.32px;
@@ -318,7 +318,7 @@ transform: rotate(-42.55deg);
 
 #ellipse22 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 760.17px;
@@ -333,7 +333,7 @@ transform: rotate(-42.55deg);
 
 #ellipse23 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 740.71px;
@@ -348,7 +348,7 @@ transform: rotate(-42.55deg);
 
 #ellipse24 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 725px;
@@ -363,7 +363,7 @@ transform: rotate(-42.55deg);
 
 #ellipse25 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 785.5px;
@@ -377,7 +377,7 @@ transform: rotate(-42.55deg);
 /* Rectangle 2 */
 
 #rect2 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 796.67px;
@@ -392,7 +392,7 @@ transform: rotate(-42.55deg);
 
 #ellipse26 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 772.31px;
@@ -407,7 +407,7 @@ transform: rotate(167.76deg);
 
 #ellipse27 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 768.85px;
@@ -422,7 +422,7 @@ transform: rotate(167.76deg);
 
 #ellipse28 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 757.21px;
@@ -437,7 +437,7 @@ transform: rotate(167.76deg);
 
 #ellipse29 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 817.13px;
@@ -452,7 +452,7 @@ transform: rotate(167.76deg);
 
 #ellipse30 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 745.83px;
@@ -467,7 +467,7 @@ transform: rotate(167.76deg);
 
 #ellipse31 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 745.48px;
@@ -482,7 +482,7 @@ transform: rotate(150.02deg);
 
 #ellipse32 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 725.37px;
@@ -497,7 +497,7 @@ transform: rotate(150.02deg);
 
 #ellipse33 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 732.1px;
@@ -512,7 +512,7 @@ transform: rotate(150.02deg);
 
 #ellipse34 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 767.42px;
@@ -527,7 +527,7 @@ transform: rotate(150.02deg);
 
 #ellipse35 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 700.15px;
@@ -542,7 +542,7 @@ transform: rotate(150.02deg);
 
 #ellipse36 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 125px;
 height: 125px;
 left: 512.42px;
@@ -556,7 +556,7 @@ background: #48463D;
 
 #ellipse37 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 125px;
 height: 125px;
 left: 653.42px;
@@ -570,7 +570,7 @@ background: #48463D;
 
 #ellipse38 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 81px;
 height: 81px;
 left: 691.42px;
@@ -584,7 +584,7 @@ background: #48463D;
 
 #ellipse39 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 48px;
 height: 37px;
 left: 671.42px;
@@ -598,7 +598,7 @@ background: #48463D;
 
 #ellipse40 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 12.06px;
 height: 39.58px;
 left: 675.95px;
@@ -614,7 +614,7 @@ transform: rotate(-116.87deg);
 
 #ellipse40 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 88px;
 height: 170px;
 left: 697.42px;
@@ -627,7 +627,7 @@ background: #48463D;
 /* Rectangle 1 */
 
 #rect3 {
-position: absolute;
+position: sticky;
 width: 144px;
 height: 125px;
 left: 571.42px;
@@ -641,7 +641,7 @@ background: #48463D;
 
 #ellipse41 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 101.36px;
 height: 106.67px;
 left: 408.75px;
@@ -656,7 +656,7 @@ transform: rotate(-121.98deg);
 
 #ellipse42 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 401.1px;
@@ -671,7 +671,7 @@ transform: rotate(-121.98deg);
 
 #ellipse43 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 396.88px;
@@ -686,7 +686,7 @@ transform: rotate(-121.98deg);
 
 #ellipse44 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1101.98px;
@@ -701,7 +701,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse45 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1110.3px;
@@ -716,7 +716,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse46 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1086.53px;
@@ -731,7 +731,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse47 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1160.22px;
@@ -746,7 +746,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse48 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1090.1px;
@@ -761,7 +761,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse49 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 1078.21px;
@@ -775,7 +775,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse50 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 101.36px;
 height: 106.67px;
 left: 1153.03px;
@@ -789,7 +789,7 @@ transform: matrix(-0.83, 0.56, 0.56, 0.83, 0, 0);
 
 #ellipse51 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 1140.9px;
@@ -804,7 +804,7 @@ transform: matrix(-0.83, 0.56, 0.56, 0.83, 0, 0);
 
 #ellipse52 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 1152.17px;
@@ -818,7 +818,7 @@ transform: matrix(-0.83, 0.56, 0.56, 0.83, 0, 0);
 
 #ellipse53 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 978.15px;
@@ -832,7 +832,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse54 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 968.73px;
@@ -846,7 +846,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse55 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 963.5px;
@@ -860,7 +860,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse56 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1015.32px;
@@ -874,7 +874,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse57 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 944.67px;
@@ -887,7 +887,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 /* Rectangle 2 */
 
 #rect4 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 932.26px;
@@ -901,7 +901,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse58 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 1142.67px;
@@ -915,7 +915,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse59 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1181.57px;
@@ -929,7 +929,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse60 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 1130.18px;
@@ -943,7 +943,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse61 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1223.33px;
@@ -957,7 +957,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse62 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 1174.33px;
@@ -970,7 +970,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 /* Rectangle 2 */
 
 #rect5 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 1166.82px;
@@ -984,7 +984,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse63 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 925.49px;
@@ -998,7 +998,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse64 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 894.65px;
@@ -1012,7 +1012,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse65 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 914.11px;
@@ -1026,7 +1026,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse66 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 929.81px;
@@ -1040,7 +1040,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse67 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 869.31px;
@@ -1053,7 +1053,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 /* Rectangle 2 */
 
 #rect6 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 858.15px;
@@ -1067,7 +1067,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse68 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 882.5px;
@@ -1081,7 +1081,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse69 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 885.96px;
@@ -1095,7 +1095,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse70 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 897.6px;
@@ -1109,7 +1109,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse71 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 837.68px;
@@ -1123,7 +1123,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse72 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 908.98px;
@@ -1137,7 +1137,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse73 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 909.33px;
@@ -1151,7 +1151,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse74 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 929.45px;
@@ -1165,7 +1165,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse75 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 922.72px;
@@ -1179,7 +1179,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse76 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 887.4px;
@@ -1193,7 +1193,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse77 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 954.67px;
@@ -1207,7 +1207,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse78 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 125px;
 height: 125px;
 left: 1142.39px;
@@ -1221,7 +1221,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse79 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 125px;
 height: 125px;
 left: 1001.39px;
@@ -1235,7 +1235,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse80 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 81px;
 height: 81px;
 left: 963.39px;
@@ -1249,7 +1249,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse81 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 48px;
 height: 37px;
 left: 983.39px;
@@ -1263,7 +1263,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse82 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 12.06px;
 height: 39.58px;
 left: 978.87px;
@@ -1277,7 +1277,7 @@ transform: matrix(0.45, -0.89, -0.89, -0.45, 0, 0);
 
 #ellipse83 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 88px;
 height: 170px;
 left: 957.39px;
@@ -1290,7 +1290,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 /* Rectangle 1 */
 
 #rect7 {
-position: absolute;
+position: sticky;
 width: 144px;
 height: 125px;
 left: 1053.39px;
@@ -1304,7 +1304,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse84 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 101.36px;
 height: 106.67px;
 left: 1246.06px;
@@ -1318,7 +1318,7 @@ transform: matrix(0.53, -0.85, -0.85, -0.53, 0, 0);
 
 #ellipse85 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 1253.71px;
@@ -1332,7 +1332,7 @@ transform: matrix(0.53, -0.85, -0.85, -0.53, 0, 0);
 
 #ellipse86 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 1257.94px;
@@ -1346,7 +1346,7 @@ transform: matrix(0.53, -0.85, -0.85, -0.53, 0, 0);
 
 #ellipse87 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 683.98px;
@@ -1360,7 +1360,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse88 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 692.3px;
@@ -1374,7 +1374,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse89 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 668.53px;
@@ -1388,7 +1388,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse90 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 742.22px;
@@ -1402,7 +1402,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse91 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 672.1px;
@@ -1415,7 +1415,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 /* Rectangle 2 */
 
 #rect8{
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 660.21px;
@@ -1429,7 +1429,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse92 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 101.36px;
 height: 106.67px;
 left: 716.91px;
@@ -1443,7 +1443,7 @@ transform: rotate(-170.6deg);
 
 #ellipse93 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 711.16px;
@@ -1457,7 +1457,7 @@ transform: rotate(-170.6deg);
 
 #ellipse94 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 742.26px;
@@ -1471,7 +1471,7 @@ transform: rotate(-170.6deg);
 
 #ellipse95 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 101.36px;
 height: 106.67px;
 left: 771.95px;
@@ -1485,7 +1485,7 @@ transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
 
 #ellipse96 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 758.01px;
@@ -1499,7 +1499,7 @@ transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
 
 #ellipse97 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 733.44px;
@@ -1513,7 +1513,7 @@ transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
 
 #ellipse98 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 560.15px;
@@ -1527,7 +1527,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse99 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 550.73px;
@@ -1541,7 +1541,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse100 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 545.5px;
@@ -1555,7 +1555,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse101 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 597.32px;
@@ -1569,7 +1569,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse102 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 526.67px;
@@ -1582,7 +1582,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 /* Rectangle 2 */
 
 #rect9 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 514.26px;
@@ -1596,7 +1596,7 @@ transform: matrix(-0.95, -0.32, -0.32, 0.95, 0, 0);
 
 #ellipse103 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 724.67px;
@@ -1610,7 +1610,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse104 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 763.57px;
@@ -1624,7 +1624,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse105 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 712.18px;
@@ -1638,7 +1638,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse106 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 805.33px;
@@ -1652,7 +1652,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse107 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 756.33px;
@@ -1665,7 +1665,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 /* Rectangle 2 */
 
 #rect10 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 748.82px;
@@ -1679,7 +1679,7 @@ transform: matrix(-0.81, 0.59, 0.59, 0.81, 0, 0);
 
 #ellipse108 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 507.49px;
@@ -1693,7 +1693,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse109 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 476.65px;
@@ -1707,7 +1707,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse110 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 496.11px;
@@ -1721,7 +1721,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse111 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 511.81px;
@@ -1735,7 +1735,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse112 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 451.31px;
@@ -1748,7 +1748,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 /* Rectangle 2 */
 
 #rect11 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 440.15px;
@@ -1762,7 +1762,7 @@ transform: matrix(-0.74, -0.68, -0.68, 0.74, 0, 0);
 
 #ellipse113 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 525.89px;
@@ -1776,7 +1776,7 @@ transform: rotate(167.76deg);
 
 #ellipse114 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 522.43px;
@@ -1790,7 +1790,7 @@ transform: rotate(167.76deg);
 
 #ellipse115 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 510.79px;
@@ -1804,7 +1804,7 @@ transform: rotate(167.76deg);
 
 #ellipse116 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 570.71px;
@@ -1818,7 +1818,7 @@ transform: rotate(167.76deg);
 
 #ellipse117 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 499.41px;
@@ -1832,7 +1832,7 @@ transform: rotate(167.76deg);
 
 #ellipse118 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 499.06px;
@@ -1846,7 +1846,7 @@ transform: rotate(150.02deg);
 
 #ellipse119 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 478.95px;
@@ -1860,7 +1860,7 @@ transform: rotate(150.02deg);
 
 #ellipse120 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 485.68px;
@@ -1874,7 +1874,7 @@ transform: rotate(150.02deg);
 
 #ellipse121 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 521px;
@@ -1888,7 +1888,7 @@ transform: rotate(150.02deg);
 
 #ellipse122 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 453.72px;
@@ -1902,7 +1902,7 @@ transform: rotate(150.02deg);
 
 #ellipse123 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 125px;
 height: 125px;
 left: 724.39px;
@@ -1916,7 +1916,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse124 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 125px;
 height: 125px;
 left: 583.39px;
@@ -1930,7 +1930,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse125 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 81px;
 height: 81px;
 left: 445px;
@@ -1943,7 +1943,7 @@ background: #FFE0A4;
 
 #ellipse126 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 48px;
 height: 37px;
 left: 425px;
@@ -1956,7 +1956,7 @@ background: #FFE0A4;
 
 #ellipse127 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 12.06px;
 height: 39.58px;
 left: 429.52px;
@@ -1970,7 +1970,7 @@ transform: rotate(-116.87deg);
 
 #ellipse128 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 88px;
 height: 170px;
 left: 539.39px;
@@ -1983,7 +1983,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 /* Rectangle 1 */
 
 #rect12 {
-position: absolute;
+position: sticky;
 width: 144px;
 height: 125px;
 left: 652.39px;
@@ -1997,7 +1997,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse129 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 958.41px;
@@ -2010,7 +2010,7 @@ background: #FFE0A4;
 
 #ellipse130 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 950.09px;
@@ -2023,7 +2023,7 @@ background: #FFE0A4;
 
 #ellipse131 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 973.86px;
@@ -2036,7 +2036,7 @@ background: #F1C877;
 
 #ellipse132 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 900.17px;
@@ -2049,7 +2049,7 @@ background: #F1C877;
 
 #ellipse133 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 970.3px;
@@ -2061,7 +2061,7 @@ background: #F1C877;
 /* Rectangle 2 */
 
 #rect13 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 982.18px;
@@ -2074,7 +2074,7 @@ background: #FFE0A4;
 
 #ellipse134 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 101.36px;
 height: 106.67px;
 left: 925.48px;
@@ -2088,7 +2088,7 @@ transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
 
 #ellipse135 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 931.23px;
@@ -2102,7 +2102,7 @@ transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
 
 #ellipse136 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 900.13px;
@@ -2116,7 +2116,7 @@ transform: matrix(0.99, -0.16, -0.16, -0.99, 0, 0);
 
 #ellipse137 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 101.36px;
 height: 106.67px;
 left: 870.45px;
@@ -2130,7 +2130,7 @@ transform: rotate(-21.4deg);
 
 #ellipse138 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 884.38px;
@@ -2144,7 +2144,7 @@ transform: rotate(-21.4deg);
 
 #ellipse139 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 112.26px;
 height: 106.67px;
 left: 908.96px;
@@ -2158,7 +2158,7 @@ transform: rotate(-21.4deg);
 
 #ellipse140 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1082.24px;
@@ -2172,7 +2172,7 @@ transform: rotate(-18.47deg);
 
 #ellipse141 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1091.67px;
@@ -2186,7 +2186,7 @@ transform: rotate(-18.47deg);
 
 #ellipse142 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1096.89px;
@@ -2200,7 +2200,7 @@ transform: rotate(-18.47deg);
 
 #ellipse143 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1045.07px;
@@ -2214,7 +2214,7 @@ transform: rotate(-18.47deg);
 
 #ellipse144 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1115.72px;
@@ -2227,7 +2227,7 @@ transform: rotate(-18.47deg);
 /* Rectangle 2 */
 
 #rect14 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 1128.13px;
@@ -2241,7 +2241,7 @@ transform: rotate(-18.47deg);
 
 #ellipse145 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 917.72px;
@@ -2255,7 +2255,7 @@ transform: rotate(36.06deg);
 
 #ellipse146 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 878.82px;
@@ -2269,7 +2269,7 @@ transform: rotate(36.06deg);
 
 #ellipse147 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 930.21px;
@@ -2283,7 +2283,7 @@ transform: rotate(36.06deg);
 
 #ellipse148 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 837.06px;
@@ -2297,7 +2297,7 @@ transform: rotate(36.06deg);
 
 #ellipse149 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 886.06px;
@@ -2310,7 +2310,7 @@ transform: rotate(36.06deg);
 /* Rectangle 2 */
 
 #rect15 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 893.57px;
@@ -2324,7 +2324,7 @@ transform: rotate(36.06deg);
 
 #ellipse150 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 1134.9px;
@@ -2338,7 +2338,7 @@ transform: rotate(-42.55deg);
 
 #ellipse151 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1165.75px;
@@ -2352,7 +2352,7 @@ transform: rotate(-42.55deg);
 
 #ellipse152 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 1146.28px;
@@ -2366,7 +2366,7 @@ transform: rotate(-42.55deg);
 
 #ellipse153 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1130.58px;
@@ -2380,7 +2380,7 @@ transform: rotate(-42.55deg);
 
 #ellipse154 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 1191.08px;
@@ -2393,7 +2393,7 @@ transform: rotate(-42.55deg);
 /* Rectangle 2 */
 
 #rect16 {
-position: absolute;
+position: sticky;
 width: 19.02px;
 height: 13.07px;
 left: 1202.24px;
@@ -2407,7 +2407,7 @@ transform: rotate(-42.55deg);
 
 #ellipse155 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 1116.5px;
@@ -2421,7 +2421,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse156 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1119.96px;
@@ -2435,7 +2435,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse157 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 1131.6px;
@@ -2449,7 +2449,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse158 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1071.68px;
@@ -2463,7 +2463,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse159 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 1142.98px;
@@ -2477,7 +2477,7 @@ transform: matrix(0.98, 0.21, 0.21, -0.98, 0, 0);
 
 #ellipse160 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 50.39px;
 height: 76.07px;
 left: 1143.33px;
@@ -2491,7 +2491,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse161 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 68.93px;
 height: 76.07px;
 left: 1163.45px;
@@ -2505,7 +2505,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse162 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 55.81px;
 height: 76.07px;
 left: 1156.72px;
@@ -2519,7 +2519,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse163 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 92.7px;
 height: 85.57px;
 left: 1121.4px;
@@ -2533,7 +2533,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse164 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 65.76px;
 height: 85.57px;
 left: 1188.67px;
@@ -2547,7 +2547,7 @@ transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
 
 #ellipse165 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 125px;
 height: 125px;
 left: 918px;
@@ -2560,7 +2560,7 @@ background: #FFE0A4;
 
 #ellipse166 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 125px;
 height: 125px;
 left: 1059px;
@@ -2573,7 +2573,7 @@ background: #FFE0A4;
 
 #ellipse167 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 81px;
 height: 81px;
 left: 1197.39px;
@@ -2587,7 +2587,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse168 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 48px;
 height: 37px;
 left: 1217.39px;
@@ -2601,7 +2601,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse169 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 12.06px;
 height: 39.58px;
 left: 1212.87px;
@@ -2615,7 +2615,7 @@ transform: matrix(0.45, -0.89, -0.89, -0.45, 0, 0);
 
 #ellipse170 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 88px;
 height: 170px;
 left: 1103px;
@@ -2627,7 +2627,7 @@ background: #FFE0A4;
 /* Rectangle 1 */
 
 #rect17 {
-position: absolute;
+position: sticky;
 width: 144px;
 height: 125px;
 left: 977px;
@@ -2639,7 +2639,7 @@ background: #FFE0A4;
 /* Rectangle 3 */
 
 #rect18 {
-position: absolute;
+position: sticky;
 width: 281px;
 /*
 height: 721px; */
@@ -2654,7 +2654,7 @@ background: #252524;
 
 #ellipse171 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 252px;
 height: 252px;
 left: 0px;
@@ -2667,7 +2667,7 @@ background: #FFE0A4;
 
 #ellipse172 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 252px;
 height: 252px;
 left: 8px;
@@ -2680,7 +2680,7 @@ background: #252524;
 
 #ellipse173 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 252px;
 height: 252px;
 left: 0px;
@@ -2693,7 +2693,7 @@ background: #FFE0A4;
 
 #ellipse174 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 252px;
 height: 252px;
 left: 8px;
@@ -2706,7 +2706,7 @@ background: #252524;
 
 #ellipse175 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 252px;
 height: 252px;
 left: 8px;
@@ -2720,7 +2720,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 #ellipse176 {
   border-radius: 50%;
-position: absolute;
+position: sticky;
 width: 252px;
 height: 252px;
 left: 0px;
@@ -2733,7 +2733,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 /* Pichhwai for the Festival of Cows */
 
 h2 {
-  position: absolute;
+  position: sticky;
   width: 202px;
   height: 77px;
   left: 39px;
@@ -2751,7 +2751,7 @@ h2 {
 }
 
 h3 {
-  position: absolute;
+  position: sticky;
 width: 202px;
 height: 77px;
 left: 39px;
