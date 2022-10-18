@@ -1,0 +1,118 @@
+body {
+  /* background: -webkit-radial-gradient(#633f7a, #c35050, #d28e2d); */
+  background: rgb(208,97,129);
+  background: radial-gradient(circle, rgba(187,144,73,1) 0%, rgba(88,137,95,1) 39%, rgba(40,75,115,1) 100%);
+  font-family: 'Xanh Mono', monospace;
+  color: white;
+}
+
+h1 {
+  font-family: 'Nova Mono', monospace;
+}
+
+h2 {
+  font-family: 'Xanh Mono', monospace;
+}
+
+img {
+  max-width: 100%;
+  align-items: center;
+}
+
+img:hover {
+
+}
+
+.description {
+  font-size: 14px;
+  margin: 4 auto;
+  background-color: #C25842;
+
+}
+
+
+/* phone i think */
+@media (max-width: 650px) {
+  body {
+    background-color: #F69072;
+    color:  white;
+    padding: 30px;
+  }
+  h1 {
+    max-width: 100%;
+    font-size: 55px;
+  }
+  h2 {
+    color: #1c6c7a;
+    max-width: 40%;
+  }
+  em {
+    font-size: 35px;
+  }
+  img {
+    max-width: 60%;
+  }
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+body {
+  font-size: 30px;
+  background: rgb(28,108,122);
+  background: linear-gradient(17deg, rgba(28,108,122,1) 0%, rgba(110,32,18,1) 100%);
+  padding: 45px;
+}
+h1 {
+  max-width: 40%;
+}
+em {
+  font-size: 35px;
+}
+
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  body {
+    font-size: 27px;
+    padding: 30px;
+  }
+  h1 {
+    max-width: 77%;
+    font-size: 69px;
+  }
+  h2 {
+    color: #1c6c7a;
+    max-width: 40%;
+  }
+  em {
+    font-size: 35px;
+
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 40px;
+    background-color: #C8D91F;
+    padding: 60px;
+  }
+  h1 {
+    max-width: 80%;
+    font-size: 90px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  em {
+    font-size: 75px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
