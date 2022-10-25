@@ -15,7 +15,7 @@ h1 {
   font-family: 'ZCOOL XiaoWei', serif;
   text-align:  center;
   font-size: 50px;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
   transition: all 0.5s ease;
 }
 
@@ -24,6 +24,8 @@ h1:hover {
   transition: all 0.5s ease;
   letter-spacing: 1.5rem;
   border-color: #B2BE83;
+  -webkit-transform: rotate(-360deg) scale(1);
+  transform: rotate(-360deg) scale(1.5);
 }
 
 .container {
