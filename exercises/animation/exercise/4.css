@@ -1,0 +1,48 @@
+.tri {
+  width: 100px;
+height: 100px;
+background: #F7C828;
+
+      position: relative;
+
+      animation-name: all;
+      animation-duration: 8s;
+      animation-timing-function: ease-out;
+      animation-delay: 0;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+}
+
+@keyframes all {
+  0% {
+    transform: scale(.1);
+    transform: rotate(3deg);
+  }
+  20% {
+    transform: scale(2.1);
+    transform: rotate(200deg);
+    opacity: 30%;
+  }
+  60% {
+    transform: scale(7);
+    transform: rotate(550deg);
+    opacity: 90%;
+  }
+  100% {
+    transform: scale(8.9);
+    transform: rotate(600deg);
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

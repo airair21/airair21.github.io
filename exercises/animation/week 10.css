@@ -24,14 +24,7 @@
   fill:#d2928b;
 }
 
-@keyframes colorSwap {
-  0% {
-    fill: default;
-  }
-  100% {
-    fill: #6d79cd;
-  }
-}
+
 
 #yin-yang path, #yin-yang circle {
   animation: colorSwap 5s ease-in infinite alternate, fade 5s ease-in infinite alternate-reverse;

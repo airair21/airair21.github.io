@@ -1,0 +1,52 @@
+div {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid red;
+      border-left: 100px solid transparent;
+  /* background: red; */
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-iteration-count: 3.25;
+}
+
+@keyframes example {
+  0%   { /* background-color:red; */
+    left:0px; top:0px;
+    width: 0;
+        height: 0;
+        border-bottom: 100px solid red;
+        border-left: 100px solid transparent;
+        animation-duration: 1.5s;
+      }
+  25%  {/* background-color:yellow; */
+    left:500px; top:0px;
+    /* width: 0;
+        height: 0; */
+        border-bottom: 100px solid yellow;
+        border-right: 100px solid transparent;
+      }
+  50%  {/* background-color:blue; */
+    left:500px; top:500px;
+    /* width: 0;
+        height: 0; */
+        border-top: 500px solid blue;
+        border-right: 500px solid transparent;
+      }
+  75%  {/*background-color:green; */
+    left:0px; top:500px;
+    /* width: 0;
+        height: 0; */
+        border-top: 100px solid green;
+        border-left: 100px solid transparent;
+      }
+  100% {/* background-color:red; */
+    left:0px; top:0px;
+    width: 0;
+        height: 0;
+        border-bottom: 100px solid red;
+        border-left: 100px solid transparent;
+      }
+}
