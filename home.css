@@ -33,6 +33,10 @@ body {
   color: navy;
 }
 
+a {
+  color: #FFFFFF;
+}
+
 /* body {
   background: #98A3BB;
 } */
@@ -103,9 +107,36 @@ and http://jsfiddle.net/gXdMc/6/ */
 /* {box-sizing:  border-box;} */
 .item {
   /*margin: 10px 10px;*/
-flex-shrink: 1;
+/* flex-shrink: 1; */
  /* flex-basis: 200px; */
  transition: all 1s ease;
+
+ display:flex;
+ text-align: center;
+  justify-content:center;
+  align-items:center;
+ color: #000000;
+}
+
+.itemno {
+  /* font-family: 'jsMath-cmti10';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 35px; */
+
+  font-family: 'jsMath-cmti10';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display:flex;
+  text-align: center;
+   justify-content:center;
+   align-items:center;
+  color: #FFFFFF;
 }
 
 /* .item:hover {
@@ -141,7 +172,7 @@ background: #C11B1B;
 
 .ellipse2 {
   border-radius: 50%;
-position: absolute;
+/* position: absolute; */
 width: 137px;
 height: 137px;
 left: 219px;
@@ -154,7 +185,7 @@ background: #C11B1B;
 
 .ellipse3 {
   border-radius: 50%;
-position: absolute;
+/* position: absolute; */
 width: 137px;
 height: 137px;
 left: 926px;
@@ -167,7 +198,7 @@ background: #C11B1B;
 
 .ellipse4 {
   border-radius: 50%;
-position: absolute;
+/* position: absolute; */
 width: 137px;
 height: 137px;
 left: 219px;
@@ -180,7 +211,7 @@ background: #C11B1B;
 
 .ellipse5 {
   border-radius: 50%;
-position: absolute;
+/* position: absolute; */
 width: 137px;
 height: 137px;
 left: 219px;
@@ -193,7 +224,7 @@ background: #C11B1B;
 
 .ellipse6 {
   border-radius: 50%;
-position: absolute;
+/* position: absolute; */
 width: 137px;
 height: 137px;
 left: 219px;
@@ -209,8 +240,8 @@ background: #C11B1B;
 /* position: absolute; */
 width: 266px;
 height: 266px;
-left: 153px;
-top: 1792px;
+/* left: 153px;
+top: 1792px; */
 
 background: #ECBF1E;
 }
@@ -254,10 +285,23 @@ top: 1845px;
 background: #FFFFFF;
 }
 
+.ellipse11 {
+  border-radius: 50%;
+/* position: absolute; */
+width: 137px;
+height: 137px;
+left: 219px;
+top: 2604px;
+
+background: #FFFFFF;
+}
+
+
+
 /* exercises */
 
 .exercises {
-position: absolute;
+/* position: absolute; */
 width: 124px;
 height: 35px;
 left: 224px;
@@ -434,7 +478,7 @@ background: #1E4CEC; */
 .tri1 {
   left: 153px;
   top: 1547px;
-  position: absolute;
+  /* position: absolute; */
 width: 0;
 height: 0;
 border-style: solid;
@@ -454,14 +498,18 @@ top: 88px;
 background: #C11B1B; */
 
 .tri2 {
-/*   left: 195px;
+  left: 195px;
   top: 88px;
- position: absolute; */
-width: 0;
-height: 0;
+/*  position: absolute; */
+
+/* width: 0;
+height: 0; */
 border-style: solid;
 border-width: 0 445px 1857px 445px;
 border-color: transparent transparent #c11b1b transparent;
+
+display: flex;
+justify-content: space-between;
 }
 
 
@@ -479,7 +527,7 @@ background: #1E4CEC;*/
 .tri3 {
   left: 861px;
   top: 1548px;
-  position: absolute;
+  /* position: absolute; */
 width: 0;
 height: 0;
 border-style: solid;
@@ -503,7 +551,7 @@ transform: rotate(-180deg); */
 .tri4 {
   left: 419px;
   top: 2303px;
-  position: absolute;
+  /* position: absolute; */
 
 width: 0;
 height: 0;
@@ -527,7 +575,7 @@ transform: rotate(-180deg); */
 .tri5 {
   left: 1127px;
   top: 2304px;
-  position: absolute;
+  /* position: absolute; */
 
 width: 0;
 height: 0;
