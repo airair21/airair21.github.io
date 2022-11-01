@@ -1,0 +1,554 @@
+h1 {
+  color: #C82003;
+background: #F9DD94;
+border: 1px solid #F9BB79;
+border-radius: 4px;
+margin: 23px;
+position: relative;
+width: 50%;
+padding: 9px;
+font-family: 'Karla', sans-serif;
+font-size: 56px;
+}
+
+h2 {
+  color: navy;
+/* background: #F9DD94;
+border: 1px solid #F9BB79;
+border-radius: 4px; */
+margin: 23px;
+padding: 9px;
+font-family: 'Yeseva One', cursive;
+font-size: 72px;
+}
+
+h3 {
+  color: navy;
+  font-family: 'Karla', sans-serif;
+  padding: 9px;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  color: navy;
+}
+
+/* body {
+  background: #98A3BB;
+} */
+
+/* .cursor {
+  cursor: url('assets/imgs/fire1.pn'), url('https://cdn.custom-cursor.com/packs/1094/pack1322.png') default;
+} */
+
+
+.fillrect {
+  border: 1px solid #F9BB79;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+}
+
+.fillrect:hover {
+  background-color: #F9DD94;
+  border: 1px solid #F9DD94;
+  border-radius: 4px;
+  cursor: url('/assets/imgs/fire2.png') pointer;
+  font-size: 2em;
+}
+
+/* inherited from https://stackoverflow.com/questions/10679367/css-moving-text-from-left-to-right ,
+and http://jsfiddle.net/gXdMc/6/ */
+.wrapper{
+    width: auto;
+    height: 50%;
+    padding: 20px;
+    background: #5768C1;
+    text-align: center;
+    position: sticky;
+}
+.marquee {
+    /* background: red; */
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 4s linear;
+}
+
+/*
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+} */
+
+
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-direction:  row;
+  justify-content:  space-between;
+  text-align:  center;
+  transition: all 0.5s ease;
+
+  font-family: 'jsMath-cmti10';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+* {box-sizing:  border-box;}
+.item {
+  /*margin: 10px 10px;*/
+flex-shrink: 1;
+ /* flex-basis: 200px; */
+ transition: all 1s ease;
+}
+
+/* .item:hover {
+  /*margin: 10px 10px;*/
+/* flex-grow: 2;
+ flex-basis: 300px;
+ transition: all 1s ease;
+/* } */
+
+/* .itemno:hover {
+  /*margin: 10px 10px;*/
+/* flex-grow: 1;
+ flex-basis: 200px;
+ transition: all 1s ease;
+} */
+
+
+/* Ellipse 1 */
+
+.ellipse1 {
+  border-radius: 50%;
+/* position: absolute; */
+width: 266px;
+height: 266px;
+left: 507px;
+top: 1906px;
+
+background: #C11B1B;
+}
+
+
+/* Ellipse 4 */
+
+.ellipse2 {
+  border-radius: 50%;
+position: absolute;
+width: 137px;
+height: 137px;
+left: 219px;
+top: 2316px;
+
+background: #C11B1B;
+}
+
+/* Ellipse 8 */
+
+.ellipse3 {
+  border-radius: 50%;
+position: absolute;
+width: 137px;
+height: 137px;
+left: 926px;
+top: 2316px;
+
+background: #C11B1B;
+}
+
+/* Ellipse 5 */
+
+.ellipse4 {
+  border-radius: 50%;
+position: absolute;
+width: 137px;
+height: 137px;
+left: 219px;
+top: 2460px;
+
+background: #C11B1B;
+}
+
+/* Ellipse 6 */
+
+.ellipse5 {
+  border-radius: 50%;
+position: absolute;
+width: 137px;
+height: 137px;
+left: 219px;
+top: 2604px;
+
+background: #C11B1B;
+}
+
+/* Ellipse 7 */
+
+.ellipse6 {
+  border-radius: 50%;
+position: absolute;
+width: 137px;
+height: 137px;
+left: 219px;
+top: 2748px;
+
+background: #C11B1B;
+}
+
+/* Ellipse 2 */
+
+.ellipse7 {
+  border-radius: 50%;
+/* position: absolute; */
+width: 266px;
+height: 266px;
+left: 153px;
+top: 1792px;
+
+background: #ECBF1E;
+}
+
+/* Ellipse 9 */
+
+.ellipse8 {
+  border-radius: 50%;
+position: absolute;
+width: 160px;
+height: 160px;
+left: 207px;
+top: 1845px;
+
+background: #FFFFFF;
+}
+
+/* Ellipse 3 */
+
+.ellipse9 {
+  border-radius: 50%;
+/* position: absolute; */
+width: 266px;
+height: 266px;
+left: 861px;
+top: 1792px;
+
+background: #ECBF1E;
+}
+
+/* Ellipse 10 */
+
+.ellipse10 {
+  border-radius: 50%;
+/* position: absolute; */
+width: 160px;
+height: 160px;
+left: 915px;
+top: 1845px;
+
+background: #FFFFFF;
+}
+
+/* exercises */
+
+.exercises {
+position: absolute;
+width: 124px;
+height: 35px;
+left: 224px;
+top: 1908px;
+
+font-family: 'jsMath-cmti10';
+font-style: italic;
+font-weight: 500;
+font-size: 32px;
+line-height: 35px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* harmonic collection */
+
+.harmoniccollection {
+position: absolute;
+width: 75px;
+height: 40px;
+left: 958px;
+top: 2365px;
+
+font-family: 'jsMath-cmti10';
+font-style: italic;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+/* hovering */
+
+.hovering {
+position: absolute;
+width: 67px;
+height: 20px;
+left: 255px;
+top: 2519px;
+
+font-family: 'jsMath-cmti10';
+font-style: italic;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+/* still-life */
+
+.stilllife {
+position: absolute;
+width: 59px;
+height: 20px;
+left: 259px;
+top: 2663px;
+
+font-family: 'jsMath-cmti10';
+font-style: italic;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+/* all-html */
+
+.allhtml {
+position: absolute;
+width: 60px;
+height: 20px;
+left: 258px;
+top: 2375px;
+
+font-family: 'jsMath-cmti10';
+font-style: italic;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+
+/* responsive */
+
+.responsive {
+position: absolute;
+width: 82px;
+height: 20px;
+left: 247px;
+top: 2807px;
+
+font-family: 'jsMath-cmti10';
+font-style: italic;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+/* project */
+
+.project {
+position: absolute;
+width: 97px;
+height: 35px;
+left: 946px;
+top: 1908px;
+
+font-family: 'jsMath-cmti10';
+font-style: italic;
+font-weight: 500;
+font-size: 32px;
+line-height: 35px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* Polygon 1 */
+
+/*
+position: absolute;
+width: 266px;
+height: 325px;
+left: 153px;
+top: 1547px;
+
+background: #1E4CEC; */
+
+.tri1 {
+  left: 153px;
+  top: 1547px;
+  position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 133px 325px 133px;
+border-color: transparent transparent #1E4CEC transparent;
+}
+
+/* Polygon 5 */
+
+/*
+position: absolute;
+width: 890px;
+height: 1857px;
+left: 195px;
+top: 88px;
+
+background: #C11B1B; */
+
+.tri2 {
+  left: 195px;
+  top: 88px;
+  position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 445px 1857px 445px;
+border-color: transparent transparent #c11b1b transparent;
+}
+
+
+/* Polygon 3 */
+
+
+/* position: absolute;
+width: 266px;
+height: 325px;
+left: 861px;
+top: 1548px;
+
+background: #1E4CEC;*/
+
+.tri3 {
+  left: 861px;
+  top: 1548px;
+  position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 133px 325px 133px;
+border-color: transparent transparent #1E4CEC transparent;
+}
+
+
+/* Polygon 2 */
+
+/*
+position: absolute;
+width: 266px;
+height: 324px;
+left: 419px;
+top: 2303px;
+
+background: #1E4CEC;
+transform: rotate(-180deg); */
+
+.tri4 {
+  left: 419px;
+  top: 2303px;
+  position: absolute;
+
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 325px 133px 0 133px;
+border-color: #1e4aec transparent transparent transparent;
+}
+
+/* Polygon 4 */
+
+/*
+position: absolute;
+width: 266px;
+height: 324px;
+left: 1127px;
+top: 2304px;
+
+background: #1E4CEC;
+transform: rotate(-180deg); */
+
+.tri5 {
+  left: 1127px;
+  top: 2304px;
+  position: absolute;
+
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 325px 133px 0 133px;
+border-color: #1e4aec transparent transparent transparent;
+}
+
+
+/* JaxWong */
+
+.jw {
+/* position: absolute; */
+/* width: 614px;
+height: 35px;
+left: 333px;
+top: 43px; */
+
+
+/* identical to box height */
+
+display: flex;
+text-align: center;
+
+color: #000000;
+}
