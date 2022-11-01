@@ -85,10 +85,12 @@ and http://jsfiddle.net/gXdMc/6/ */
 
 .container {
   display: flex;
-  align-items: stretch;
+  /* align-items: stretch;
   flex-direction:  row;
   justify-content:  space-between;
   text-align:  center;
+  align-content: space-between;*/
+  justify-content: space-between;
   transition: all 0.5s ease;
 
   font-family: 'jsMath-cmti10';
@@ -98,7 +100,7 @@ and http://jsfiddle.net/gXdMc/6/ */
   line-height: 35px;
 }
 
-* {box-sizing:  border-box;}
+/* {box-sizing:  border-box;} */
 .item {
   /*margin: 10px 10px;*/
 flex-shrink: 1;
@@ -452,9 +454,9 @@ top: 88px;
 background: #C11B1B; */
 
 .tri2 {
-  left: 195px;
+/*   left: 195px;
   top: 88px;
-  position: absolute;
+ position: absolute; */
 width: 0;
 height: 0;
 border-style: solid;
@@ -548,6 +550,8 @@ top: 43px; */
 /* identical to box height */
 
 display: flex;
+align-self: center;
+align-items: center;
 text-align: center;
 
 color: #000000;
