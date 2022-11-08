@@ -7,16 +7,47 @@ background-repeat: no-repeat;
 background-position: center top;
 
 font-family: 'Playfair Display SC', serif;
+}
 
+p {
+  z-index: 6;
+  text-align: right;
 }
 
 a {
   color: #F8EDCF;
   font-family: 'Playfair Display SC', serif;
+  margin: 30px;
 }
+
+a:hover {
+  background: linear-gradient(270deg, #E54326, #DB550E, #F7A725, #F8CC38, #C65131);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: slideBackground 2s ease infinite;
+  -moz-animation: slideBackground 2s ease infinite;
+  animation: slideBackground 2s ease infinite;
+}
+
+    @-webkit-keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
 
 
 .waves {
+  z-index: 3;
   width: 50%;
   margin-top: -1200px;
   margin-left: -300px;
@@ -67,6 +98,7 @@ a {
 }
 
 .ships {
+  z-index: 2;
   position: fixed;
   animation-name: ships;
   animation-duration: 4s;
@@ -82,11 +114,12 @@ top: -200px;
   }
   100% {
 left: 0px;
-top: 0px;
+top: 20px;
   }
 }
 
 .women {
+  z-index: 1;
   /* width: 150px; */
   position: fixed;
   animation-name: women;
