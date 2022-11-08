@@ -90,9 +90,14 @@ a:hover {
     top: 890px;
     opacity: 22%;
   }
-  100% {
+  99% {
     left: -100px;
     top: 1020px;
+    opacity: 0%;
+  }
+  100% {
+    left: -100px;
+    top: 2020px;
     opacity: 0%;
   }
 }
