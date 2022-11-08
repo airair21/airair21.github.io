@@ -12,18 +12,18 @@ font-size: 56px;
 }
 
 h2 {
-  color: navy;
+  color: #000000;
 /* background: #F9DD94;
 border: 1px solid #F9BB79;
 border-radius: 4px; */
 margin: 23px;
-padding: 9px;
-font-family: 'Cormorant', serif;
+padding: 19px;
+font-family: 'Poor Story', cursive;
 font-size: 72px;
 }
 
 h3 {
-    color: navy;
+    color: #FFFFFF;
     font-family: 'Poor Story', cursive;
   padding: 9px;
 }
@@ -34,6 +34,15 @@ body {
 
 a {
   color: #FFFFFF;
+  font-family: 'Poor Story', cursive;
+  transition: ease-out 1.7s;
+
+}
+
+a:hover {
+  transition: ease-in .3s;
+  background: #FFFFFF;
+  color: #C11B1B;
 }
 
 /* body {
