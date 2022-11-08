@@ -15,6 +15,7 @@ a {
   font-family: 'Playfair Display SC', serif;
 }
 
+
 .waves {
   width: 50%;
   margin-top: -1200px;
@@ -66,8 +67,7 @@ a {
 }
 
 .ships {
-  width: 200px;
-  position: relative;
+  position: fixed;
   animation-name: ships;
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
@@ -87,8 +87,8 @@ top: 0px;
 }
 
 .women {
-  width: 200px;
-  position: relative;
+  /* width: 150px; */
+  position: fixed;
   animation-name: women;
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
@@ -98,9 +98,11 @@ top: 0px;
 
 @keyframes women {
   0% {
-
+    left: 500px;
+    top: 300px;
   }
   100% {
-    
+    left: 400px;
+    top: 400px;
   }
 }
