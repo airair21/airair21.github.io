@@ -46,6 +46,10 @@ a:hover {
         100%{background-position:0% 50%}
     }
 
+.background {
+
+}
+
 
 .waves {
   z-index: 3;
