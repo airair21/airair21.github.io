@@ -7,7 +7,7 @@ margin: 23px;
 position: relative;
 width: 50%;
 padding: 9px;
-font-family: 'Karla', sans-serif;
+font-family: 'Cormorant', serif;
 font-size: 56px;
 }
 
@@ -18,19 +18,18 @@ border: 1px solid #F9BB79;
 border-radius: 4px; */
 margin: 23px;
 padding: 9px;
-font-family: 'Yeseva One', cursive;
+font-family: 'Cormorant', serif;
 font-size: 72px;
 }
 
 h3 {
-  color: navy;
-  font-family: 'Karla', sans-serif;
+    color: navy;
+    font-family: 'Poor Story', cursive;
   padding: 9px;
 }
 
 body {
-  font-family: 'Karla', sans-serif;
-  color: navy;
+  font-family: 'Poor Story', cursive;
 }
 
 a {
@@ -96,9 +95,9 @@ and http://jsfiddle.net/gXdMc/6/ */
   align-content: space-between;*/
   justify-content: space-between;
   transition: all 0.5s ease;
+  width: 100%;
 
-  font-family: 'jsMath-cmti10';
-  font-style: italic;
+  font-family: 'Poor Story', cursive;
   font-weight: 500;
   font-size: 32px;
   line-height: 35px;
@@ -116,6 +115,7 @@ and http://jsfiddle.net/gXdMc/6/ */
   justify-content:center;
   align-items:center;
  color: #000000;
+ height: auto;
 }
 
 .itemno {
@@ -125,7 +125,7 @@ and http://jsfiddle.net/gXdMc/6/ */
   font-size: 32px;
   line-height: 35px; */
 
-  font-family: 'jsMath-cmti10';
+  font-family: 'Cormorant';
   font-style: italic;
   font-weight: 500;
   font-size: 18px;
@@ -181,57 +181,7 @@ top: 2316px;
 background: #C11B1B;
 }
 
-/* Ellipse 8 */
 
-.ellipse3 {
-  border-radius: 50%;
-/* position: absolute; */
-width: 137px;
-height: 137px;
-left: 926px;
-top: 2316px;
-
-background: #C11B1B;
-}
-
-/* Ellipse 5 */
-
-.ellipse4 {
-  border-radius: 50%;
-/* position: absolute; */
-width: 137px;
-height: 137px;
-left: 219px;
-top: 2460px;
-
-background: #C11B1B;
-}
-
-/* Ellipse 6 */
-
-.ellipse5 {
-  border-radius: 50%;
-/* position: absolute; */
-width: 137px;
-height: 137px;
-left: 219px;
-top: 2604px;
-
-background: #C11B1B;
-}
-
-/* Ellipse 7 */
-
-.ellipse6 {
-  border-radius: 50%;
-/* position: absolute; */
-width: 137px;
-height: 137px;
-left: 219px;
-top: 2748px;
-
-background: #C11B1B;
-}
 
 /* Ellipse 2 */
 
@@ -248,15 +198,15 @@ background: #ECBF1E;
 
 /* Ellipse 9 */
 
-.ellipse8 {
+.ellipse8 { /* to test for spots*/
   border-radius: 50%;
-position: absolute;
+/* position: absolute; */
 width: 160px;
 height: 160px;
 left: 207px;
 top: 1845px;
 
-background: #FFFFFF;
+background: #000000;
 }
 
 /* Ellipse 3 */
@@ -285,18 +235,6 @@ top: 1845px;
 background: #FFFFFF;
 }
 
-.ellipse11 {
-  border-radius: 50%;
-/* position: absolute; */
-width: 137px;
-height: 137px;
-left: 219px;
-top: 2604px;
-
-background: #FFFFFF;
-}
-
-
 
 /* exercises */
 
@@ -307,7 +245,7 @@ height: 35px;
 left: 224px;
 top: 1908px;
 
-font-family: 'jsMath-cmti10';
+font-family: 'Cormorant';
 font-style: italic;
 font-weight: 500;
 font-size: 32px;
@@ -331,7 +269,7 @@ height: 40px;
 left: 958px;
 top: 2365px;
 
-font-family: 'jsMath-cmti10';
+font-family: 'Cormorant';
 font-style: italic;
 font-weight: 500;
 font-size: 18px;
@@ -353,7 +291,7 @@ height: 20px;
 left: 255px;
 top: 2519px;
 
-font-family: 'jsMath-cmti10';
+font-family: 'Cormorant';
 font-style: italic;
 font-weight: 500;
 font-size: 18px;
@@ -377,7 +315,7 @@ height: 20px;
 left: 259px;
 top: 2663px;
 
-font-family: 'jsMath-cmti10';
+font-family: 'Cormorant';
 font-style: italic;
 font-weight: 500;
 font-size: 18px;
@@ -400,7 +338,7 @@ height: 20px;
 left: 258px;
 top: 2375px;
 
-font-family: 'jsMath-cmti10';
+font-family: 'Cormorant';
 font-style: italic;
 font-weight: 500;
 font-size: 18px;
@@ -425,7 +363,7 @@ height: 20px;
 left: 247px;
 top: 2807px;
 
-font-family: 'jsMath-cmti10';
+font-family: 'Cormorant';
 font-style: italic;
 font-weight: 500;
 font-size: 18px;
@@ -449,7 +387,7 @@ height: 35px;
 left: 946px;
 top: 1908px;
 
-font-family: 'jsMath-cmti10';
+font-family: 'Cormorant';
 font-style: italic;
 font-weight: 500;
 font-size: 32px;
@@ -572,17 +510,6 @@ top: 2304px;
 background: #1E4CEC;
 transform: rotate(-180deg); */
 
-.tri5 {
-  left: 1127px;
-  top: 2304px;
-  /* position: absolute; */
-
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 325px 133px 0 133px;
-border-color: #1e4aec transparent transparent transparent;
-}
 
 
 /* JaxWong */
@@ -604,3 +531,8 @@ text-align: center;
 
 color: #000000;
 }
+
+/*
+font-family: 'Cormorant', serif;
+font-family: 'Poor Story', cursive;
+*/

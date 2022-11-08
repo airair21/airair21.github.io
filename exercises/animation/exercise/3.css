@@ -1,8 +1,7 @@
 div {
-      width: 0;
-      height: 0;
-      border-bottom: 100px solid red;
-      border-left: 100px solid transparent;
+  width: 100px;
+height: 100px;
+background: red;
   /* background: red; */
   position: relative;
   animation-name: example;
@@ -15,38 +14,36 @@ div {
 @keyframes example {
   0%   { /* background-color:red; */
     left:0px; top:0px;
-    width: 0;
-        height: 0;
-        border-bottom: 100px solid red;
-        border-left: 100px solid transparent;
+    width: 100px;
+ height: 100px;
+ background: red;
         animation-duration: 1.5s;
       }
   25%  {/* background-color:yellow; */
-    left:500px; top:0px;
-    /* width: 0;
-        height: 0; */
-        border-bottom: 100px solid yellow;
-        border-right: 100px solid transparent;
+    left:700px; top:0px;
+    width: 200px;
+  height: 200px;
+  background: yellow;
+  border-radius: 50%;
       }
   50%  {/* background-color:blue; */
-    left:500px; top:500px;
-    /* width: 0;
-        height: 0; */
-        border-top: 500px solid blue;
-        border-right: 500px solid transparent;
+    left:700px; top:700px;
+    width: 300px;
+  height: 300px;
+  background: blue;
+  border-radius: 30%;
       }
   75%  {/*background-color:green; */
-    left:0px; top:500px;
-    /* width: 0;
-        height: 0; */
-        border-top: 100px solid green;
-        border-left: 100px solid transparent;
+    left:0px; top:700px;
+    width: 500px;
+  height: 500px;
+  background: green;
+  border-radius: 15%;
       }
   100% {/* background-color:red; */
     left:0px; top:0px;
-    width: 0;
-        height: 0;
-        border-bottom: 100px solid red;
-        border-left: 100px solid transparent;
+    width: 100px;
+  height: 100px;
+  background: red;
       }
 }
