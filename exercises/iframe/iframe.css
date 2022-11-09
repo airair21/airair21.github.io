@@ -12,6 +12,13 @@ p {
   font-size: 50px;
 }
 
+a {
+  font-family: 'Marcellus', serif;
+  color: #FFDDA3;
+  padding: 20px;
+  font-size: 20px;
+}
+
 iframe {
   padding: 7px;
   border-radius: 50%;
