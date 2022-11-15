@@ -10,6 +10,23 @@ img {
   align-content: center;
   align-self: center;
   width: 75%;
+
+  animation-name: img;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes img {
+  0% {
+    position: relative;
+    margin: 0px;
+  }
+  100%{
+    position: relative;
+    margin: 20px;
+  }
 }
 
 
