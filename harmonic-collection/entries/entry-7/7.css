@@ -1,0 +1,151 @@
+body {
+  font-family: 'Abel', sans-serif;
+  background: #AF8AEB;
+  text-align: center;
+  font-size: 50px;
+}
+
+img {
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  width: 75%;
+}
+
+
+/* hover effects:
+https://css-tricks.com/cool-hover-effects-using-background-properties/
+*/
+
+.button1 {
+  /* background-color: #EEEAF4; */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  transition-duration: 3s;
+
+  background: linear-gradient(#EEEAF4 0 0) no-repeat;
+  background-size: 200% 0.1rem;
+  background-position: 200% 100%;
+  transition: background-size .4s, background-position .4s .4s;
+}
+
+.button1:hover {
+  /* background-color: #C3B4DD; */
+  transition-duration: 3s;
+  /* animation-name: button;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-iteration-count: 1; */
+
+  background-size: 200% 100%;
+  background-position: 100% 100%;
+  transition: background-size .4s .4s, background-position .4s;
+/* the delay time of background-size is same with the duration time of background-position */
+
+}
+
+.button2 {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  transition-duration: 3s;
+
+  background: linear-gradient(#694A9B 0 0) no-repeat;
+  background-size: 200% 0.1rem;
+  background-position: -200% 100%;
+  transition: background-size .4s, background-position .4s .4s;
+}
+
+.button2:hover {
+  transition-duration: 3s;
+  background-size: 200% 100%;
+  background-position: 100% 100%;
+  transition: background-size .4s .4s, background-position .4s;
+}
+
+.button3 {
+  font-size: 10px;
+  padding: 7px;
+  transition-duration: 3s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  background-color: white;
+}
+
+.button3:hover {
+  transition-duration: 3s;
+  color: white;
+  background-color: black;
+}
+
+
+
+#heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+    #heart:before,
+    #heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: #694A9B;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+
+    /* Tablet breakpoint */
+    @media (min-width: 768px) {
+    body {
+      font-size: 44px;
+    }
+    img {
+      height: 40%;
+    }
+    }
+
+    /* Desktop breakpoint */
+    @media (min-width: 992px) {
+      body {
+        font-size: 70px;
+      }
+      img {
+        width: 50%;
+      }
+    }
+
+
+    /* Wide screen breakpoint */
+    @media (min-width: 1200px) {
+      body {
+        font-size: 30px;
+        padding: 60px;
+      }
+      img {
+        width: 70%;
+      }
+    }
