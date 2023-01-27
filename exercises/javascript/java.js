@@ -8,6 +8,7 @@ function turnOnLight() {
 let button = document.querySelector(".button");
 button.addEventListener("click", turnOnLight);
 
+
 var myAudio = document.getElementById("myAudio");
 
 function togglePlay() {
