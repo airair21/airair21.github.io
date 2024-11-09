@@ -1,0 +1,82 @@
+h1 {
+  color: #C82003;
+background: #F9DD94;
+border: 1px solid #F9BB79;
+border-radius: 4px;
+margin: 23px;
+position: relative;
+width: 50%;
+padding: 9px;
+font-family: 'Karla', sans-serif;
+font-size: 56px;
+}
+
+h2 {
+  color: navy;
+/* background: #F9DD94;
+border: 1px solid #F9BB79;
+border-radius: 4px; */
+margin: 23px;
+padding: 9px;
+font-family: 'Yeseva One', cursive;
+font-size: 72px;
+}
+
+h3 {
+  color: navy;
+  font-family: 'Karla', sans-serif;
+  padding: 9px;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  color: navy;
+}
+
+/* body {
+  background: #98A3BB;
+} */
+
+/* .cursor {
+  cursor: url('assets/imgs/fire1.pn'), url('https://cdn.custom-cursor.com/packs/1094/pack1322.png') default;
+} */
+
+
+.fillrect {
+  border: 1px solid #F9BB79;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+}
+
+.fillrect:hover {
+  background-color: #F9DD94;
+  border: 1px solid #F9DD94;
+  border-radius: 4px;
+  cursor: url('/assets/imgs/fire2.png') pointer;
+  font-size: 2em;
+}
+
+/* inherited from https://stackoverflow.com/questions/10679367/css-moving-text-from-left-to-right ,
+and http://jsfiddle.net/gXdMc/6/ */
+.wrapper{
+    width: auto;
+    height: 50%;
+    padding: 20px;
+    background: #5768C1;
+    text-align: center;
+}
+.marquee {
+    /* background: red; */
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 4s linear;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+/*  border: 3px solid green; */
+}

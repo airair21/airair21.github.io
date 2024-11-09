@@ -1,0 +1,31 @@
+#yin-yang {
+  height:500px;
+}
+
+@keyframes yinyangSpin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+#yin-yang {
+  animation: yinyangSpin 5s ease-out infinite;
+  height:500px;
+}
+
+#yin-yang:hover {
+    animation-play-state: paused;
+  }
+
+.cls-1{
+  fill:#d2928b;
+}
+
+
+
+#yin-yang path, #yin-yang circle {
+  animation: colorSwap 5s ease-in infinite alternate, fade 5s ease-in infinite alternate-reverse;
+}

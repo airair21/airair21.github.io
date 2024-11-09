@@ -1,0 +1,64 @@
+h1 {
+  color: navy;
+background: #5768C1;
+/* border: 1px solid #F9BB79; */
+margin: 23px;
+padding: 9px;
+/* font-family: 'Rubik Moonrocks', cursive; */
+font-family: 'Righteous', cursive;
+font-size: 67px;
+border-bottom-right-radius: 20%;
+border-top-left-radius: 20%;
+max-width: 50%;
+}
+
+h3 {
+  color: navy;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 9px;
+}
+
+body {
+  background: #B4B8D9;
+  color: navy;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* .palm {
+margin-top: 60px;
+transition: all 0.5s ease;
+}
+
+.palm:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(360deg) scale(6);
+  cursor: pointer;
+} [from the hover exercise]*/
+
+.link {
+  transition: all 0.5s ease;
+}
+
+.link:hover {
+  -webkit-transform: rotate(-360deg) scale(1);
+  transform: rotate(-23deg) scale(2);
+}
+
+img {
+  width: 9%;
+  height: auto;
+}
+
+.imgfilters img {
+  /* display: block; */
+  margin: 0 auto;
+  /*  -webkit-filter: grayscale(100%); */ /* Safari 6.0 - 9.0 */
+  /* filter: grayscale(100%); */
+  padding: 60px 0 60px 0;
+  filter: blur(1px);
+  opacity: 83%;
+}
+.imgfilters img:hover {
+  filter: none;
+  cursor: pointer;
+}

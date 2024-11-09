@@ -1,0 +1,47 @@
+body {
+  background: #000000;
+animation: colorSwap 5s ease-in infinite alternate, fade 5s ease-in infinite alternate-reverse;
+}
+
+@keyframes colorSwap {
+  0% {
+    background: #FF0000;
+  }
+  25% {
+    background: #FFBD00;
+  }
+  50% {
+    background: #5FE6C3;
+  }
+  75% {
+    background: #5F2FE0;
+  }
+  100% {
+    background: #E02F2F;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+.ellipse2 {
+  border-radius: 50%;
+/* position: absolute; */
+width: 500px;
+height: 500px;
+/* left: 219px;
+top: 2316px; */
+
+max-width: 80%;
+max-height: 80%;
+
+background: #C11B1B;
+
+display:flex;
+text-align: center;
+ justify-content:center;
+ align-items:center;
+}

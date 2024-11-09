@@ -1,0 +1,25 @@
+body {
+  font-family: 'Marcellus', serif;
+  color: #000000;
+  align-items: center;
+  background-color: #3F3E85;
+}
+
+p {
+  font-family: 'Marcellus', serif;
+  color: #FFDDA3;
+  padding: 20px;
+  font-size: 50px;
+}
+
+a {
+  font-family: 'Marcellus', serif;
+  color: #FFDDA3;
+  padding: 20px;
+  font-size: 20px;
+}
+
+iframe {
+  padding: 7px;
+  border-radius: 50%;
+}

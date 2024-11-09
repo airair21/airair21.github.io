@@ -1,0 +1,151 @@
+body {
+transition: all 0.5s ease;
+background-color: #000000;
+background-image: url(assets/bg.jpg);
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center top;
+
+font-family: 'Playfair Display SC', serif;
+overflow-y: hidden;
+}
+
+p {
+  z-index: 6;
+  text-align: right;
+}
+
+a {
+  color: #F8EDCF;
+  font-family: 'Playfair Display SC', serif;
+  margin: 30px;
+}
+
+a:hover {
+  background: linear-gradient(270deg, #E54326, #DB550E, #F7A725, #F8CC38, #C65131);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: slideBackground 2s ease infinite;
+  -moz-animation: slideBackground 2s ease infinite;
+  animation: slideBackground 2s ease infinite;
+}
+
+    @-webkit-keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+.background {
+
+}
+
+
+.waves {
+  z-index: 3;
+  width: 50%;
+  margin-top: -1200px;
+  margin-left: -300px;
+  position: relative;
+  animation-name: waves;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes waves {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 100%;
+  }
+  20% {
+    left: 300px;
+    top: 120px;
+    opacity: 99%;
+  }
+  44% {
+    left: -40px;
+    top: 230px;
+    opacity: 95%;
+  }
+  60% {
+    left: 270px;
+    top: 560px;
+    opacity: 80%;
+  }
+  73% {
+    left: -80px;
+    top: 670px;
+    opacity: 73%;
+  }
+  95% {
+    left: 280px;
+    top: 890px;
+    opacity: 22%;
+  }
+  99% {
+    left: -100px;
+    top: 1020px;
+    opacity: 0%;
+  }
+  100% {
+    left: -100px;
+    top: 2020px;
+    opacity: 0%;
+  }
+}
+
+.ships {
+  z-index: 2;
+  position: fixed;
+  animation-name: ships;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes ships {
+  0% {
+left: -400px;
+top: -200px;
+  }
+  100% {
+left: 0px;
+top: 20px;
+  }
+}
+
+.women {
+  z-index: 1;
+  /* width: 150px; */
+  position: fixed;
+  animation-name: women;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes women {
+  0% {
+    left: 500px;
+    top: 300px;
+  }
+  100% {
+    left: 400px;
+    top: 400px;
+  }
+}
