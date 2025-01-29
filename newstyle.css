@@ -261,8 +261,9 @@ a:hover {
     /* font-family: AlpinaExtended; */
 }
 
-#worksproj {
-    width: 70vw;               /* Define the width of #works */
+.worksproj {
+    width: 55vw;               
+        /* Define the width of #works */
     /* outline: 2px red solid;     */
         /* Add an outline for visibility */
     display: flex;             
@@ -270,11 +271,12 @@ a:hover {
         flex-direction: column;
     justify-content: center;   /* Center content horizontally inside */
     align-items: center;       /* Center content vertically inside */
-    text-align: center;        /* Ensure text inside #works is centered */
+    text-align: left;        
+        /* Ensure text inside #works is centered */
     margin-left: auto;
     margin-right: auto;
 }
-#worksproj p {
+.worksproj p {
     font-family: AlpinaExtended;
     font-size: 1.5rem;
     letter-spacing: normal;
@@ -283,12 +285,41 @@ a:hover {
     font-style: normal;
 
 }
-#worksproj img {
+.worksproj img {
     max-width: 90vw;
+    padding: 4%;
 }
 
 #portrait {
-    max-width: 75vw;
-    width: 45vw;
-    padding: 4%;
+    max-width: 55vw;
+    width: 55vw;
+    /* padding: 4%; */
 }
+
+
+.tworow {
+    display: flex;
+    width: 90vw;                 
+        /* This limits the width of the container */
+    justify-content: space-between;  
+        /* Distribute images evenly */
+    /* outline: blue 2px solid; */
+    flex-wrap: wrap;              
+        /* Allow the images to wrap within the container */
+    gap: 2%;
+    padding: 4%;                     
+        /* Add space between images */
+}
+
+.tworow img {
+    width: 48%;                   
+        /* Control the image width to be less than 50% to avoid overflow */
+    height: auto;                 
+        /* Ensure the image keeps its aspect ratio */
+    margin: 0;
+    padding: 0%;                  
+        /* Add padding inside the image to control space */
+    object-fit: contain;          
+        /* Ensure the image fits the container */
+}
+
