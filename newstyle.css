@@ -110,10 +110,11 @@ a:hover {
 .header a:hover {
     /* color: purple; */
     /* font-size: 100%; */
-    font-weight: 800;
+    font-weight: bold;
     padding: 1%;
 
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
+    color: cornflowerblue;
 
 
     /* color: orangered;
@@ -204,6 +205,12 @@ a:hover {
     text-decoration: none;
     /* border: 5px solid red; */
 }
+.receipt a:hover {
+    /* font-size: 1.3em; */
+    font-weight: bold;
+    /* mix-blend-mode: exclusion; */
+    color: cornflowerblue;
+}
 .receipt h2 {
     font-size: 2.1em;
     padding-left: 15%;
@@ -211,6 +218,13 @@ a:hover {
 .receipt div {
     padding-bottom: 1rem;
 
+}
+.receipt p {
+    font-size: 1rem;
+    font-style: italic;
+    /* font-weight: 200; */
+    letter-spacing: normal;
+    font-kerning: auto;
 }
 
 
@@ -243,10 +257,38 @@ a:hover {
     visibility: visible;
     
 }
-.tooltip:hover {
-    font-size: 1.3em;
-    margin: 2%;
-    padding: 2%;
+.tooltip p {
+    /* font-family: AlpinaExtended; */
+}
 
+#worksproj {
+    width: 70vw;               /* Define the width of #works */
+    /* outline: 2px red solid;     */
+        /* Add an outline for visibility */
+    display: flex;             
+        /* Use flex to center content inside #works */
+        flex-direction: column;
+    justify-content: center;   /* Center content horizontally inside */
+    align-items: center;       /* Center content vertically inside */
+    text-align: center;        /* Ensure text inside #works is centered */
+    margin-left: auto;
+    margin-right: auto;
+}
+#worksproj p {
+    font-family: AlpinaExtended;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    font-kerning: auto;
+    line-height: 130%;
+    font-style: normal;
 
+}
+#worksproj img {
+    max-width: 90vw;
+}
+
+#portrait {
+    max-width: 75vw;
+    width: 45vw;
+    padding: 4%;
 }
