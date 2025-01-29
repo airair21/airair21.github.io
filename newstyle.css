@@ -22,6 +22,18 @@
     src: url(assets/BaseNeueTrial-SuperExpExtBd.woff2);
     font-kerning: auto;
 }
+@font-face {
+    font-family: BaseNeueAllCaps;
+    src: url(assets/BaseNeueTrial-SuperExp.woff2);
+}
+@font-face {
+    font-family: BaseNeueNorm;
+    src: url(assets/BaseNeueTrial-Regular.woff2);
+}
+@font-face {
+    font-family: UniversL;
+    src: url(assets/universLight.woff2);
+}
 
 p {
     /* font-family: KeplerItalic;   */
@@ -212,6 +224,8 @@ a:hover {
     color: cornflowerblue;
 }
 .receipt h2 {
+    /* font-family: UniversL; */
+
     font-size: 2.1em;
     padding-left: 15%;
 }
@@ -220,11 +234,20 @@ a:hover {
 
 }
 .receipt p {
-    font-size: 1rem;
-    font-style: italic;
+    /* font-size: 1rem; */
+    /* font-style: italic; */
+    font-style: normal;
     /* font-weight: 200; */
     letter-spacing: normal;
     font-kerning: auto;
+
+    /* font-family: BaseNeueAllCaps; 
+        font-size: .7rem; */
+    font-family: UniversL;
+    font-size: .88vw;
+    font-stretch: wider;
+
+    text-transform: uppercase;
 }
 
 
@@ -277,11 +300,22 @@ a:hover {
     margin-right: auto;
 }
 .worksproj p {
-    font-family: AlpinaExtended;
+    /* font-family: AlpinaExtended;
     font-size: 1.5rem;
+    line-height: 130%; */
+
+
+    /* font-family: BaseNeueNorm;
+    font-size: 1vw;
+    line-height: 130%; */
+    /* letter-spacing: .06vw; */
+
+    font-family: UniversL;
+    font-size: 1.5vw;
+    line-height: 130%;
+
     letter-spacing: normal;
     font-kerning: auto;
-    line-height: 130%;
     font-style: normal;
 
 }
