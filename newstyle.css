@@ -1,0 +1,252 @@
+@font-face {
+    font-family: Kepler;
+    src: url(assets/Kepler\ Std\ Medium.woff);
+}
+@font-face {
+    font-family: KeplerItalic;
+    src: url(assets\ Kepler\ Std\ Medium\ Italic.woff);
+    font-kerning: auto;
+}
+@font-face {
+    font-family: AlpinaExtended;
+    src: url(assets/GT-Alpina-Extended-Thin-Trial.woff2);
+    font-kerning: auto;
+}
+@font-face {
+    font-family: AlpinaExtendedItalic;
+    src: url(assets/GT-Alpina-Extended-Thin-Italic-Trial.woff2);
+    font-kerning: auto;
+}
+@font-face {
+    font-family: BaseNeue;
+    src: url(assets/BaseNeueTrial-SuperExpExtBd.woff2);
+    font-kerning: auto;
+}
+
+p {
+    /* font-family: KeplerItalic;   */
+    font-family: AlpinaExtendedItalic;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 5.5vw;
+    letter-spacing: -.47vw;
+    font-kerning: auto;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+h1 {
+    /* font-family: KeplerItalic; */
+    font-family: BaseNeue;
+    font-style: italic;
+    /* font-weight: 200; */
+    font-size: 18vw;
+    /* letter-spacing: -.7rem; */
+    word-spacing: 3rem;
+    font-kerning: auto;
+    margin-top: 0rem;
+    margin-bottom: .7rem;
+
+    /* border: 1px blue solid; */
+}
+h3 {
+    /* font-family: KeplerItalic; */
+    font-family: AlpinaExtendedItalic;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 6vw;
+    letter-spacing: -.7vw;
+    font-kerning: auto;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    color: orange;
+}
+a {
+    color: orange;
+    transition: .3s;
+}
+a:hover {
+    /* color: blue; */
+    font-size: 7vw;
+}
+
+
+.thisis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+
+    /* font-family: 'Sono', monospace; */
+    /* font-family: KeplerItalic; */
+    font-family: AlpinaExtendedItalic;
+
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: -.17rem;
+    font-kerning: auto;
+
+    transition: .3s;
+
+}
+.header a {
+    /* color: midnightblue; */
+    /* background-color: orange; */
+    color: orange;
+    font-size: 2em;
+
+    text-decoration: none;
+
+}
+.header a:hover {
+    /* color: purple; */
+    /* font-size: 100%; */
+    font-weight: 800;
+    padding: 1%;
+
+    mix-blend-mode: exclusion;
+
+
+    /* color: orangered;
+    background-color: midnightblue; */
+}
+
+
+.worksbody {
+    display: flex;
+}
+.worksbody img{
+    height: 40vh;
+    background-color: orange;
+    padding: 1vw;
+}
+
+.bodywork {
+    display: flex;
+    flex-direction: column;
+    /* height: 200em; */
+    
+    align-items: center;
+    
+    /* border: 1px solid blue; */
+}
+.bodywork div {
+    margin: 1vw;
+    /* align-content: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center; */
+
+    /* border: 1px solid purple; */
+
+    width: 66vh;
+
+    text-align: center; 
+    justify-content: center;
+}
+.bodywork img {
+    /* align-content: right;
+    justify-content: center; */
+}
+.bodywork h3{
+    /* width: 80vh; */
+    height: 30vh;
+    /* height: 50vw; */
+    text-align: center; 
+    justify-content: center;
+
+    margin-top: -20vw;
+
+    /* rotate: 270deg; */
+    mix-blend-mode: difference;
+
+    /* margin-top: -3vh; */
+
+    /* border: 2px solid red; */
+}
+
+
+
+
+
+.receipt {
+    font-family: AlpinaExtendedItalic;
+    font-style: italic;
+
+    width: 40vw;
+    outline: 2px black solid;
+    padding: 2%;
+    margin: 2%;
+
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: flex-start;
+    
+    /* Center the .receipt div horizontally */
+    margin-left: auto;
+    margin-right: auto;
+}
+.receipt a {
+    font-size: 2em;
+    border-bottom: 2px dotted black; 
+        /* If you want dots under the hoverable text */
+    text-decoration: none;
+    /* border: 5px solid red; */
+}
+.receipt h2 {
+    font-size: 2.1em;
+    padding-left: 15%;
+}
+.receipt div {
+    padding-bottom: 1rem;
+
+}
+
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    /* display: inline-block; */
+    transition: .1s;
+    /* font-size: 2.1em; */
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 17em;
+    /* background-color: black; */
+    /* color: #fff; */
+    /* text-align: center; */
+    /* padding: 5px 0; */
+    margin: 2%;
+    /* border-radius: .2rem; */
+    border: 2px orange solid;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    
+}
+.tooltip:hover {
+    font-size: 1.3em;
+    margin: 2%;
+    padding: 2%;
+
+
+}
