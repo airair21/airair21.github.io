@@ -34,6 +34,14 @@
     font-family: UniversL;
     src: url(assets/universLight.woff2);
 }
+@font-face {
+    font-family: PPEditorial;
+    src: url(assets/PPEditorialOld-Regular.woff2);
+}
+@font-face {
+    font-family: PPEditorialIt;
+    src: url(assets/PPEditorialOld-Italic.woff2);
+}
 
 p {
     /* font-family: KeplerItalic;   */
@@ -314,14 +322,22 @@ a:hover {
     font-size: 1.5vw;
     line-height: 130%;
 
+    /* font-family: PPEditorial;
+    font-size: 2vw; */
+
     letter-spacing: normal;
     font-kerning: auto;
     font-style: normal;
 
 }
+.worksproj em {
+    color: darkorange;
+    /* font-family: PPEditorialIt; */
+    font-size: 2.5vw;
+}
 .worksproj img {
     max-width: 90vw;
-    padding: 4%;
+    padding: 2%;
 }
 
 #portrait {
@@ -340,8 +356,9 @@ a:hover {
     /* outline: blue 2px solid; */
     flex-wrap: wrap;              
         /* Allow the images to wrap within the container */
-    gap: 2%;
-    padding: 4%;                     
+    /* gap: 2%; */
+    padding-top: 2%;    
+    padding-bottom: 2%;                 
         /* Add space between images */
 }
 
@@ -357,3 +374,7 @@ a:hover {
         /* Ensure the image fits the container */
 }
 
+
+.smallerwide {
+    width: 66vw;
+}
