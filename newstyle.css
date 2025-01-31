@@ -42,6 +42,14 @@
     font-family: PPEditorialIt;
     src: url(assets/PPEditorialOld-Italic.woff2);
 }
+@font-face {
+    font-family: PressuraMono;
+    src: url(assets/GT-Pressura-Mono-Trial-VF.woff2);
+}
+@font-face {
+    font-family: ObvVar;
+    src: url(assets/Obviously\ Variable\ Compressed\ Thin.woff2);
+}
 
 p {
     /* font-family: KeplerItalic;   */
@@ -53,18 +61,22 @@ p {
     font-kerning: auto;
     margin-top: .3rem;
     margin-bottom: .3rem;
+
+    color: cornflowerblue;
+
 }
 h1 {
     /* font-family: KeplerItalic; */
     font-family: BaseNeue;
     font-style: italic;
     /* font-weight: 200; */
-    font-size: 18vw;
+    font-size: 16vw;
     /* letter-spacing: -.7rem; */
     word-spacing: 3rem;
     font-kerning: auto;
     margin-top: 0rem;
     margin-bottom: .7rem;
+
 
     /* border: 1px blue solid; */
 }
@@ -108,6 +120,9 @@ a:hover {
     /* font-family: 'Sono', monospace; */
     /* font-family: KeplerItalic; */
     font-family: AlpinaExtendedItalic;
+    /* font-family: PressuraMono; */
+    /* font-family: ObvVar;
+    font-weight: 300; */
 
     font-style: italic;
     font-weight: 200;
@@ -135,6 +150,8 @@ a:hover {
 
     /* mix-blend-mode: exclusion; */
     color: cornflowerblue;
+    /* text-transform: uppercase; */
+
 
 
     /* color: orangered;
@@ -233,6 +250,10 @@ a:hover {
 }
 .receipt h2 {
     /* font-family: UniversL; */
+    /* font-family: PressuraMono;
+    font-weight: 500; */
+    /* font-family: ObvVar;
+    text-transform: uppercase; */
 
     font-size: 2.1em;
     padding-left: 15%;
@@ -254,6 +275,12 @@ a:hover {
     font-family: UniversL;
     font-size: .88vw;
     font-stretch: wider;
+
+    /* font-family: PressuraMono;
+    font-weight: 300;
+    font-stretch: wider; */
+
+    /* font-family: ObvVar; */
 
     text-transform: uppercase;
 }
@@ -322,18 +349,37 @@ a:hover {
     font-size: 1.5vw;
     line-height: 130%;
 
+    /* font-family: PressuraMono;
+    font-size: 1.5vw;
+    line-height: 130%;
+    font-kerning: normal; */
+
+    /* font-family: ObvVar;
+    font-size: 1.0vw;
+    line-height: 150%;
+    font-kerning: normal;
+    font-stretch: ultra-expanded;
+    font-weight: 350; */
+
+
     /* font-family: PPEditorial;
     font-size: 2vw; */
 
     letter-spacing: normal;
-    font-kerning: auto;
+    /* font-kerning: auto; */
     font-style: normal;
+
+    color: black;
 
 }
 .worksproj em {
     color: darkorange;
     /* font-family: PPEditorialIt; */
     font-size: 2.5vw;
+
+    font-family: AlpinaExtended;
+
+    font-weight: 700;
 }
 .worksproj img {
     max-width: 90vw;
