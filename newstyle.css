@@ -330,6 +330,7 @@ a:hover {
     /* margin: 10px 0;  */
         /* Space between blocks (optional) */
     /* outline: 3px red solid; Uncomment to debug the layout */
+    max-width: 90vw;
 }
 
 
@@ -568,7 +569,10 @@ a:hover {
 }
 .worksproj img {
     max-width: 90vw;
-    padding: 2%;
+    margin: 2%;
+}
+.worksproj video {
+    max-width: 90vw;
 }
 
 #portrait {
@@ -622,6 +626,16 @@ a:hover {
     /* border: blueviolet dashed 1px; */
 }
 
+.blackborder {
+    border: 3px black solid;
+    max-width: 90vw;
+    margin: 0 !important;
+}
+video {
+    /* override other styles to make responsive */
+    width: auto    !important;
+    height: 76vh   !important;
+}
 
 
 
