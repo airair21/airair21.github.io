@@ -238,12 +238,14 @@ a:hover {
     font-kerning: auto;
 
     transition: .3s;
+
+    z-index: 500;
 }
 .header a {
     /* color: midnightblue; */
     /* background-color: orange; */
     color: orange;
-    font-size: 2em;
+    font-size: 2.5em;
 
     text-decoration: none;
 
@@ -365,7 +367,7 @@ a:hover {
     text-shadow: none;
 }
 .receipt a {
-    font-size: 2em;
+    font-size: 2.5em;
     /* border-bottom: 2px dotted black;  */
         /* If you want dots under the hoverable text */
     text-decoration: none;
@@ -415,7 +417,7 @@ a:hover {
     /* font-family: BaseNeueAllCaps; 
         font-size: .7rem; */
     font-family: UniversL;
-    font-size: .88vw;
+    font-size: 1vw;
     font-stretch: wider;
 
     /* font-family: PressuraMono;
@@ -480,8 +482,7 @@ a:hover {
 }
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    
+    visibility: visible;  
 }
 .tooltip p {
     /* font-family: AlpinaExtended; */
@@ -491,6 +492,7 @@ a:hover {
 
     flex: 2 1 0;
     /* outline: solid red 2px; */
+    align-self: flex-end;
 }
 .right {
     flex: 1 2 0;
@@ -618,4 +620,81 @@ a:hover {
     
 
     /* border: blueviolet dashed 1px; */
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content inside each .block */
+        /* width: 60%;  */
+            /* Adjust width as needed */
+        /* margin: 10px 0;  */
+            /* Space between blocks (optional) */
+        /* outline: 3px red solid; Uncomment to debug the layout */
+    }
+    .thisis {
+
+        background-color: white;
+        
+    
+        /* width: 88vw; */
+        width: 85vw;
+        /* margin: 4%; */
+        padding: 4%;
+        /* margin: 5%; */
+    
+        /* border: red dotted 1px; */
+    
+    }
+    .receipt {
+        width: 80vw; /* You can adjust this */
+        padding: 2%;
+        margin: 4%;
+        /* margin-right: 50%; */
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+        overflow-y: auto;
+        max-height: 800vh;
+    }
+    .receipt p {
+        font-size: 2.5vw;
+    }
+    .receipt a {
+        font-size: 5.5vw;
+        text-decoration: none;
+    
+    }
+
+    .header a {
+        font-size: 6vw;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: hidden;  
+    }    
+    
+
+}
+@media only screen and (min-width: 3500px) {
+    
+
 }
