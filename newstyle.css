@@ -50,6 +50,10 @@
     font-family: ObvVar;
     src: url(assets/Obviously\ Variable\ Compressed\ Thin.woff2);
 }
+@font-face {
+    font-family: Megascope;
+    src: url(assets/Megascope\ Variable\ Regular.woff2);
+}
 
 /* // <weight>: Use a value from 200 to 800
 // <uniquifier>: Use a unique and descriptive class name */
@@ -94,16 +98,16 @@ p {
     /* font-family: AlpinaExtendedItalic; */
     /* font-style: italic; */
 
-    font-family: Newsreader, serif;
+    font-family: "Newsreader", serif;
 
     font-weight: 100;
     font-size: 5.5vw;
-    letter-spacing: -.47vw;
+    /* letter-spacing: -.47vw; */
     font-kerning: auto;
     margin-top: .3rem;
     margin-bottom: .3rem;
 
-    color: cornflowerblue;
+    /* color: cornflowerblue; */
 
     /* border: red solid 1px; */
 
@@ -116,52 +120,25 @@ h1 {
     /* font-weight: 200; */
     /* letter-spacing: -.7rem; */
 
-    font-family: "Climate Crisis", serif;
+    /* font-family: "Climate Crisis", serif;
     font-variation-settings:
     "YEAR" 2042;
-    font-size: 13vw;
+    font-size: 13vw; */
+
+    font-family: Megascope;
+    font-size: 17vw;
 
     line-height: 80%;
 
-    word-spacing: 3rem;
+    /* word-spacing: 3rem; */
     font-kerning: auto;
-    margin-top: 0rem;
-    margin-bottom: .7rem;
+    margin: 0rem;
+    margin-top: 1rem;
+    /* margin-bottom: .7rem; */
 
 
     /* border: 1px blue solid; */
 }
-.thisis h1 {
-    /* text-shadow: 0vw 0vw .5vw rgb(255, 166, 0); */
-
-    /* padding-bottom: -50%; */
-
-    animation-name: cch1;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-
-}
-@keyframes cch1 {
-    0% {
-        font-family: "Climate Crisis", serif;
-        font-variation-settings:
-        "YEAR" 2042;
-    }
-    90% {
-        font-family: "Climate Crisis", serif;
-        font-variation-settings:
-        "YEAR" 2000;
-    }
-    100% {
-        font-family: "Climate Crisis", serif;
-        font-variation-settings:
-        "YEAR" 2000;
-    }
-}
-
-
-
 .thisis {
     display: flex;
     flex-direction: column;
@@ -179,14 +156,64 @@ h1 {
     z-index: 100; /* Ensures it stays above scrolling content */
 
     /* width: 88vw; */
-    width: 45vw;
+    width: 48vw;
     /* margin: 4%; */
     padding: 4%;
+    padding-right: 2%;
     /* margin: 5%; */
 
     /* border: red dotted 1px; */
+}
+.thisis h1 {
+    /* text-shadow: 0vw 0vw .5vw rgb(255, 166, 0); */
+
+    /* padding-bottom: -50%; */
+
+    animation-name: cch1;
+    animation-duration: 6.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 
 }
+@keyframes cch1 {
+    0% {
+        /* font-family: "Climate Crisis", serif;
+        font-variation-settings:
+        "YEAR" 2042; */
+
+        font-family: Megascope;
+        font-size: 13vw;
+        font-variation-settings: 'SCOP' 100, 'wght' 100;
+    }
+    30% {
+
+        font-family: Megascope;
+        font-size: 13vw;
+        font-variation-settings: 'SCOP' 55, 'wght' 400;
+    }
+    90% {
+        /* font-family: "Climate Crisis", serif;
+        font-variation-settings:
+        "YEAR" 2000; */
+
+        font-family: Megascope;
+        font-size: 13vw;
+        font-variation-settings: 'SCOP' 100, 'wght' 666;
+    }
+    100% {
+        /* font-family: "Climate Crisis", serif;
+        font-variation-settings:
+        "YEAR" 2000; */
+
+        font-family: Megascope;
+        font-size: 13vw;
+        font-variation-settings: 'SCOP' 0, 'wght' 700;
+    }
+}
+
+
+
+
 
 
 h3 {
@@ -202,7 +229,8 @@ h3 {
     color: orange;
 }
 a {
-    color: orange;
+    /* color: orange; */
+    color: black;
     transition: .3s;
 }
 a:hover {
@@ -257,7 +285,10 @@ a:hover {
     padding: 1%;
 
     /* mix-blend-mode: exclusion; */
-    color: cornflowerblue;
+    /* color: cornflowerblue; */
+    color: black;
+    outline: white;
+    text-shadow: 0vw 0vw .5vw white;
     /* text-transform: uppercase; */
 
 
@@ -324,13 +355,21 @@ a:hover {
 
 .blocks {
     display: flex;
-    justify-content: center; /* Center content inside each .block */
+    justify-content: space-between!important; 
+    height: 80vh;
+    /* height: 100vh; */
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    /* Center content inside each .block */
     /* width: 60%;  */
         /* Adjust width as needed */
     /* margin: 10px 0;  */
         /* Space between blocks (optional) */
-    /* outline: 3px red solid; Uncomment to debug the layout */
-    max-width: 90vw;
+    /* outline: 3px red solid;  */
+        /* Uncomment to debug the layout */
+    max-width: 100vw;
+
 }
 
 
@@ -360,10 +399,6 @@ a:hover {
 
     box-sizing: border-box; /* Include padding and border in width/height */
 }
-
-
-
-
 .receipt:hover {
     text-shadow: none;
 }
@@ -381,7 +416,8 @@ a:hover {
     /* font-size: 2.3em; */
     font-weight: 500;
     /* mix-blend-mode: exclusion; */
-    color: cornflowerblue;
+    /* color: cornflowerblue; */
+    color: orange;
 
     text-shadow: none;
 
@@ -405,7 +441,6 @@ a:hover {
 }
 .receipt div {
     /* padding-bottom: 1rem; */
-
 }
 .receipt p {
     /* font-size: 1rem; */
@@ -417,8 +452,9 @@ a:hover {
 
     /* font-family: BaseNeueAllCaps; 
         font-size: .7rem; */
-    font-family: UniversL;
-    font-size: 1vw;
+    /* font-family: UniversL; */
+    font-family: Newsreader;
+    font-size: 1.2vw;
     font-stretch: wider;
 
     /* font-family: PressuraMono;
@@ -513,8 +549,10 @@ a:hover {
     display: flex;             
         /* Use flex to center content inside #works */
         flex-direction: column;
-    justify-content: center;   /* Center content horizontally inside */
-    align-items: center;       /* Center content vertically inside */
+    justify-content: center;   
+        /* Center content horizontally inside */
+    align-items: center;       
+        /* Center content vertically inside */
     text-align: left;        
         /* Ensure text inside #works is centered */
     margin-left: auto;
@@ -531,7 +569,13 @@ a:hover {
     line-height: 130%; */
     /* letter-spacing: .06vw; */
 
-    font-family: UniversL;
+
+    font-family: Newsreader, serif;
+    /* font-style: italic!important; */
+    font-weight: 300; 
+    
+
+    /* font-family: UniversL; */
     font-size: 1.5vw;
     line-height: 130%;
 
@@ -575,10 +619,27 @@ a:hover {
     max-width: 90vw;
 }
 
+.descriptor {
+    text-align: left;
+    width: 40vw;
+}
+
+.infoblock {
+    display: flex;
+
+    width: 95vw;
+    margin: 0 auto;
+}
+
+
 #portrait {
-    max-width: 55vw;
+    max-width: 500px;
     width: 55vw;
+    height: auto;
     /* padding: 4%; */
+    display: flex;
+    margin: 0 auto;
+
 }
 
 
@@ -596,7 +657,6 @@ a:hover {
     padding-bottom: 2%;                 
         /* Add space between images */
 }
-
 .tworow img {
     width: 48%;                   
         /* Control the image width to be less than 50% to avoid overflow */
@@ -610,6 +670,31 @@ a:hover {
 }
 
 
+
+.threegrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 equal columns */
+    gap: 0px; /* Removes gaps between grid items */
+    width: 90vw;
+    padding: 0;
+    /* margin: 0 auto;  */
+        /* Centers the grid */
+
+
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.threegrid img {
+    width: 100%; /* Ensures images take full column width */
+    height: auto;
+    display: block; /* Removes inline spacing gaps */
+    padding: 0;
+    margin: 0;
+}
+
+
+
 .smallerwide {
     width: 66vw;
 }
@@ -617,6 +702,7 @@ a:hover {
 .blackbg {
     display: grid;
     grid: auto auto auto;
+    margin-bottom: 2%;
 }
 .blackbg img{
     padding: 0;
@@ -657,6 +743,7 @@ video {
         /* margin: 10px 0;  */
             /* Space between blocks (optional) */
         /* outline: 3px red solid; Uncomment to debug the layout */
+        height: 100vh;
     }
     .thisis {
 
@@ -704,7 +791,17 @@ video {
 
     .tooltip:hover .tooltiptext {
         visibility: hidden;  
-    }    
+    }   
+    
+    .threegrid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .threegrid img {
+        height: auto;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
     
 
 }
