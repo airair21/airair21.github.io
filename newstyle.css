@@ -54,6 +54,14 @@
     font-family: Megascope;
     src: url(assets/Megascope\ Variable\ Regular.woff2);
 }
+@font-face {
+    font-family: Cheee;
+    src: url(assets/Cheee\ Variable\ Stinkhead.woff2);
+}
+@font-face {
+    font-family: Casual;
+    src: url(assets/Ohno\ Casual\ Variable\ Thin.woff2);
+}
 
 /* // <weight>: Use a value from 200 to 800
 // <uniquifier>: Use a unique and descriptive class name */
@@ -93,6 +101,25 @@
 
 
 
+.blackblack {
+    background-color: black;
+    color: white !important;
+}
+.blackblack .header a {
+    /* color: orange; */
+    color: white;
+}
+.blackblack .header a:hover {
+    /* color: orange; */
+    color: white;
+    outline: black;
+    /* text-shadow: 0vw 0vw .3vw white; */
+    text-shadow: 0vw 0vw .3vw orange;
+
+    /* font-variation-settings: 'SCOP' 100, 'wght' 400; */
+}
+
+
 p {
     /* font-family: KeplerItalic;   */
     /* font-family: AlpinaExtendedItalic; */
@@ -125,8 +152,11 @@ h1 {
     "YEAR" 2042;
     font-size: 13vw; */
 
-    font-family: Megascope;
+    /* font-family: Megascope; */
     font-size: 17vw;
+
+    
+
 
     line-height: 80%;
 
@@ -169,11 +199,44 @@ h1 {
 
     /* padding-bottom: -50%; */
 
+    /* font-family: "Sixtyfour Convergence", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13vw; */
+
+    /* font-family: "Honk", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; */
+
+
+    /* font-family: "Tilt Neon", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11vw; */
+
+    /* font-family: Cheee;
+    font-size: 13vw; */
+
+    font-family: Casual;
+    font-size: 13vw;
+
+    /* text-shadow: 0vw 0vw 1vw black; */
+
+    transition: .2s;
+    
+
     animation-name: cch1;
     animation-duration: 6.9s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 
+}
+.thisis h1:hover {
+    color: orange;
+    text-shadow: 0vw 0vw .5vw orange;
 }
 @keyframes cch1 {
     0% {
@@ -181,33 +244,60 @@ h1 {
         font-variation-settings:
         "YEAR" 2042; */
 
-        font-family: Megascope;
-        font-size: 13vw;
-        font-variation-settings: 'SCOP' 100, 'wght' 100;
-    }
-    30% {
+        /* font-family: Megascope;
+        font-variation-settings: 'SCOP' 100, 'wght' 100; */
 
-        font-family: Megascope;
-        font-size: 13vw;
-        font-variation-settings: 'SCOP' 55, 'wght' 400;
+        /* font-variation-settings:
+        "XROT" -45,
+        "YROT" -45; */
+
+
+        /* font-variation-settings: 'YEST' 0, 'GRVT' 0; */
+        font-variation-settings: 'CNTR' 500, 'wght' 432;
+    }
+    20% {
+
+        /* font-family: Megascope;
+        font-variation-settings: 'SCOP' 55, 'wght' 400; */
+
+        /* font-variation-settings:
+        "XROT" -5,
+        "YROT" 15; */
+
+
+        font-variation-settings: 'CNTR' 533, 'wght' 444;
     }
     90% {
         /* font-family: "Climate Crisis", serif;
         font-variation-settings:
         "YEAR" 2000; */
 
-        font-family: Megascope;
-        font-size: 13vw;
-        font-variation-settings: 'SCOP' 100, 'wght' 666;
+        /* font-family: Megascope;
+        font-variation-settings: 'SCOP' 100, 'wght' 666; */
+
+        /* font-variation-settings:
+        "XROT" 25,
+        "YROT" -45; */
+
+        /* font-variation-settings: 'YEST' 1000, 'GRVT' 200; */
+        font-variation-settings: 'CNTR' 888, 'wght' 888;
     }
     100% {
         /* font-family: "Climate Crisis", serif;
         font-variation-settings:
         "YEAR" 2000; */
 
-        font-family: Megascope;
-        font-size: 13vw;
-        font-variation-settings: 'SCOP' 0, 'wght' 700;
+        /* font-family: Megascope;
+        font-variation-settings: 'SCOP' 0, 'wght' 700; */
+
+
+        /* font-variation-settings:
+        "XROT" 45,
+        "YROT" 45; */
+
+
+        /* font-variation-settings: 'YEST' 1000, 'GRVT' 200; */
+        font-variation-settings: 'CNTR' 900, 'wght' 900;
     }
 }
 
@@ -235,7 +325,7 @@ a {
 }
 a:hover {
     /* color: blue; */
-    font-size: 7vw;
+    /* font-size: 7vw; */
 }
 
 
@@ -257,12 +347,20 @@ a:hover {
     /* font-family: ObvVar;
     font-weight: 300; */
 
-    font-family: Newsreader, serif;
+    /* font-family: Newsreader, serif; */
 
-    font-style: italic;
+    /* font-family: Megascope; */
+
+    font-family: Casual;
+    font-variation-settings: 'CNTR' 777, 'wght' 555;
+    font-size: 2vw;
+
+    text-transform: uppercase;
+
+    /* font-style: italic; */
     font-weight: 200;
-    font-size: 1rem;
-    letter-spacing: -.17rem;
+    /* font-size: 1rem; */
+    /* letter-spacing: -.17rem; */
     font-kerning: auto;
 
     transition: .3s;
@@ -272,24 +370,36 @@ a:hover {
 .header a {
     /* color: midnightblue; */
     /* background-color: orange; */
-    color: orange;
-    font-size: 2.5em;
+
+    /* color: orange; */
+    /* font-size: 2.5em; */
 
     text-decoration: none;
+
+    transition: .3s;
 
 }
 .header a:hover {
     /* color: purple; */
     /* font-size: 100%; */
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 1%;
 
     /* mix-blend-mode: exclusion; */
     /* color: cornflowerblue; */
-    color: black;
-    outline: white;
-    text-shadow: 0vw 0vw .5vw white;
+    /* outline: white; */
+
+    /* color: black;
+    text-shadow: 0vw 0vw .5vw white !important; */
+
+
+    color: orange;
+    text-shadow: 0vw 0vw .2vw orange;
+
     /* text-transform: uppercase; */
+
+
+    font-variation-settings: 'CNTR' 900, 'wght' 900;
 
 
 
@@ -374,6 +484,7 @@ a:hover {
 
 
 
+
 .receipt {
     font-family: Newsreader;
     font-style: italic;
@@ -403,7 +514,7 @@ a:hover {
     text-shadow: none;
 }
 .receipt a {
-    font-size: 2.5em;
+    font-size: 2.5vw;
     /* border-bottom: 2px dotted black;  */
         /* If you want dots under the hoverable text */
     text-decoration: none;
@@ -432,7 +543,7 @@ a:hover {
 
     /* text-transform: uppercase; */
 
-    font-weight: 200;
+    font-weight: 350;
     font-style: normal;
     font-size: 2.1em;
     padding-left: 15%;
@@ -599,7 +710,7 @@ a:hover {
     /* font-kerning: auto; */
     font-style: normal;
 
-    color: black;
+    /* color: black; */
 
 }
 .worksproj em {
@@ -612,7 +723,8 @@ a:hover {
     font-weight: 700;
 }
 .worksproj img {
-    max-width: 90vw;
+    width: 90vw;
+    max-width: 100vw;
     margin: 2%;
 }
 .worksproj video {
@@ -684,7 +796,6 @@ a:hover {
     margin-left: 0;
     margin-right: 0;
 }
-
 .threegrid img {
     width: 100%; /* Ensures images take full column width */
     height: auto;
@@ -693,6 +804,71 @@ a:hover {
     margin: 0;
 }
 
+.threegridspace {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 equal columns */
+    gap: 2%; 
+        /* Removes gaps between grid items */
+    width: 90vw;
+    padding: 0;
+    /* margin: 0 auto;  */
+        /* Centers the grid */
+
+
+    margin-left: 0;
+    margin-right: 0;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.threegridspace img {
+    width: 100%; 
+        /* Ensures images take full column width */
+    height: auto;
+    display: block; 
+        /* Removes inline spacing gaps */
+    padding: 0;
+    margin: 0;
+}
+
+.imgheight {
+ 
+    display: flex;
+    justify-content: space-between!important; 
+    /* height: 80vh; */
+    /* height: 100vh; */
+    /* width: 90vw !important; */
+    height: auto;
+    /* max-width: 100%; */
+
+    align-items: center;
+    align-self: center;
+    align-content: center;
+        /* Center content inside each .block */
+    /* width: 60%;  */
+        /* Adjust width as needed */
+    margin: 2%; 
+        /* Space between blocks (optional) */
+    /* outline: 3px red solid;  */
+        /* Uncomment to debug the layout */
+}
+.imgheight img {
+
+    /* override other styles to make responsive */
+    /* width: fit-content; */
+    /* width: auto    !important; */
+    max-height: 76vh   !important;
+    /* height: 60%; */
+    max-width: 100%;
+}
+
+/* i need to fucking fix fixed height, fixed widtrh of parent cdontainer,
+but fluid imgs to fill space asifjha*/
+.ratio img {
+
+    aspect-ratio: 5/4;
+    object-fit: cover;
+}
 
 
 .smallerwide {
@@ -702,14 +878,37 @@ a:hover {
 .blackbg {
     display: grid;
     grid: auto auto auto;
-    margin-bottom: 2%;
+    margin: 4%;
 }
 .blackbg img{
     padding: 0;
     margin: 0;
-    
+    max-width: 90vw;
 
     /* border: blueviolet dashed 1px; */
+}
+
+.fwgrid {
+    display: grid;
+    grid-template-columns: 1fr; 
+        /* Ensure a single column that spans full width */
+    gap: 0;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    /* background-color: white; */
+}
+.fwgrid img{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    /* display: block; */
+}
+.fwgrid div{
+    width: 100vw;
+}
+.fwgrid div img{
+    width: 100%;
 }
 
 .blackborder {
