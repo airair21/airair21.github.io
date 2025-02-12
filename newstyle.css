@@ -941,6 +941,9 @@ but fluid imgs to fill space asifjha*/
 .fwgrid div img{
     width: 100%;
 }
+.fwgrid div video{
+    width: 100vw !important;
+}
 
 .blackborder {
     border: 3px black solid;
