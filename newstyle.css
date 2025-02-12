@@ -489,6 +489,13 @@ a:hover {
 }
 .blocks img {
     max-width: 100%;
+    height: auto;
+}
+
+
+.block img{
+    max-height: 90vh !important;
+    width: auto !important;
 }
 
 
@@ -621,7 +628,9 @@ a:hover {
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 17em;
+    /* width: 17vw; */
+    /* height: auto; */
+    max-height: 27vh;
     /* background-color: black; */
     /* color: #fff; */
     /* text-align: center; */
