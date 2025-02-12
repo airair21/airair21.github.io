@@ -768,14 +768,16 @@ a:hover {
     padding-top: 2%;    
     padding-bottom: 2%;                 
         /* Add space between images */
+
+    margin: 0;
 }
 .tworow img {
-    width: 48%;                   
+    width: 49%;                   
         /* Control the image width to be less than 50% to avoid overflow */
     height: auto;                 
         /* Ensure the image keeps its aspect ratio */
     margin: 0;
-    padding: 0%;                  
+    padding: 0;                  
         /* Add padding inside the image to control space */
     object-fit: contain;          
         /* Ensure the image fits the container */
