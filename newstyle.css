@@ -493,11 +493,11 @@ a:hover {
 }
 
 
-.block img{
+
+.blockq img{
     max-height: 90vh !important;
     width: auto !important;
 }
-
 
 
 
@@ -644,7 +644,7 @@ a:hover {
     z-index: 1;
 
     top: -5px;
-    right: 5%;
+    right: 15%;
 }
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
