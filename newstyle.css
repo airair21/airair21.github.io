@@ -62,6 +62,18 @@
     font-family: Casual;
     src: url(assets/Ohno\ Casual\ Variable\ Thin.woff2);
 }
+@font-face {
+    font-family: Gluten;
+    src: url(assets/GlutenVariable.woff2);
+}
+@font-face {
+    font-family: Jabin;
+    src: url(assets/Jabin-Typeface.woff2);
+}
+@font-face {
+    font-family: Estiana;
+    src: url(assets/AV\ Estiana-VF.woff2);
+}
 
 /* // <weight>: Use a value from 200 to 800
 // <uniquifier>: Use a unique and descriptive class name */
@@ -220,18 +232,34 @@ h1 {
     /* font-family: Cheee;
     font-size: 13vw; */
 
-    font-family: Casual;
-    font-size: 13vw;
+
+    /* font-family: Casual;
+    font-size: 13vw; */
+
+    /* font-family: Gluten;
+    font-weight: 500; */
+
+    /* font-family: Jabin; */
+
+    font-family: Estiana;
+    font-weight: 900;
+    font-size: 15vw;
+
+    line-height: 77%;
+
+    /* /* margin-top: -4% !important; */
+    margin-bottom: 4%; */
 
     /* text-shadow: 0vw 0vw 1vw black; */
 
     transition: .2s;
     
 
-    animation-name: cch1;
+    /* animation-name: cch1; */
     animation-duration: 6.9s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
 
 }
 .thisis h1:hover {
@@ -240,65 +268,28 @@ h1 {
 }
 @keyframes cch1 {
     0% {
-        /* font-family: "Climate Crisis", serif;
-        font-variation-settings:
-        "YEAR" 2042; */
-
-        /* font-family: Megascope;
-        font-variation-settings: 'SCOP' 100, 'wght' 100; */
-
-        /* font-variation-settings:
-        "XROT" -45,
-        "YROT" -45; */
-
-
-        /* font-variation-settings: 'YEST' 0, 'GRVT' 0; */
-        font-variation-settings: 'CNTR' 500, 'wght' 432;
+        font-weight: 123;
     }
-    20% {
-
-        /* font-family: Megascope;
-        font-variation-settings: 'SCOP' 55, 'wght' 400; */
-
-        /* font-variation-settings:
-        "XROT" -5,
-        "YROT" 15; */
-
-
-        font-variation-settings: 'CNTR' 533, 'wght' 444;
-    }
-    90% {
-        /* font-family: "Climate Crisis", serif;
-        font-variation-settings:
-        "YEAR" 2000; */
-
-        /* font-family: Megascope;
-        font-variation-settings: 'SCOP' 100, 'wght' 666; */
-
-        /* font-variation-settings:
-        "XROT" 25,
-        "YROT" -45; */
-
-        /* font-variation-settings: 'YEST' 1000, 'GRVT' 200; */
-        font-variation-settings: 'CNTR' 888, 'wght' 888;
+    23% {
+        font-weight: 900;
     }
     100% {
-        /* font-family: "Climate Crisis", serif;
-        font-variation-settings:
-        "YEAR" 2000; */
-
-        /* font-family: Megascope;
-        font-variation-settings: 'SCOP' 0, 'wght' 700; */
-
-
-        /* font-variation-settings:
-        "XROT" 45,
-        "YROT" 45; */
-
-
-        /* font-variation-settings: 'YEST' 1000, 'GRVT' 200; */
-        font-variation-settings: 'CNTR' 900, 'wght' 900;
+        font-weight: 666;
     }
+
+    0% {
+        letter-spacing: 3.3vw;
+        /* font-size: 11vw;
+        line-height: calc(11/13); */
+    }
+    66% {
+        letter-spacing: 85%;
+    }
+    100% {
+        letter-spacing: 85%;
+    }
+
+
 }
 
 
@@ -357,14 +348,25 @@ a:hover {
 
     /* font-family: Megascope; */
 
-    font-family: Casual;
+
+    /* font-family: Casual;
     font-variation-settings: 'CNTR' 777, 'wght' 555;
-    font-size: 2vw;
+    font-size: 2vw; */
+
+    /* font-family: Gluten;
+    font-weight: 500; */
+
+    /* font-family: Jabin; */
+
+    font-family: Estiana;
+    font-weight: 100;
+    font-size: 1.5vw;
+
 
     text-transform: uppercase;
 
     /* font-style: italic; */
-    font-weight: 200;
+    /* font-weight: 200; */
     /* font-size: 1rem; */
     /* letter-spacing: -.17rem; */
     font-kerning: auto;
@@ -405,7 +407,8 @@ a:hover {
     /* text-transform: uppercase; */
 
 
-    font-variation-settings: 'CNTR' 900, 'wght' 900;
+    /* font-variation-settings: 'CNTR' 900, 'wght' 900; */
+    font-weight: 800;
 
 
 
