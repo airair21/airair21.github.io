@@ -74,6 +74,10 @@
     font-family: Estiana;
     src: url(assets/AV\ Estiana-VF.woff2);
 }
+@font-face {
+    font-family: Glitchy;
+    src: url(assets/GlitchyVF.woff2);
+}
 
 /* // <weight>: Use a value from 200 to 800
 // <uniquifier>: Use a unique and descriptive class name */
@@ -165,7 +169,7 @@ h1 {
     font-size: 13vw; */
 
     /* font-family: Megascope; */
-    font-size: 17vw;
+    /* font-size: 17vw; */
 
     
 
@@ -174,8 +178,8 @@ h1 {
 
     /* word-spacing: 3rem; */
     font-kerning: auto;
-    margin: 0rem;
-    margin-top: 1rem;
+    margin: 0vh;
+    margin-top: 1vh;
     /* margin-bottom: .7rem; */
 
 
@@ -241,9 +245,15 @@ h1 {
 
     /* font-family: Jabin; */
 
-    font-family: Estiana;
+    /* font-family: Estiana;
     font-weight: 900;
-    font-size: 15vw;
+    font-size: 15vw; */
+
+    /* font-family: Megascope; */
+
+    font-family: Glitchy;
+    text-transform: uppercase;
+    font-size: 17vw;
 
     line-height: 77%;
 
@@ -255,7 +265,7 @@ h1 {
     transition: .2s;
     
 
-    /* animation-name: cch1; */
+    animation-name: cch1;
     animation-duration: 6.9s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
@@ -265,28 +275,61 @@ h1 {
 .thisis h1:hover {
     color: orange;
     text-shadow: 0vw 0vw .5vw orange;
+    /* font-size: 19vw; */
+
+    /* position: absolute;
+    height: 100% !important; */
+
 }
 @keyframes cch1 {
-    0% {
+    /* 0% {
         font-weight: 123;
     }
-    23% {
-        font-weight: 900;
+    34% {
+        font-weight: 700;
     }
     100% {
-        font-weight: 666;
-    }
+        font-weight: 555;
+    } */
 
-    0% {
+    /* 0% {
         letter-spacing: 3.3vw;
-        /* font-size: 11vw;
-        line-height: calc(11/13); */
     }
     66% {
         letter-spacing: 85%;
     }
     100% {
         letter-spacing: 85%;
+    } */
+
+    /* 0% {
+        font-variation-settings: 'wdth' 233;
+    }
+    33% {
+        font-variation-settings: 'wdth' 555;
+    }
+    100% {
+        font-variation-settings: 'wdth' 100;
+    } */
+    0% {
+        /* font-variation-settings: 'SCOP' 100; */
+        font-variation-settings: 'NOIS' 33;
+        /* font-variation-settings: 'wdth' 1000; */
+    }
+    20% {
+        /* font-variation-settings: 'SCOP' 55; */
+        font-variation-settings: 'NOIS' 100;
+        /* font-variation-settings: 'wdth' 888; */
+    }
+    90% {
+        /* font-variation-settings: 'SCOP' 100; */
+        font-variation-settings: 'NOIS' 8;
+        /* font-variation-settings: 'wdth' 102; */
+    }
+    100% {
+        /* font-variation-settings: 'SCOP' 0; */
+        font-variation-settings: 'NOIS' 21;
+        /* font-variation-settings: 'wdth' 33; */
     }
 
 
@@ -348,6 +391,11 @@ a:hover {
 
     /* font-family: Megascope; */
 
+    font-family: Glitchy;
+    font-variation-settings: 'NOIS' 88;
+
+    font-size: 2vw;
+
 
     /* font-family: Casual;
     font-variation-settings: 'CNTR' 777, 'wght' 555;
@@ -358,9 +406,11 @@ a:hover {
 
     /* font-family: Jabin; */
 
-    font-family: Estiana;
+
+
+    /* font-family: Estiana;
     font-weight: 100;
-    font-size: 1.5vw;
+    font-size: 1.5vw; */
 
 
     text-transform: uppercase;
@@ -404,13 +454,20 @@ a:hover {
     color: orange;
     text-shadow: 0vw 0vw .2vw orange;
 
-    /* text-transform: uppercase; */
+
+    font-variation-settings: 'NOIS' 13;
+
+    text-transform: uppercase;
 
 
     /* font-variation-settings: 'CNTR' 900, 'wght' 900; */
-    font-weight: 800;
+    
+    /* font-family: Megascope;
+    font-variation-settings: 'SCOP' 77, 'wght' 666;     */
+    /* font-weight: 800; */
 
 
+    transition: .3s;
 
     /* color: orangered;
     background-color: midnightblue; */
