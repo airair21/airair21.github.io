@@ -274,7 +274,7 @@ h1 {
 }
 .thisis h1:hover {
     color: orange;
-    text-shadow: 0vw 0vw .5vw orange;
+    text-shadow: 0vw 0vw 1vw orange;
     /* font-size: 19vw; */
 
     /* position: absolute;
@@ -1070,7 +1070,8 @@ video {
         /* margin: 5%; */
     
         /* border: red dotted 1px; */
-        font-size: 16vw;
+        font-size: 15vw;
+
     
     }
     .receipt {
