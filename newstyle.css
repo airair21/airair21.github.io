@@ -1070,6 +1070,7 @@ video {
         /* margin: 5%; */
     
         /* border: red dotted 1px; */
+        font-size: 16vw;
     
     }
     .receipt {
@@ -1102,9 +1103,13 @@ video {
         position: sticky;
         top: 5vh;
         margin: 2%;
+
+        font-variation-settings: 'NOIS' 0 !important;
     }
     .header a {
         font-size: 6vw;
+
+        font-variation-settings: 'NOIS' 0 !important;
     }
 
     .tooltip:hover .tooltiptext {
