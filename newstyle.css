@@ -1027,6 +1027,9 @@ but fluid imgs to fill space asifjha*/
 .smallerwide {
     width: 66vw;
 }
+.smallerwide img {
+    width: 100%;
+}
 
 .blackbg {
     display: grid;
