@@ -116,6 +116,11 @@
 
 
 
+html {
+    padding: 0;
+    margin: 0;
+}
+
 
 .blackblack {
     background-color: black;
@@ -144,7 +149,7 @@ p {
     font-family: "Newsreader", serif;
 
     font-weight: 100;
-    font-size: 5.5vw;
+    font-size: 4vw;
     /* letter-spacing: -.47vw; */
     font-kerning: auto;
     margin-top: .3rem;
@@ -191,6 +196,7 @@ h1 {
     align-items: center;
     text-align: center;
 
+
     /* line-height: 70%; */
 
     /* position: sticky;
@@ -198,13 +204,16 @@ h1 {
 
 
     position: sticky;
-    top: 0; /* Adjust as needed */
-    z-index: 100; /* Ensures it stays above scrolling content */
+    top: 7%; 
+        /* Adjust as needed */
+    /* z-index: -1;  */
+        /* Ensures it stays above scrolling content */
 
     /* width: 88vw; */
     width: 48vw;
     /* margin: 4%; */
     padding: 4%;
+    padding-top: 0;
     padding-right: 2%;
     /* margin: 5%; */
 
@@ -253,7 +262,7 @@ h1 {
 
     font-family: Glitchy;
     text-transform: uppercase;
-    font-size: 17vw;
+    font-size: 15vw;
 
     line-height: 77%;
 
@@ -527,6 +536,11 @@ a:hover {
     /* border: 2px solid red; */
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 
 
 .blocks {
@@ -552,6 +566,11 @@ a:hover {
     height: auto;
 }
 
+/* iframe {
+    width: 100%;
+    height: 7vh;
+} */
+
 
 
 .blockq img{
@@ -567,9 +586,12 @@ a:hover {
     font-weight: 300;
 
     width: 40vw; /* You can adjust this */
-    outline: 2px black solid;
+    height: auto;
+    /* outline: 2px black solid; */
     padding: 2%;
-    margin: 4%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /* margin: 20%; */
     /* margin-right: 50%; */
     
     display: flex;
@@ -577,12 +599,13 @@ a:hover {
     align-items: center;
     justify-content: flex-start;
 
-    margin-left: auto;
+    margin-left: 53vw;
     margin-right: auto;
+    scrollbar-color: white;
 
     /* box-shadow: 0vw 0vw 3vw darkseagreen; */
-    overflow-y: auto;
-    max-height: 80vh;
+    /* overflow-y: auto; */
+    /* max-height: 80vh; */
 
     box-sizing: border-box; /* Include padding and border in width/height */
 }
@@ -656,10 +679,40 @@ a:hover {
 
 }
 .receipt .block {
-    width: 90%;
+    /* width: 90%; */
     /* border: red solid 2px; */
 }
 
+.borderoutline {
+    border: 2px solid black;
+    padding: 2vw;
+    padding-top: 5vw; 
+}
+
+.landing {
+    display: flex;
+    justify-content: space-between!important; 
+    height: 100vh;
+    /* height: 100vh; */
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    /* Center content inside each .block */
+    /* width: 60%;  */
+        /* Adjust width as needed */
+    /* margin: 10px 0;  */
+        /* Space between blocks (optional) */
+    /* outline: 3px red solid;  */
+        /* Uncomment to debug the layout */
+    max-width: 100vw;
+
+    z-index: 0;
+
+}
+.landing img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* Tooltip container */
@@ -1078,6 +1131,8 @@ video {
         width: 80vw; /* You can adjust this */
         padding: 2%;
         margin: 4%;
+        margin-top: 100vh;
+        margin-bottom: 0;
         /* margin-right: 50%; */
         
         display: flex;
@@ -1089,7 +1144,8 @@ video {
         margin-right: auto;
     
         overflow-y: auto;
-        max-height: 800vh;
+        /* max-height: 100vh; */
+        height: 100vh;
     }
     .receipt p {
         font-size: 2.5vw;
@@ -1106,6 +1162,8 @@ video {
         margin: 2%;
 
         font-variation-settings: 'NOIS' 0 !important;
+
+        z-index: 1;
     }
     .header a {
         font-size: 6vw;
