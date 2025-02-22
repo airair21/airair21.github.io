@@ -905,8 +905,9 @@ body{
     margin: 0;
 }
 .tworow img {
-    width: 49%;                   
+    max-width: 49%;                   
         /* Control the image width to be less than 50% to avoid overflow */
+    /* width: 40%; */
     height: auto;                 
         /* Ensure the image keeps its aspect ratio */
     margin: 0;
