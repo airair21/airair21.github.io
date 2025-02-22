@@ -881,6 +881,12 @@ body{
 }
 
 
+.infoblock #arrow p {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+
 #portrait {
     max-width: 500px;
     width: 55vw;
@@ -1165,6 +1171,7 @@ video {
         overflow-y: auto;
         /* max-height: 100vh; */
         /* height: 100vh; */
+        height: auto;
     }
     .receipt p {
         font-size: 2.5vw;
