@@ -1015,6 +1015,15 @@ body{
     /* height: 60%; */
     max-width: 100%;
 }
+.imgheight video {
+
+    /* override other styles to make responsive */
+    /* width: fit-content; */
+    /* width: auto    !important; */
+    max-height: 76vh   !important;
+    /* height: 60%; */
+    max-width: 100%;
+}
 
 /* i need to fucking fix fixed height, fixed widtrh of parent cdontainer,
 but fluid imgs to fill space asifjha*/
