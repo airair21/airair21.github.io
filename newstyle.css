@@ -997,6 +997,12 @@ body{
     /* margin-top: 2%;
     margin-bottom: 2%; */
 }
+.threegridspace div video {
+    width: 30vw !important;
+    height: auto !important;
+    /* border: 5px red dotted; */
+}
+
 
 .imgheight {
  
@@ -1252,7 +1258,6 @@ video {
         margin-top: 2%;
         margin-bottom: 2%;
     }
-    
     
 
     .worksproj p {
