@@ -866,6 +866,9 @@ body{
 .worksproj a:hover {
     color: orange;
     transition: .3s;
+}.worksproj p a:hover {
+    color: orange;
+    transition: .3s;
 }
 
 .descriptor {
@@ -1141,6 +1144,7 @@ video {
     
         /* width: 88vw; */
         width: 85vw;
+        height: auto;
         /* margin: 4%; */
         padding: 4%;
         /* margin: 5%; */
