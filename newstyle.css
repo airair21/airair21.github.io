@@ -691,7 +691,13 @@ body{
 .borderoutline {
     border: 2px solid black;
     padding: 2vw;
-    padding-top: 5vw; 
+    /* padding-top: 5vw;  */
+}
+.borderoutline h2 {
+    padding-top: 1vw;
+}
+.borderoutline #also {
+    /* padding-top: .3vw; */
 }
 
 .landing {
