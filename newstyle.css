@@ -139,6 +139,9 @@ html {
 
     /* font-variation-settings: 'SCOP' 100, 'wght' 400; */
 }
+.blackblack a {
+    color: white;
+}
 
 
 p {
@@ -1079,6 +1082,9 @@ but fluid imgs to fill space asifjha*/
     width: 100%;
 }
 .fwgrid div video{
+    width: 100vw !important;
+}
+.fwgrid video{
     width: 100vw !important;
 }
 
