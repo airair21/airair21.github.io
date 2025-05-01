@@ -774,6 +774,33 @@ body{
     /* outline: solid red 2px; */
 }
 
+#wip:hover{
+    /* text-decoration: line-through; */
+    /* text-decoration-style: wavy; */
+    /* text-decoration-thickness: 0.2rem; */
+    /* text-decoration: underline 0.2vw; */
+    /* text-underline-offset: -0.5rem; */
+    /* z-index: 1000; */
+}
+#wip .tooltiptext {
+    font-size: 2.5vw;
+    background-color: white;
+    padding: 0.4rem;
+}
+s{
+    text-decoration: none;
+    position: relative;
+}
+s::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    /* top: calc( 50% - 1.5px ); */
+    top: calc(15%);
+    border-bottom: .3rem solid rgba(0, 0, 0, 0.8);
+}
+
 
 .worksproj {
     width: 55vw;               
@@ -1271,6 +1298,14 @@ video {
         /* font-size: 22vw; */
 
         visibility: hidden;
+    }
+
+    /* .tooltip #wip .tooltiptext{
+        visibility: visible;
+    } */
+    #wip .tooltiptext{
+        display: block;
+        visibility: visible !important;
     }
 
 }
