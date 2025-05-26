@@ -598,6 +598,7 @@ body{
     margin-bottom: 0;
     /* margin: 20%; */
     /* margin-right: 50%; */
+    margin-top: -85vh;
     
     display: flex;
     flex-direction: column;
@@ -615,7 +616,11 @@ body{
     box-sizing: border-box; /* Include padding and border in width/height */
 }
 .receipt:hover {
-    text-shadow: none;
+    /* text-shadow: none; */
+
+    /* text-shadow: ; */
+    /* box-shadow: 0vw 0vw 1vw orange; */
+    /* border: ; */
 }
 .receipt a {
     font-size: 2.5vw;
@@ -692,12 +697,19 @@ body{
     border: 2px solid black;
     padding: 2vw;
     /* padding-top: 5vw;  */
+
+    transition: .3s;
 }
 .borderoutline h2 {
     padding-top: 1vw;
 }
 .borderoutline #also {
     /* padding-top: .3vw; */
+}
+.borderoutline:hover {
+
+    box-shadow: 0vw 0vw 3vw orange;
+    border: orange 2px solid;
 }
 
 .landing {
