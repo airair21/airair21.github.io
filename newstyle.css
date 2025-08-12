@@ -1,83 +1,56 @@
-@font-face {
-    font-family: Kepler;
-    src: url(assets/Kepler\ Std\ Medium.woff);
-}
-@font-face {
-    font-family: KeplerItalic;
-    src: url(assets\ Kepler\ Std\ Medium\ Italic.woff);
-    font-kerning: auto;
-}
-@font-face {
-    font-family: AlpinaExtended;
-    src: url(assets/GT-Alpina-Extended-Thin-Trial.woff2);
-    font-kerning: auto;
-}
-@font-face {
-    font-family: AlpinaExtendedItalic;
-    src: url(assets/GT-Alpina-Extended-Thin-Italic-Trial.woff2);
-    font-kerning: auto;
-}
-@font-face {
-    font-family: BaseNeue;
-    src: url(assets/BaseNeueTrial-SuperExpExtBd.woff2);
-    font-kerning: auto;
-}
-@font-face {
-    font-family: BaseNeueAllCaps;
-    src: url(assets/BaseNeueTrial-SuperExp.woff2);
-}
-@font-face {
-    font-family: BaseNeueNorm;
-    src: url(assets/BaseNeueTrial-Regular.woff2);
-}
-@font-face {
-    font-family: UniversL;
-    src: url(assets/universLight.woff2);
-}
-@font-face {
-    font-family: PPEditorial;
-    src: url(assets/PPEditorialOld-Regular.woff2);
-}
-@font-face {
-    font-family: PPEditorialIt;
-    src: url(assets/PPEditorialOld-Italic.woff2);
-}
-@font-face {
-    font-family: PressuraMono;
-    src: url(assets/GT-Pressura-Mono-Trial-VF.woff2);
-}
-@font-face {
-    font-family: ObvVar;
-    src: url(assets/Obviously\ Variable\ Compressed\ Thin.woff2);
-}
-@font-face {
-    font-family: Megascope;
-    src: url(assets/Megascope\ Variable\ Regular.woff2);
-}
-@font-face {
-    font-family: Cheee;
-    src: url(assets/Cheee\ Variable\ Stinkhead.woff2);
-}
-@font-face {
-    font-family: Casual;
-    src: url(assets/Ohno\ Casual\ Variable\ Thin.woff2);
-}
-@font-face {
-    font-family: Gluten;
-    src: url(assets/GlutenVariable.woff2);
-}
-@font-face {
-    font-family: Jabin;
-    src: url(assets/Jabin-Typeface.woff2);
-}
-@font-face {
-    font-family: Estiana;
-    src: url(assets/AV\ Estiana-VF.woff2);
-}
+
 @font-face {
     font-family: Glitchy;
     src: url(assets/GlitchyVF.woff2);
 }
+@font-face {
+    font-family: 'Avara_Bold';
+    src:    url('assets/Bold/Avara-Bold_web.eot');
+    src:    url('assets/Bold/Avara-Bold_web.eot?#iefix') format('embedded-opentype'),
+            url('assets/Bold/Avara-Bold_web.woff') format('woff'),
+            url('assets/Bold/Avara-Bold_web.woff2') format('woff2'),
+            url('assets/Bold/Avara-Bold_web.ttf') format('truetype'),
+            url('assets/Bold/Avara-Bold_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Avara_Bold_Italic;
+    src:    url('assets/BoldItalic/Avara-Bold_Italic_web.eot');
+    src:    url('assets/BoldItalic/Avara-Bold_Italic_web.eot?#iefix') format('embedded-opentype'),
+            url('assets/BoldItalic/Avara-Bold_Italic_web.woff') format('woff'),
+            url('assets/BoldItalic/Avara-Bold_Italic_web.woff2') format('woff2'),
+            url('assets/BoldItalic/Avara-Bold_Italic_web.ttf') format('truetype'),
+            url('assets/BoldItalic/Avara-Bold_Italic_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: ABI;
+    src: url(assets/BoldItalic/Avara-BoldItalic.woff2);
+}
+.ABI {
+    font-family: 'ABI';
+    text-transform: none;
+}
+#jaxwong {
+    font-size: 120%;
+    color: orange;
+}
+
+@font-face {
+    font-family: 'Avara_Black';
+    src:    url('assets/Black/Avara-Black_web.eot');
+    src:    url('assets/Black/Avara-Black_web.eot?#iefix') format('embedded-opentype'),
+            url('assets/Black/Avara-Black_web.woff') format('woff'),
+            url('assets/Black/Avara-Black_web.woff2') format('woff2'),
+            url('assets/Black/Avara-Black_web.ttf') format('truetype'),
+            url('assets/Black/Avara-Black_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* // <weight>: Use a value from 200 to 800
 // <uniquifier>: Use a unique and descriptive class name */
@@ -93,6 +66,13 @@
 
   font-size: 40%;
 }
+
+.inter-body {
+    font-family: "Inter", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 300;
+    font-style: normal;
+  }
 
 /* // <year>: Use a value from 1979 to 2050
 // <uniquifier>: Use a unique and descriptive class name */
@@ -116,10 +96,16 @@
 
 
 
+
+
 html {
     padding: 0;
     margin: 0;
+
+    /* cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="%23FFA500" stroke="%23FFA500" stroke-width="0.75" d="M15 9V4.5c0-.83-.67-1.5-1.5-1.5h-3C9.67 3 9 3.67 9 4.5V9H4.5C3.67 9 3 9.67 3 10.5v3c0 .83.67 1.5 1.5 1.5H9v4.5c0 .83.67 1.5 1.5 1.5h3c.83 0 1.5-.67 1.5-1.5V15h4.5c.83 0 1.5-.67 1.5-1.5v-3c0-.83-.67-1.5-1.5-1.5H15Z"></path></svg>'), pointer; */
+    /* color: oran; */
 }
+
 
 
 .blackblack {
@@ -129,6 +115,7 @@ html {
 .blackblack .header a {
     /* color: orange; */
     color: white;
+    background-color: black;
 }
 .blackblack .header a:hover {
     /* color: orange; */
@@ -136,6 +123,8 @@ html {
     outline: black;
     /* text-shadow: 0vw 0vw .3vw white; */
     text-shadow: 0vw 0vw .3vw orange;
+
+    /* font-style: italic; */
 
     /* font-variation-settings: 'SCOP' 100, 'wght' 400; */
 }
@@ -149,12 +138,12 @@ p {
     /* font-family: AlpinaExtendedItalic; */
     /* font-style: italic; */
 
-    font-family: "Newsreader", serif;
+    font-family: "Inter";
 
-    font-weight: 100;
+    font-weight: 300;
     font-size: 4vw;
     /* letter-spacing: -.47vw; */
-    font-kerning: auto;
+    /* font-kerning: auto; */
     margin-top: .3rem;
     margin-bottom: .3rem;
 
@@ -263,15 +252,22 @@ h1 {
 
     /* font-family: Megascope; */
 
-    font-family: Glitchy;
-    text-transform: uppercase;
-    font-size: 15vw;
+    /* font-family: Glitchy;
+    text-transform: uppercase; 
+    font-size: 15vw; */
+
+    font-family: Newsreader;
+    font-weight: 255;
+    letter-spacing: -.5rem !important;
+    font-size: 18vw;
+
+
 
     line-height: 77%;
 
-    /* /* margin-top: -4% !important; */
-    margin-bottom: 4%; */
-
+    /* margin-top: -4% !important; */
+    /* margin-bottom: 4%; */
+    margin: 3%;
     /* text-shadow: 0vw 0vw 1vw black; */
 
     transition: .2s;
@@ -295,66 +291,13 @@ h1 {
     height: 100% !important; */
 
 }
-@keyframes cch1 {
-    /* 0% {
-        font-weight: 123;
-    }
-    34% {
-        font-weight: 700;
-    }
-    100% {
-        font-weight: 555;
-    } */
-
-    /* 0% {
-        letter-spacing: 3.3vw;
-    }
-    66% {
-        letter-spacing: 85%;
-    }
-    100% {
-        letter-spacing: 85%;
-    } */
-
-    /* 0% {
-        font-variation-settings: 'wdth' 233;
-    }
-    33% {
-        font-variation-settings: 'wdth' 555;
-    }
-    100% {
-        font-variation-settings: 'wdth' 100;
-    } */
-    0% {
-        /* font-variation-settings: 'SCOP' 100; */
-        font-variation-settings: 'NOIS' 33;
-        /* font-variation-settings: 'wdth' 1000; */
-    }
-    20% {
-        /* font-variation-settings: 'SCOP' 55; */
-        font-variation-settings: 'NOIS' 100;
-        /* font-variation-settings: 'wdth' 888; */
-    }
-    90% {
-        /* font-variation-settings: 'SCOP' 100; */
-        font-variation-settings: 'NOIS' 8;
-        /* font-variation-settings: 'wdth' 102; */
-    }
-    100% {
-        /* font-variation-settings: 'SCOP' 0; */
-        font-variation-settings: 'NOIS' 21;
-        /* font-variation-settings: 'wdth' 33; */
-    }
-
-
-}
 
 
 
 
 
 h2 {
-    font-family: Newsreader;
+    font-family: Inter;
     font-weight: 300;
     font-size: 6vw;
     margin-bottom: 2%;
@@ -362,15 +305,17 @@ h2 {
 }
 h3 {
     /* font-family: KeplerItalic; */
-    font-family: AlpinaExtendedItalic;
-    font-style: italic;
-    font-weight: 200;
-    font-size: 6vw;
-    letter-spacing: -.7vw;
-    font-kerning: auto;
+    /* font-family: AlpinaExtendedItalic; */
+    font-family: Inter;
+    /* font-style: italic; */
+    font-weight: 400;
+    font-size: 300%;
+    /* letter-spacing: -.2vw; */
+    /* font-kerning: auto; */
     margin-top: .3rem;
     margin-bottom: .3rem;
-    color: orange;
+    /* color: orange; */
+    text-align: end;
 }
 a {
     /* color: orange; */
@@ -385,47 +330,46 @@ a:hover {
 
 
 
-.header {
+/* HEADER STUFF */
+.bigheader {
     position: sticky;
-    top: 2%;
     display: flex;
     justify-content: space-between;
+    flex: 1 1 50%;
     padding: 2%;
+    top: 2%;
+    /* align-items: center; */
+    
+}
 
-    /* font-family: 'Sono', monospace; */
-    /* font-family: KeplerItalic; */
-
-    /* font-family: AlpinaExtendedItalic; */
-
-    /* font-family: PressuraMono; */
-    /* font-family: ObvVar;
-    font-weight: 300; */
-
-    /* font-family: Newsreader, serif; */
-
-    /* font-family: Megascope; */
-
-    font-family: Glitchy;
-    font-variation-settings: 'NOIS' 88;
-
-    font-size: 2vw;
-
-
-    /* font-family: Casual;
-    font-variation-settings: 'CNTR' 777, 'wght' 555;
-    font-size: 2vw; */
-
-    /* font-family: Gluten;
-    font-weight: 500; */
-
-    /* font-family: Jabin; */
+#name {
+    /* font-size: 4vw; */
+    font-size: 300%;
+    text-align: left;
+    display: inline-flex;
+    /* align-items: center; */
+    flex-grow: 2;
+}
+#name img {
+    height: 100%;
+    height: 1em;
+    width: auto;
+    /* vertical-align: top; */
+}
 
 
+.header {
+    /* border: tomato 2px dotted; */
 
-    /* font-family: Estiana;
-    font-weight: 100;
-    font-size: 1.5vw; */
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    /* justify-content: ; */
+    text-align: end;
 
+    font-family: Inter;
+    /* font-size: 2vw; */
+    font-size: 150%;
 
     text-transform: uppercase;
 
@@ -449,36 +393,20 @@ a:hover {
     text-decoration: none;
 
     transition: .3s;
+    background-color: white;
 
 }
 .header a:hover {
-    /* color: purple; */
-    /* font-size: 100%; */
-    /* font-weight: bold; */
     padding: 1%;
-
-    /* mix-blend-mode: exclusion; */
-    /* color: cornflowerblue; */
-    /* outline: white; */
-
-    /* color: black;
-    text-shadow: 0vw 0vw .5vw white !important; */
 
 
     color: orange;
     text-shadow: 0vw 0vw .2vw orange;
+    /* font-style: italic; */
 
-
-    font-variation-settings: 'NOIS' 13;
 
     text-transform: uppercase;
 
-
-    /* font-variation-settings: 'CNTR' 900, 'wght' 900; */
-    
-    /* font-family: Megascope;
-    font-variation-settings: 'SCOP' 77, 'wght' 666;     */
-    /* font-weight: 800; */
 
 
     transition: .3s;
@@ -486,6 +414,183 @@ a:hover {
     /* color: orangered;
     background-color: midnightblue; */
 }
+
+
+
+/* HOMEPAGE STUFF */
+.homepage {
+    display: flex;
+    /* flex-direction: column; */
+    max-width: 100%; 
+        /* Ensure container doesn't grow infinitely */
+    padding: 2%;
+}
+.homepage img {
+    max-width: 90%;
+    min-width: 15%;
+}
+#flex {
+    /* flex-flow: column wrap; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    /* flex-basis: 0; Remove this from container */
+    gap: 2em;
+}
+#flex > * {
+    /* outline: solid tomato 2px; */
+    /* background-color: powderblue; */
+
+        /* width: max-content; prevents wrapping */
+    flex: 1 1 20%; 
+    box-sizing: border-box; /* Include padding/border in width */
+
+    min-width: 160px; /* Minimum width before wrapping */
+    max-width: 30%; /* Maximum width (~3 items per row) */
+}
+
+    #one {
+        order: 1;
+        flex: 1 1 20%;
+        /* can't i just change all of these to flex grow since thats the
+        only thing changing?? */
+    }
+    #two {
+        order: 2;
+        flex: 1 1 20%;
+    }
+    #three {
+        order: 3;
+        flex: 3 1 20%;
+    }
+    #four {
+        order: 4;
+        flex: 2 1 20%;
+    }
+
+
+#flex2 {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    /* flex-basis: 0; Remove this from container */
+    gap: 2em;
+    height: 70vh;
+}
+#flex2 iframe {
+    width: 31%;
+    
+}
+
+.hometitle {
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: flex;
+    border-bottom: 2px dotted black;
+    /* margin-bottom: 1.2rem; */
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+    transition: .3s;
+    /* could be cool with off */
+
+    height: 100%;
+    width: 100%;
+}
+.tooltip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+    filter: invert(100%);
+    filter: grayscale(100%);
+    transition: .3s;
+}
+.tooltip a {
+    display: flex;
+    width: 100%;
+}
+
+/* Tooltip content */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: fixed;
+    max-height: 27vh;
+    /* border: 2px solid orange; */
+    border-bottom: 2px dotted black;
+    background-color: white;
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* padding: 5px; */
+    /* height: auto; */
+    object-fit: contain;
+    
+    /* Initial position off-screen */
+    left: -9999px;
+    top: -9999px;
+
+
+    /* padding: 1%; */
+    transition: .3s;
+
+    /* transition: height 0.3s ease-out, opacity 0.3s ease-out; */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.tooltiptext p {
+    font-family: Inter;
+    font-weight: 444;
+    font-size: 222%;
+}
+.tooltiptext .tttsmall {
+    font-size: 111%;
+    font-weight: 333;
+    font-style: italic;
+}
+
+/* pointer-events: none; */
+/* will not let rotate tho */
+
+/* .tooltip:hover {
+    rotate: 33deg;
+    scale: 111%;
+} */
+.tooltip:hover img {
+
+    filter: invert(0%);
+    border: 2px solid orange;
+} 
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    pointer-events: painted;
+
+    opacity: 1;
+    height: auto;
+}
+
+
+
+
+
+
+
+
 
 
 .worksbody {
@@ -586,7 +691,7 @@ body{
 
 
 .receipt {
-    font-family: Newsreader;
+    font-family: Inter;
     font-style: italic;
     font-weight: 300;
 
@@ -673,7 +778,7 @@ body{
     /* font-family: BaseNeueAllCaps; 
         font-size: .7rem; */
     /* font-family: UniversL; */
-    font-family: Newsreader;
+    font-family: Inter;
     font-size: 1.2vw;
     font-stretch: wider;
 
@@ -737,45 +842,211 @@ body{
     height: auto;
 }
 
-/* Tooltip container */
-.tooltip {
-    position: relative;
+
+
+.bodyscroll {
     display: flex;
-    border-bottom: 2px dotted black;
-    margin-bottom: 1.2rem;
-    cursor: pointer;
+    max-width: 100%;
+    flex-direction: row;
+    padding: 2%;
+    padding-bottom: 0%;
 }
-
-/* Tooltip content */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    position: fixed;
-    max-height: 27vh;
-    border: 2px solid orange;
-    /* background-color: white; */
-    pointer-events: none;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    /* padding: 5px; */
-    height: auto;
-    object-fit: contain;
+.sleft {
+    flex: 1 1 30%;
+    /* outline: 2px solid tomato; */
+    height: 85vh;
+    position: sticky;
+    overflow: scroll;
     
-    /* Initial position off-screen */
-    left: -9999px;
-    top: -9999px;
+    scrollbar-color: orange;
+    padding-right: 2%;
+}
+.sleft p {
+    font-size: 150%;
+}
+.sright {
+    flex: 2 1 30%;
+    /* outline: 3px blue solid; */
+    height: 85vh;
+    max-width: 100%;
+    position: sticky;
+    overflow: scroll;
+
+    justify-content: center;   
+        /* Center content horizontally inside */
+    align-items: center;       
+        /* Center content vertically inside */
+    /* text-align: left;         */
+        /* Ensure text inside #works is centered */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    box-sizing: border-box
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    pointer-events: painted;
+.sright {
+    flex: 2 1 30%;
+    /* outline: 3px blue solid; */
+    /* height: 100vh; */
+    max-width: 100%;
+    position: sticky;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed from center to flex-start */
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem; /* Add some padding inside the container */
 }
+
+/* Consistent spacing for all direct children */
+.sright > * {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Two image row */
+.sright .tworow {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    width: 100%;
+}
+
+.sright .tworow img {
+    width: 49%;
+    height: auto;
+}
+
+/* Three image grid */
+.sright .threegridspace {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    width: 100%;
+}
+
+.sright .threegridspace img {
+    width: calc(33.33% - 2%);
+    height: auto;
+}
+
+/* Single images and videos */
+.sright img:not(.tworow img):not(.threegridspace img),
+.sright video {
+    width: 100%;
+    display: block;
+}
+
+.sright {
+    /* Your existing styles */
+    display: flex;
+    flex-direction: column;
+}
+
+/* All images get bottom margin */
+.sright img {
+    margin-bottom: 2rem;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Consecutive images get top margin */
+.sright img + img {
+    margin-top: 2rem;
+}
+
+/* Exceptions for grouped images */
+.sright .tworow,
+.sright .threegridspace {
+    margin-bottom: 2rem;
+}
+
+.sright .tworow img,
+.sright .threegridspace img {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+/* Paragraphs */
+.sright p {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.sright p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.2rem; 
+        /* Consider using rem instead of vw for text */
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.sright em {
+    color: darkorange;
+    /* font-family: PPEditorialIt; */
+    font-size: 2.5vw;
+
+    font-family: AlpinaExtended;
+
+    font-weight: 700;
+}
+.sright img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+.sright video {
+    width: auto !important;
+    max-width: 100%;
+    height: auto !important;
+    /* max-width: 90vw; */
+}
+.sright a:hover {
+    color: orange;
+    transition: .3s;
+}
+.sright p a:hover {
+    color: orange;
+    transition: .3s;
+}
+
+
+/* Constrain all direct children */
+.sright > * {
+    max-width: 100%;
+    width: auto;
+    /* padding: 10px 0;  */
+        /* Add vertical spacing between items */
+}
+
+.sright .tworow {
+    width: 100%;
+    /* justify-content: center; */
+}
+
+.sright .tworow img {
+    max-width: 48%;
+}
+
+
 
 
 .left {
 
     flex: 2 1 0;
-    /* outline: solid red 2px; */
-    align-self: flex-end;
+    outline: solid red 2px;
+    /* align-self: flex-end; */
+    height: 100%;
 }
 .right {
     flex: 1 2 0;
@@ -832,18 +1103,10 @@ s::before{
     margin-right: auto;
 }
 .worksproj p {
-    /* font-family: AlpinaExtended;
-    font-size: 1.5rem;
-    line-height: 130%; */
+    
 
 
-    /* font-family: BaseNeueNorm;
-    font-size: 1vw;
-    line-height: 130%; */
-    /* letter-spacing: .06vw; */
-
-
-    font-family: Newsreader, serif;
+    font-family: Inter;
     /* font-style: italic!important; */
     font-weight: 300; 
     
@@ -852,22 +1115,7 @@ s::before{
     font-size: 1.5vw;
     line-height: 130%;
 
-    /* font-family: PressuraMono;
-    font-size: 1.5vw;
-    line-height: 130%;
-    font-kerning: normal; */
-
-    /* font-family: ObvVar;
-    font-size: 1.0vw;
-    line-height: 150%;
-    font-kerning: normal;
-    font-stretch: ultra-expanded;
-    font-weight: 350; */
-
-
-    /* font-family: PPEditorial;
-    font-size: 2vw; */
-
+    
     letter-spacing: normal;
     /* font-kerning: auto; */
     font-style: normal;
@@ -897,7 +1145,8 @@ s::before{
 .worksproj a:hover {
     color: orange;
     transition: .3s;
-}.worksproj p a:hover {
+}
+.worksproj p a:hover {
     color: orange;
     transition: .3s;
 }
@@ -1112,6 +1361,7 @@ but fluid imgs to fill space asifjha*/
     margin-bottom: 4%;
     margin-top: 4%;
     /* background-color: white; */
+    margin-top: 0%;
 }
 .fwgrid img{
     padding: 0;
@@ -1149,6 +1399,27 @@ video {
     height: 76vh !important;
     width: auto !important;
 }
+
+
+
+
+
+
+/* SCROLLBAR */
+.sleft, .sright {
+    scrollbar-width: thin;
+    scrollbar-color: orange transparent;
+}
+
+.sleft::-webkit-scrollbar, .sright::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sleft::-webkit-scrollbar-thumb, .sright::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 3px;
+}
+
 
 
 
@@ -1325,3 +1596,8 @@ video {
     
 
 }
+
+
+
+
+
