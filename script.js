@@ -7,61 +7,65 @@ var tooltip = document.querySelectorAll('.tooltiptext');
 
 
 document.querySelectorAll('.tooltip').forEach(tooltip => {
-    const tooltipText = tooltip.querySelector('.tooltiptext');
-    const originalContent = tooltipText.innerHTML;
-    
-    // Clear content initially and set up container
-    tooltipText.innerHTML = originalContent;
-    tooltipText.style.overflow = 'hidden';
-    tooltipText.style.display = 'block';
-    tooltipText.style.height = '0';
-    tooltipText.style.opacity = '0';
-    tooltipText.style.borderWidth = '0';
-    tooltipText.style.transition = 'none';
-    
-    tooltip.addEventListener('mouseenter', function() {
-        // Reset for animation
-        tooltipText.innerHTML = originalContent;
-        tooltipText.style.display = 'block';
-        tooltipText.style.height = '0';
-        tooltipText.style.opacity = '0';
-        tooltipText.style.borderWidth = '0';
-        tooltipText.style.transition = 'none';
-        
-        // Get the full height we need to animate to
-        const fullHeight = tooltipText.scrollHeight + 'px';
-        const borderWidth = '2px'; // Match your original border width
-        
-        // Force reflow
-        void tooltipText.offsetHeight;
-        
-        // Start animation
-        tooltipText.style.transition = `
-            height 0.3s ease-in,
-            opacity 0.2s ease-in 0.1s,
-            border-width 0.2s ease-in 0.1s
-        `;
-        tooltipText.style.height = fullHeight;
-        tooltipText.style.opacity = '1';
-        tooltipText.style.borderWidth = borderWidth;
-    });
-    
-    tooltip.addEventListener('mouseleave', function() {
-        // Reverse animation
-        tooltipText.style.transition = `
-            height 0.3s ease-out,
-            opacity 0.2s ease-out,
-            border-width 0.2s ease-out
-        `;
-        tooltipText.style.height = '0';
-        tooltipText.style.opacity = '0';
-        tooltipText.style.borderWidth = '0';
-        
-        // Keep content until animation completes
-        setTimeout(() => {
-            tooltipText.style.display = 'none';
-        }, 300);
-    });
+  const tooltipText = tooltip.querySelector('.tooltiptext');
+  
+  // Store original content and set initial state
+  const originalContent = tooltipText.innerHTML;
+  tooltipText.innerHTML = originalContent;
+  
+  // Set initial styles
+  tooltipText.style.visibility = 'visible'; // Keep visible for positioning
+  tooltipText.style.opacity = '0';
+  tooltipText.style.height = '0';
+  tooltipText.style.borderWidth = '0';
+  tooltipText.style.padding = '0';
+  tooltipText.style.overflow = 'hidden';
+  tooltipText.style.transition = 'none';
+  
+  tooltip.addEventListener('mouseenter', function() {
+      // Reset styles
+      tooltipText.style.transition = 'none';
+      tooltipText.style.opacity = '0';
+      tooltipText.style.height = '0';
+      tooltipText.style.borderWidth = '0';
+      tooltipText.style.padding = '0';
+      
+      // Get target values
+      const targetHeight = tooltipText.scrollHeight + 'px';
+      const targetBorderWidth = '2px';
+      const targetPadding = '5px'; // Adjust as needed
+      
+      // Force reflow
+      void tooltipText.offsetHeight;
+      
+      // Apply transition and animate to target
+      tooltipText.style.transition = `
+          height 0.1s ease-out,
+          opacity 0.2s ease-out 0.1s,
+          border-width 0.2s ease-out 0.1s,
+          padding 0.1s ease-out 0.1s
+      `;
+      
+      tooltipText.style.height = targetHeight;
+      tooltipText.style.opacity = '1';
+      tooltipText.style.borderWidth = targetBorderWidth;
+      tooltipText.style.padding = targetPadding;
+  });
+  
+  tooltip.addEventListener('mouseleave', function() {
+      // Animate back to hidden state
+      tooltipText.style.transition = `
+          height 0.05s ease-in,
+          opacity 0.1s ease-in,
+          border-width 0.1s ease-in,
+          padding 0.05s ease-in
+      `;
+      
+      tooltipText.style.height = '0';
+      tooltipText.style.opacity = '0';
+      tooltipText.style.borderWidth = '0';
+      tooltipText.style.padding = '0';
+  });
 });
 
 // Keep your existing mousemove code for positioning
@@ -188,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
     // Add click events to images
-    document.querySelectorAll('.sright img').forEach(img => {
+    document.querySelectorAll('.worksproj img').forEach(img => {
       img.style.cursor = 'zoom-in';
       
       img.addEventListener('click', function() {
@@ -297,3 +301,29 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
+
+
+  // Add orange highlighting on hover for each span individually
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all spans within the paragraph
+  const spans = document.querySelectorAll('p span');
+  
+  spans.forEach(span => {
+      span.style.transition = 'background-color 0.2s ease';
+      span.style.borderRadius = '3px';
+      span.style.cursor = 'pointer';
+      // span.style.display = 'inline-block'; // Ensure proper highlighting
+      span.style.padding = '2px 4px'; // Add some padding for better visual
+      span.style.margin = '1px 0'; // Small margin between spans
+      
+      span.addEventListener('mouseenter', function(e) {
+          e.stopPropagation();
+          this.style.backgroundColor = 'orange';
+      });
+      
+      span.addEventListener('mouseleave', function(e) {
+          e.stopPropagation();
+          this.style.backgroundColor = '';
+      });
+  });
+});
