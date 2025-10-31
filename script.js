@@ -213,98 +213,100 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
 
-  document.addEventListener('DOMContentLoaded', function() {
-    // Check if mobile device (you can adjust the breakpoint as needed)
-    const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   // Check if mobile device (you can adjust the breakpoint as needed)
+  //   const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
     
-    if (isMobile) {
-      // Create popup elements
-      const popupOverlay = document.createElement('div');
-      const popupContent = document.createElement('div');
-      const popupMessage = document.createElement('p');
-      const closeButton = document.createElement('button');
+  //   if (isMobile) {
+  //     // Create popup elements
+  //     const popupOverlay = document.createElement('div');
+  //     const popupContent = document.createElement('div');
+  //     const popupMessage = document.createElement('p');
+  //     const closeButton = document.createElement('button');
       
-      // Style the overlay
-      Object.assign(popupOverlay.style, {
-        position: 'fixed',
-        top: '0',
-        left: '0',
-        width: '100%',
-        height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.8)',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        zIndex: '9999',
-        fontFamily: 'sans-serif'
-      });
+  //     // Style the overlay
+  //     Object.assign(popupOverlay.style, {
+  //       position: 'fixed',
+  //       top: '0',
+  //       left: '0',
+  //       width: '100%',
+  //       height: '100%',
+  //       backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  //       display: 'flex',
+  //       justifyContent: 'center',
+  //       alignItems: 'center',
+  //       zIndex: '9999',
+  //       fontFamily: 'sans-serif'
+  //     });
       
-      // Style the content box
-      Object.assign(popupContent.style, {
-        backgroundColor: 'white',
-        padding: '20px',
-        borderRadius: '10px',
-        maxWidth: '80%',
-        textAlign: 'center',
-        boxShadow: '0 0 20px rgba(0,0,0,0.5)'
-      });
+  //     // Style the content box
+  //     Object.assign(popupContent.style, {
+  //       backgroundColor: 'white',
+  //       padding: '20px',
+  //       borderRadius: '10px',
+  //       maxWidth: '80%',
+  //       textAlign: 'center',
+  //       boxShadow: '0 0 20px rgba(0,0,0,0.5)'
+  //     });
       
-      // Style the message
-      Object.assign(popupMessage.style, {
-        fontSize: '18px',
-        margin: '0 0 20px 0',
-        color: '#333'
-      });
-      popupMessage.textContent = 'Sorry! Phone site work in progress. Please visit on desktop for the full experience :)';
+  //     // Style the message
+  //     Object.assign(popupMessage.style, {
+  //       fontSize: '18px',
+  //       margin: '0 0 20px 0',
+  //       color: '#333'
+  //     });
+  //     popupMessage.textContent = 'Sorry! Phone site work in progress. Please visit on desktop for the full experience :)';
       
-      // Style the close button
-      Object.assign(closeButton.style, {
-        backgroundColor: '#ff6b6b',
-        color: 'white',
-        border: 'none',
-        padding: '10px 20px',
-        borderRadius: '5px',
-        cursor: 'pointer',
-        fontSize: '16px'
-      });
-      closeButton.textContent = 'I Understand';
+  //     // Style the close button
+  //     Object.assign(closeButton.style, {
+  //       backgroundColor: '#ff6b6b',
+  //       color: 'white',
+  //       border: 'none',
+  //       padding: '10px 20px',
+  //       borderRadius: '5px',
+  //       cursor: 'pointer',
+  //       fontSize: '16px'
+  //     });
+  //     closeButton.textContent = 'I Understand';
       
-      // Build the popup structure
-      popupContent.appendChild(popupMessage);
-      popupContent.appendChild(closeButton);
-      popupOverlay.appendChild(popupContent);
-      document.body.appendChild(popupOverlay);
+  //     // Build the popup structure
+  //     popupContent.appendChild(popupMessage);
+  //     popupContent.appendChild(closeButton);
+  //     popupOverlay.appendChild(popupContent);
+  //     document.body.appendChild(popupOverlay);
       
-      // Make body non-scrollable
-      document.body.style.overflow = 'hidden';
+  //     // Make body non-scrollable
+  //     document.body.style.overflow = 'hidden';
       
-      // Close functionality
-      closeButton.addEventListener('click', function() {
-        document.body.removeChild(popupOverlay);
-        document.body.style.overflow = 'auto';
-      });
+  //     // Close functionality
+  //     closeButton.addEventListener('click', function() {
+  //       document.body.removeChild(popupOverlay);
+  //       document.body.style.overflow = 'auto';
+  //     });
       
-      // Also close when clicking outside content
-      popupOverlay.addEventListener('click', function(e) {
-        if (e.target === popupOverlay) {
-          document.body.removeChild(popupOverlay);
-          document.body.style.overflow = 'auto';
-        }
-      });
+  //     // Also close when clicking outside content
+  //     popupOverlay.addEventListener('click', function(e) {
+  //       if (e.target === popupOverlay) {
+  //         document.body.removeChild(popupOverlay);
+  //         document.body.style.overflow = 'auto';
+  //       }
+  //     });
       
-      // Close with ESC key
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && document.body.contains(popupOverlay)) {
-          document.body.removeChild(popupOverlay);
-          document.body.style.overflow = 'auto';
-        }
-      });
-    }
-  });
+  //     // Close with ESC key
+  //     document.addEventListener('keydown', function(e) {
+  //       if (e.key === 'Escape' && document.body.contains(popupOverlay)) {
+  //         document.body.removeChild(popupOverlay);
+  //         document.body.style.overflow = 'auto';
+  //       }
+  //     });
+  //   }
+  // });
 
 
   // Add orange highlighting on hover for each span individually
-document.addEventListener('DOMContentLoaded', function() {
+
+
+  document.addEventListener('DOMContentLoaded', function() {
   // Select all spans within the paragraph
   const spans = document.querySelectorAll('p span');
   
