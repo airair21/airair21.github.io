@@ -303,6 +303,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // });
 
 
+
+  
   // Add orange highlighting on hover for each span individually
 
 
@@ -329,3 +331,32 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+function initScrollFade() {
+    const images = document.querySelectorAll('.worksproj img');
+    
+    // Set initial state
+    images.forEach(img => {
+        img.style.opacity = '0';
+        img.style.transform = 'translateY(20px)';
+        img.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+    });
+    
+    // Create intersection observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, 100);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    // Observe all images
+    images.forEach(img => observer.observe(img));
+}
+
+document.addEventListener('DOMContentLoaded', initScrollFade);

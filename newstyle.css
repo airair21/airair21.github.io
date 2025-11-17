@@ -82,6 +82,7 @@ p {
     margin-bottom: .3rem;
 }
 
+
 h1 {
     line-height: 80%;
     font-kerning: auto;
@@ -133,6 +134,17 @@ a:hover {
     flex-grow: 2;
 }
 
+.fuckthis{
+    width: 100%;
+    font-size: .5rem !important;
+    padding: 2%;
+    /* border: 3px blue solid !important; */
+    /* background-color: aqua; */
+}
+.fuckthis .info {
+    justify-content: end;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -165,6 +177,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    padding: 1%;
 }
 
 .homepage {
@@ -298,6 +311,17 @@ body{
     text-align: left;
 }
 
+
+li {
+    font-family: "DM Sans";
+    font-weight: 300;
+    font-size: 150%;
+    letter-spacing: normal;
+    font-style: normal;
+    text-align: left;
+}
+
+
 .worksproj em {
     color: darkorange;
     font-family: 'DM Sans';
@@ -356,6 +380,10 @@ body{
 .desc {
     flex: 2 0;
     width: 100%;
+
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #year {
@@ -369,6 +397,64 @@ body{
     display: flex;
     margin: 0 auto;
 }
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.wrapper {
+    overflow: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    width: 100%;
+    margin: 2% 0;
+
+    /* border: red solid 4px; */
+}
+
+.gallery {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.gallery__img {
+    scroll-snap-align: start;
+    margin-bottom: 10px;
+    min-height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.lil-nav {
+overflow-y: scroll;
+overflow-x: hidden;
+
+    a {
+        height: 200px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+}
+
+.lil-nav__img {
+object-fit: cover;
+filter: saturate(0);
+transition: 0.3s ease all;
+
+    &:hover {
+        transform: scale(1.05);
+        filter: saturate(1);
+    }
+}
+
+
 
 .tworow {
     display: flex;
@@ -388,10 +474,16 @@ body{
 .threegrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
+    gap: 2%;
+    /* padding: 0; */
+    /* margin-left: 0;
+    margin-right: 0; */
+
+
+    width: 100%; /* Add this */
+    height: 100%;
+    box-sizing: border-box; /* Add this */
+    /* border: purple solid 1px; */
 }
 
 .threegrid img {
@@ -400,6 +492,9 @@ body{
     display: block;
     padding: 0;
     margin: 0;
+
+    object-fit: contain;
+    max-width: 100%;
 }
 
 .threegridspace {
@@ -422,6 +517,16 @@ body{
     margin: 0;
 }
 
+
+.vidrow {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-height: 80vh;
+}
+
 .smallerwide {
     width: 66vw;
     padding: 2%;
@@ -431,6 +536,15 @@ body{
 .smallerwide img {
     width: 100%;
     margin: none !important;
+}
+
+.fwgridsock {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+.fwgridsock img {
+    width: calc(100%/9);
 }
 
 .fwgrid {
@@ -589,6 +703,7 @@ video {
     }
     
     /* Grids and Layouts */
+
     .threegrid {
         grid-template-columns: repeat(1, 1fr);
         gap: 2%;
