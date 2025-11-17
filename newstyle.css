@@ -582,6 +582,7 @@ transition: 0.3s ease all;
 video {
     width: auto !important;
     height: 76vh !important;
+    max-width: 100% !important;
 }
 
 /* SCROLLBAR */
