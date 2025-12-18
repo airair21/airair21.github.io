@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  
+
   // Add orange highlighting on hover for each span individually
 
 
@@ -360,3 +360,69 @@ function initScrollFade() {
 }
 
 document.addEventListener('DOMContentLoaded', initScrollFade);
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  function randomizeOtherImg() {
+      const projects = document.querySelectorAll('.proj');
+      
+      projects.forEach(proj => {
+          const otherImgs = proj.querySelectorAll('.otherimg');
+          const projHeight = proj.clientHeight;
+          
+          // Track used space to prevent overlap
+          const usedRanges = [];
+          
+          otherImgs.forEach(otherImg => {
+              const img = otherImg.querySelector('img');
+              
+              // Set minimum and maximum height as percentages
+              const minHeightPercent = 35; // Minimum 15% of parent
+              const maxHeightPercent = 90; // Maximum 50% of parent
+              
+              const minHeight = (minHeightPercent / 100) * projHeight;
+              const maxHeight = (maxHeightPercent / 100) * projHeight;
+              
+              // Randomize height within limits
+              const randomHeight = minHeight + Math.random() * (maxHeight - minHeight);
+              
+              // Apply height
+              otherImg.style.height = `${randomHeight}px`;
+              if (img) {
+                  img.style.maxHeight = '100%';
+                  img.style.width = 'auto';
+              }
+              
+              // ... rest of the code remains the same
+              let randomTop;
+              let attempts = 0;
+              const maxAttempts = 50;
+              
+              do {
+                  randomTop = Math.random() * (projHeight - randomHeight);
+                  attempts++;
+                  
+                  const newRange = { start: randomTop, end: randomTop + randomHeight };
+                  const overlaps = usedRanges.some(used => 
+                      (newRange.start < used.end && newRange.end > used.start)
+                  );
+                  
+                  if (!overlaps || attempts >= maxAttempts) {
+                      usedRanges.push(newRange);
+                      break;
+                  }
+              } while (attempts < maxAttempts);
+              
+              randomTop = Math.max(0, Math.min(randomTop, projHeight - randomHeight - 1));
+              otherImg.style.transform = `translateY(${randomTop}px)`;
+          });
+      });
+  }
+  
+  randomizeOtherImg();
+  window.addEventListener('resize', randomizeOtherImg);
+});

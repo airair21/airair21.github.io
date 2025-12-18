@@ -25,12 +25,48 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: Feroniapi;
+    src:    url('assets/Feroniapi-MediumItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sneak;
+    src: url('assets/Sneak-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Mincho;
+    src: url('assets/MSMINCHO.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Comico-Regular';
+    src: url('assets/fonts/Comico-Regular.woff2') format('woff2'),
+         url('assets/fonts/Comico-Regular.woff') format('woff'),
+         url('assets/fonts/Comico-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url('assets/WorkSans.ttf') format('truetype');
+}
+
+
 @font-face {
     font-family: ABI;
-    src: url(assets/BoldItalic/Avara-BoldItalic.woff2);
+    src: url('assets/MSMINCHO.woff2');
 }
 .ABI {
-    font-family: 'DM Sans';
+    /* font-family: 'DM Sans'; */
+    /* font-family: WorkSans; */
+    font-family: Mincho;
     font-style: italic;
     text-transform: none;
     transition: .2s;
@@ -40,6 +76,11 @@
     color: orange;
     margin-top: -5em;
     text-transform: uppercase;
+
+
+
+    /* font-style: oblique 50deg; */
+    transform: skew(60deg);
 }
 
 .dm-sans {
@@ -75,7 +116,9 @@ html {
 }
 
 p {
-    font-family: "DM Sans";
+    /* font-family: "DM Sans"; */
+    font-family: 'Sneak';
+    /* font-family: 'Mincho'; */
     font-weight: 300;
     font-size: 4vw;
     margin-top: .3rem;
@@ -91,15 +134,20 @@ h1 {
 }
 
 h2 {
-    font-family: "DM Sans";
+    /* font-family: "DM Sans"; */
+    /* font-family: WorkSans; */
+    font-family: 'Sneak';
+    /* font-family: 'Mincho'; */
     font-weight: 300;
     font-size: 3em;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     text-align: center;
 }
 
 h3 {
-    font-family: "DM Sans";
+    /* font-family: "DM Sans"; */
+    font-family: 'Sneak';
+    /* font-family: 'Mincho'; */
     font-weight: 400;
     font-size: 300%;
     margin-top: .3rem;
@@ -120,11 +168,17 @@ a:hover {
 .bigheader {
     position: sticky !important;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
     flex: 1 1 50%;
     padding: 2%;
     top: 0;
     z-index: 1000;
+
+    text-align: right;
+
+
+    /* width: 50vw; */
 }
 
 #name {
@@ -132,9 +186,12 @@ a:hover {
     text-align: left;
     display: inline-flex;
     flex-grow: 2;
+
+    width: auto;
 }
 
 .fuckthis{
+    max-width: 100%;
     width: 100%;
     font-size: .5rem !important;
     padding: 2%;
@@ -147,15 +204,18 @@ a:hover {
 
 .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1 1 0;
-    justify-content: center;
-    text-align: end;
-    font-family: "DM Sans";
+    justify-content: end;
+    /* text-align: right; */
+    /* font-family: "DM Sans"; */
+    font-family: 'Sneak';
+    /* font-family: 'Mincho'; */
     font-size: 110%;
     text-transform: uppercase;
     transition: .3s;
     z-index: 500;
+
 }
 
 .header a {
@@ -165,7 +225,7 @@ a:hover {
 }
 
 .header a:hover {
-    padding: 1%;
+    /* padding-right: 1%; */
     color: orange;
     text-shadow: 0vw 0vw .4vw orange;
     text-transform: uppercase;
@@ -222,17 +282,91 @@ a:hover {
     text-align: start;
 }
 
+
+
+
+
+
+.homeweird {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    gap: 2em;
+
+    padding: 2%;
+
+    /* border: 2px purple solid; */
+}
+
+.proj {
+    display: flex;
+    flex-direction: row;
+    max-height: 33vh;
+    /* gap: 10px; */
+    gap: 2em;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative; 
+        /* Add this for better positioning context */
+
+    /* border: 2px peru solid; */
+}
+
+.proj img {
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+/* CHANGES WHERE .OTHERIMG ALIGNS */
+/* .proj .heroimg {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+} */
+
+.proj .heroimg img {
+    max-height: 33vh;
+    width: auto;
+}
+
+.proj .otherimg {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative; 
+        /* Important for transform to work properly */
+}
+
+.proj .otherimg img {
+    max-height: 100%;
+    width: auto;
+
+    /* border: 2px palegreen solid; */
+}
+
+.otherimg {
+}
+
+
+
+
+
+
 /* Tooltip container */
 .tooltip {
     position: relative;
     display: flex;
-    border-bottom: 2px dotted black;
+    /* border-bottom: 2px dotted black; */
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
+
+    /* justify-content: center;
+    align-items: center; */
     overflow: hidden;
     height: auto;
     width: 100%;
+
+    transition: .1s;
 }
 
 .tooltip img {
@@ -272,7 +406,9 @@ a:hover {
 }
 
 .tooltiptext p {
-    font-family: "DM Sans";
+    /* font-family: "DM Sans"; */
+    font-family: 'Sneak';
+    /* font-family: 'Mincho'; */
     font-weight: 444;
     font-size: 222%;
 }
@@ -283,9 +419,12 @@ a:hover {
     font-style: italic;
 }
 
+.tooltip:hover {
+    background-color: rgb(255, 236, 202);
+}
 .tooltip:hover img {
     filter: invert(0%);
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 } 
 
 body{
@@ -303,7 +442,9 @@ body{
 }
 
 .worksproj p {
-    font-family: "DM Sans";
+    /* font-family: "DM Sans"; */
+    font-family: 'Sneak';
+    /* font-family: 'Mincho'; */
     font-weight: 300;
     font-size: 150%;
     letter-spacing: normal;
@@ -313,7 +454,9 @@ body{
 
 
 li {
-    font-family: "DM Sans";
+    /* font-family: "DM Sans"; */
+    font-family: 'Sneak';
+    /* font-family: 'Mincho'; */
     font-weight: 300;
     font-size: 150%;
     letter-spacing: normal;
@@ -324,7 +467,8 @@ li {
 
 .worksproj em {
     color: darkorange;
-    font-family: 'DM Sans';
+    /* font-family: 'DM Sans'; */
+    font-family: 'Sneak';
     font-weight: 700;
 }
 
@@ -359,17 +503,18 @@ li {
     flex-direction: row;
     justify-content: space-between;
     gap: 2%;
-    padding-bottom: 2%;
+    /* padding-bottom: 2%; */
     width: 100%;
 }
 
 .titledeets {
     flex: 1 0;
     width: auto;
+    padding-bottom: 2%;
 }
 
 .titledeets h2 {
-    margin-top: 0;
+    margin: 0;
     text-align: left;
 }
 
@@ -387,7 +532,7 @@ li {
 }
 
 #year {
-    text-align: right;
+    text-align: left;
 }
 
 #portrait {
@@ -480,9 +625,9 @@ transition: 0.3s ease all;
     margin-right: 0; */
 
 
-    width: 100%; /* Add this */
+    width: 100%;
     height: 100%;
-    box-sizing: border-box; /* Add this */
+    box-sizing: border-box;
     /* border: purple solid 1px; */
 }
 
@@ -542,9 +687,11 @@ transition: 0.3s ease all;
     display: flex;
     width: 100%;
     max-width: 100%;
+
+    justify-content: center;
 }
 .fwgridsock img {
-    width: calc(100%/9);
+    width: calc(100%/5);
 }
 
 .fwgrid {
