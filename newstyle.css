@@ -345,7 +345,8 @@ a:hover {
     /* border: 2px palegreen solid; */
 }
 
-.otherimg {
+.proj:hover{
+    /* border: orange 1.5px solid; */
 }
 
 
@@ -421,6 +422,7 @@ a:hover {
 
 .tooltip:hover {
     background-color: rgb(255, 236, 202);
+    border: 1.5px orange dotted;
 }
 .tooltip:hover img {
     filter: invert(0%);
