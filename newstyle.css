@@ -1422,6 +1422,7 @@ video {
         min-height: auto !important;
         contain: none !important;
         isolation: auto !important;
+    background-color: rgba(255, 166, 0, 0.279);
     }
     
     /* Show all images in a simple grid on mobile */
@@ -1431,12 +1432,19 @@ video {
         display: block !important;
         width: 100% !important;
         height: auto !important;
-        opacity: 1 !important;
+        /* opacity: 0.5; */
+        /* background-color: orange; */
         margin-bottom: 10px !important;
         border: none !important;
         transform: none !important;
         left: auto !important;
         top: auto !important;
+    }
+
+    .proj .otherimg {
+        opacity: .5;
+        mix-blend-mode: hard-light;
+
     }
     
     .proj .heroimg {
