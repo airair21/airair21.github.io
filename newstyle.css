@@ -35,12 +35,23 @@
 
 @font-face {
     font-family: Sneak;
-    src: url('assets/Sneak-Regular.woff2') format('woff2');
+    /* src: url('assets/Sneak-Regular.woff2') format('woff2'); */
+
+    src: url('assets/Geist[wght].woff2') format('woff2');
 }
 
 @font-face {
     font-family: Mincho;
-    src: url('assets/MSMINCHO.woff2') format('woff2');
+    /* src: url('assets/MSMINCHO.woff2') format('woff2'); */
+    /* src: url('assets/Sneak-Regular.woff2'); */
+
+
+    src: url('assets/GeistPixel-Line.woff2') format('woff2');
+    /* src: url('assets/VesterbroVariable.woff2') format('woff2'); */
+
+    /* src: url('assets/Cesare-Regular.woff2') format('woff2'); */
+
+    /* src: url('assets/Americaine-Condensed.woff2') format('woff2'); */
 }
 
 @font-face {
@@ -66,8 +77,9 @@
 .ABI {
     /* font-family: 'DM Sans'; */
     /* font-family: WorkSans; */
-    font-family: Mincho;
-    font-style: italic;
+    font-family: 'Mincho';
+    font-weight: 100;
+    /* font-style: italic; */
     text-transform: none;
     transition: .2s;
 }
@@ -80,7 +92,7 @@
 
 
     /* font-style: oblique 50deg; */
-    transform: skew(60deg);
+    /* transform: skew(60deg); */
 }
 
 .dm-sans {
@@ -119,7 +131,7 @@ p {
     /* font-family: "DM Sans"; */
     font-family: 'Sneak';
     /* font-family: 'Mincho'; */
-    font-weight: 300;
+    font-weight: 100;
     font-size: 4vw;
     margin-top: .3rem;
     margin-bottom: .3rem;
@@ -194,7 +206,7 @@ a:hover {
     max-width: 100%;
     width: 100%;
     font-size: .5rem !important;
-    padding: 2%;
+    /* padding: 2%; */
     /* border: 3px blue solid !important; */
     /* background-color: aqua; */
 }
@@ -215,6 +227,8 @@ a:hover {
     text-transform: uppercase;
     transition: .3s;
     z-index: 500;
+
+    font-weight: 400;
 
 }
 
@@ -297,141 +311,216 @@ a:hover {
 
     /* border: 2px purple solid; */
 }
-
-.proj {
-    display: flex;
-    flex-direction: row;
-    max-height: 33vh;
-    /* gap: 10px; */
-    gap: 2em;
-    align-items: flex-start;
-    overflow: hidden;
-    position: relative; 
-        /* Add this for better positioning context */
-
-    /* border: 2px peru solid; */
-}
-
-.proj img {
-    height: auto;
-    width: auto;
-    object-fit: contain;
-}
-
-/* CHANGES WHERE .OTHERIMG ALIGNS */
-/* .proj .heroimg {
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-} */
-
-.proj .heroimg img {
-    max-height: 33vh;
-    width: auto;
-}
-
-.proj .otherimg {
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
-    position: relative; 
-        /* Important for transform to work properly */
-}
-
-.proj .otherimg img {
-    max-height: 100%;
-    width: auto;
-
-    /* border: 2px palegreen solid; */
-}
-
-.proj:hover{
-    /* border: orange 1.5px solid; */
-}
-
-
-
-
-
-
 /* Tooltip container */
 .tooltip {
     position: relative;
-    display: flex;
-    /* border-bottom: 2px dotted black; */
+    display: block;
+    margin: 0 ;
+    /* padding: 1em 0 ; */
+    margin: 2%;
+    margin-left: 0%;
     cursor: pointer;
-
-    /* justify-content: center;
-    align-items: center; */
-    overflow: hidden;
-    height: auto;
     width: 100%;
-
-    transition: .1s;
+    /* border-left: 4px solid orange; */
+    /* background-color: rgba(255, 165, 0, 0.05); */
+    transition: all 0.2s ease;
 }
 
-.tooltip img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    filter: grayscale(100%);
-    transition: .1s;
+.tooltip:hover {
+    /* background-color: orange !important; */
+    /* border: solid 1.5px orange; */
+    /* transform: translateX(2%); */
+        /* ISSUE FOR TOOLTIPTEXT */
 }
 
-.tooltip a {
-    display: flex;
-    width: 100%;
-    object-fit: contain;
+.tooltip:hover .heroimg{
+    border-right: 4px solid orange;
+    border-left: 0px;
+}
+.tooltip .proj {
+    transition: .2s transform ease;
+    border-left: solid 4px orange;
+}
+.tooltip:hover .proj {
+    transform: translateX(2%);
+    transition: transform 0.2s ease;
+    background-color: rgba(255, 166, 0, 0.279);
+}
+
+/* Optional visual separator */
+.tooltip:not(:last-child) {
+    /* border-bottom: 1px solid rgba(0,0,0,0.1);  */
+    /* border-bottom: 1px dotted rgba(255,165,0,0.5);  */
+
 }
 
 /* Tooltip content */
 .tooltip .tooltiptext {
-    visibility: hidden;
-    position: fixed;
-    max-height: 27vh;
-    border-bottom: 2px dotted black;
-    background-color: white;
+    position: fixed ;
+    z-index: 9999 ;
+    background-color: white ;
+    border: 1.5px orange solid !important;
+    padding: 1% !important;
+    /* border-radius: 2px; */
+    white-space: nowrap;
     pointer-events: none;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     opacity: 0;
-    height: 0;
-    overflow: hidden;
-    border-width: 0;
-    padding: 0;
+    visibility: visible;
+    transition: opacity 0.2s ease;
+    /* font-family: 'Sneak'; */
+    /* font-family: 'Mincho' !important; */
+    font-weight: 400;
+    /* font-size: 1.5em; */
+    font-size: 1.3em;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+
+
+    color: orange !important;
 }
 
 .tooltiptext p {
-    /* font-family: "DM Sans"; */
-    font-family: 'Sneak';
-    /* font-family: 'Mincho'; */
-    font-weight: 444;
-    font-size: 222%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+    line-height: 1.2;
+
+    font-family: 'Mincho';
+    text-transform: uppercase;
 }
+
 
 .tooltiptext .tttsmall {
-    font-size: 111%;
-    font-weight: 333;
+    font-size: .7em;
+    /* font-weight: 300; */
     font-style: italic;
+    margin-top: 4px;
+
+    font-family: 'Sneak';
+    text-transform: none;
+    font-weight: 400;
 }
 
-.tooltip:hover {
-    background-color: rgb(255, 236, 202);
-    border: 1.5px orange dotted;
+.tooltip:hover .tooltiptext {
+
+    opacity: 1;
+    visibility: visible;
 }
-.tooltip:hover img {
-    filter: invert(0%);
-    /* border: 2px solid orange; */
-} 
+
+
+
+
+/* .proj - Force containment */
+.proj {
+    position: relative !important;
+    display: flex;
+    align-items: flex-start;
+    width: 100% !important;
+    min-height: 30vh;
+        /* CRITICAL: These 3 lines contain absolutely positioned children */
+    contain: layout style paint;
+    isolation: isolate;
+        /* Visual boundary */
+    /* outline: 1px solid red;  */
+        /* RED = OUTER BOUNDARY */
+}
+
+/* Force .proj to be a positioning context */
+.proj {
+    transform: translateZ(0); /* Creates a new stacking context */
+}
+
+.proj::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Hero image container - takes space but doesn't push other images out */
+.proj .heroimg {
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 99999;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+    border-right: solid 4px white;
+    border-left: solid 4px white;
+
+    transition: .2s ease-in-out;
+}
+
+.proj .heroimg img {
+    max-height: 33vh;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Container for all otherimg elements */
+.proj .otherimg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: visible;
+}
+
+/* .otherimg - Strict containment */
+.proj .otherimg {
+    position: absolute !important;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.34, 1.33, 0.6, 1);
+    opacity: 0.3;
+    box-sizing: border-box !important;
+    /* Force within .proj */
+    max-width: 100% !important;
+    max-height: 100% !important;
+    /* Visual boundary */
+    /* border: 2px solid blue !important;  */
+        /* BLUE = IMAGE BOUNDARY */
+}
+
+.proj .otherimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    /* Ensure image has no padding/margin */
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+}
+
+
+
+
 
 body{
     margin: 0;
     padding: 0;
+}
+
+/* Scrollbar styling for body */
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f0f0f0;
 }
 
 .worksproj {
@@ -489,6 +578,7 @@ li {
     display: flex;
     width: 95vw;
     margin: 0 auto;
+    font-weight: 400;
 }
 
 .infoblock em {
@@ -498,6 +588,11 @@ li {
 .infoblock #arrow p {
     font-size: 1.5vw;
     text-align: center;
+}
+
+.infoblock div p {
+
+    font-weight: 300;
 }
 
 .info {
@@ -518,6 +613,7 @@ li {
 .titledeets h2 {
     margin: 0;
     text-align: left;
+    font-family: 'Mincho';
 }
 
 #deets {
@@ -749,8 +845,295 @@ video {
     border-radius: 3px;
 }
 
-/* MOBILE STYLES */
+
+
+
+
+
+/* Works Popup */
+.works-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: white;
+    /* border: 4px solid black; */
+    padding: 2%;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.34, 1.33, 0.6, 1);
+    font-family: 'Sneak', sans-serif;
+    /* box-shadow: 12px 12px 0 orange; */
+}
+
+.works-popup.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(2px);
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Close Button */
+.popup-close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background: none;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Sneak', sans-serif;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+
+.popup-close:hover {
+    background-color: orange;
+    color: black;
+    border-color: orange;
+    transform: rotate(90deg);
+}
+
+/* Popup Title */
+.popup-title {
+    /* font-family: 'Mincho', serif; */
+    font-family: 'Sneak';
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 4%;
+    text-align: center;
+    /* border-bottom: 2px dotted orange; */
+    padding-bottom: 2%;
+    /* letter-spacing: 2px; */
+    color: black;
+}
+
+/* Popup Grid */
+.popup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 6%;
+    padding: 2% 0;
+}
+
+/* Popup Item */
+.popup-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    padding: 4%;
+    border-left: 4px solid orange;
+    /* background-color: rgba(255, 165, 0, 0.05); */
+    transition: all 0.2s ease;
+}
+
+.popup-item:hover {
+    background-color: rgba(255, 166, 0, 0.049);
+    transform: translateX(4px);
+}
+
+.popup-category {
+    font-family: 'Mincho', serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 5%;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.popup-projects {
+    font-family: 'Sneak', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    /* color: #333; */
+    /* font-style: italic; */
+}
+
+.popup-projects a {
+    text-decoration: none;
+}
+
+/* Popup Footer */
+.popup-footer {
+    margin-top: 6%;
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 2%;
+    /* border-top: 1px solid #ddd; */
+    color: orange;
+    font-weight: 500;
+}
+
+/* Scrollbar styling for popup */
+.works-popup::-webkit-scrollbar {
+    width: 6px;
+}
+
+.works-popup::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 3px;
+}
+
+.works-popup::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+
+
+
+
+/* Mobile styles */
 @media only screen and (max-width: 768px) {
+.works-popup {
+        width: 92% !important;
+        max-width: 92% !important;
+        max-height: 85vh !important;
+        padding: 20px 15px !important;
+        /* border: 3px solid orange !important; */
+        box-shadow: none !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    
+    .popup-title {
+        font-size: 24px !important;
+        margin: 10px 0 20px 0 !important;
+        padding-bottom: 15px !important;
+        /* border-bottom: 2px dotted orange !important; */
+        text-align: center !important;
+        font-weight: 600 !important;
+    }
+    
+    .popup-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 5px 0 !important;
+    }
+    
+    .popup-item {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0 !important;
+        padding: 12px 15px !important;
+        border-left: 4px solid orange !important;
+        background-color: rgba(255, 166, 0, 0.03) !important;
+        border-radius: 0 !important;
+    }
+    
+    .popup-close {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        top: 1%;
+        right: 1%;
+    }
+    
+    .popup-category {
+        font-size: 14px !important;
+        margin-bottom: 8px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px !important;
+        color: #333 !important;
+    }
+    
+    .popup-projects {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 5px 8px !important;
+    }
+    
+    .popup-projects a {
+        display: inline-block !important;
+        padding: 4px 8px !important;
+        background-color: rgba(255, 166, 0, 0.1) !important;
+        border-radius: 3px !important;
+        color: black !important;
+        text-decoration: none !important;
+        font-size: 15px !important;
+        transition: background-color 0.2s ease !important;
+    }
+    
+    .popup-projects a:hover {
+        background-color: orange !important;
+        color: white !important;
+    }
+    
+    /* Add commas between projects except last */
+    .popup-projects a:not(:last-child)::after {
+        /* content: "," !important; */
+        display: inline !important;
+        margin-left: 2px !important;
+        color: #666 !important;
+    }
+    
+    .popup-close {
+        top: 10px !important;
+        right: 10px !important;
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 20px !important;
+        border: 2px solid orange !important;
+        background-color: white !important;
+        color: orange !important;
+        z-index: 2001 !important;
+    }
+    
+    .popup-close:active {
+        background-color: orange !important;
+        color: white !important;
+    }
+    
+    .popup-footer {
+        margin-top: 25px !important;
+        font-size: 13px !important;
+        color: orange !important;
+        text-align: center !important;
+        padding-top: 15px !important;
+        border-top: 1px solid #eee !important;
+    }
+    
+    /* Overlay */
+    .popup-overlay {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        backdrop-filter: blur(3px) !important;
+    }
+    
+
     /* Layout */
     .hpcontainer {
         flex-direction: column;
@@ -771,30 +1154,46 @@ video {
     
     /* Header */
     .bigheader {
-        flex-direction: row;
-        margin: 4%;
-        /* max-height: 05vh !important; */
-        justify-content: center;
-        background-color: white;
-        position: sticky;
-        padding: 0%;
+        position: sticky !important;
+        top: 0 !important;
+        display: flex !important;
+        /* flex-direction: row !important; */
+        justify-content: space-between !important;
+        /* align-items: center !important; */
+        /* padding: 3% 4% !important; */
+        margin: 0 !important;
+        /* background-color: white !important; */
+        z-index: 1000 !important;
+        width: 100% !important;
+        /* box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important; */
     }
     
     #name {
-        font-size: 110%;
-        text-align: lef;
-        /* margin-bottom: 2%; */
+        font-size: 120% !important;
+        text-align: left !important;
+        margin: 0 !important;
+        flex: 1 !important;
     }
     
     .header {
-        flex-direction: column;
-        justify-content: space-around;
-        /* text-align: center; */
-        font-size: 90%;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        gap: 15px !important;
+        font-size: 90% !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     
     .header a {
-        padding: 2%;
+        padding: 5px 8px !important;
+        white-space: nowrap !important;
+    }
+    
+    #jaxwong {
+        font-size: 100% !important;
+        margin: 0 !important;
     }
 
     #clickme {
@@ -913,12 +1312,57 @@ video {
     }
     
     /* Tooltips */
+
+    .tooltip {
+        position: relative !important;
+        margin-bottom: 30px !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
     .tooltip .tooltiptext {
-        display: none;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        height: auto !important;
+        background-color: transparent !important;
+        border: none !important;
+        border-left: 4px solid orange !important;
+        padding: 10px !important;
+        margin-top: 10px !important;
+        font-size: 16px !important;
+        z-index: 1 !important;
+        pointer-events: auto !important;
+        overflow: visible !important;
+    }
+
+    .tooltip .tooltiptext p {
+        /* font-size: 18px !important; */
+        margin: 0 0 5px 0 !important;
+        color: black !important;
+    }
+    .tooltip .tooltiptext .tttsmall {
+        font-size: 14px !important;
+        margin: 0 !important;
+        color: orange !important;
+        font-family: 'Sneak', sans-serif !important;
+        text-transform: none !important;
+        font-weight: 400 !important;
+        font-style: italic !important;
     }
     
     .tooltip:hover .tooltiptext {
         visibility: hidden;
+    }
+
+    .tooltip:hover .proj {
+        transform: none !important;
+        background-color: transparent !important;
     }
     
     /* About Page */
@@ -970,4 +1414,135 @@ video {
     .header a {
         padding: 3%;
     }
+
+    .proj {
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: auto !important;
+        contain: none !important;
+        isolation: auto !important;
+    }
+    
+    /* Show all images in a simple grid on mobile */
+    .proj .heroimg,
+    .proj .otherimg {
+        position: relative !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        opacity: 1 !important;
+        margin-bottom: 10px !important;
+        border: none !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+    }
+    
+    .proj .heroimg {
+        border-right: none !important;
+        border-left: none !important;
+    }
+    
+    .proj .heroimg img,
+    .proj .otherimg img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: cover !important;
+    }
+    
+    /* Simple 2-column grid for project images on mobile */
+    .proj {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+    
+    /* Make hero image span full width on mobile */
+    .proj .heroimg {
+        grid-column: 1 / -1 !important;
+        width: 100% !important;
+    }
+    
+    /* Hide tooltips on mobile (they don't work well with touch) */
+    .tooltip .tooltiptext {
+        /* display: none !important; */
+    }
+    
+    /* Add a simple title below each project on mobile */
+    .tooltip a::after {
+        content: attr(title);
+        display: block;
+        font-family: 'Sneak', sans-serif;
+        font-size: 14px;
+        margin-top: 5px;
+        color: orange;
+        text-align: center;
+    }
+    
+    /* Fix spacing */
+    .homeweird {
+        gap: 20px !important;
+        padding: 10px !important;
+    }
+    
+    .tooltip {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    
+    .tooltip:hover .proj {
+        transform: none !important;
+        background-color: transparent !important;
+    }
+    
+}
+
+
+/* ============================================
+   SPACING FIXES
+   ============================================ */
+
+/* Remove spacing from home containers */
+.homeweird,
+#flex,
+.hpcontainer {
+    gap: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Remove bottom margin from last tooltip */
+.homeweird .tooltip:last-child,
+#flex .tooltip:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Ensure no vertical gaps in homepage layout */
+.homepage#flex {
+    gap: 0 !important;
+}
+
+/* Fix anchor tag spacing inside tooltips */
+.tooltip a {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none;
+}
+
+/* Remove spacing between tooltips in containers */
+.homeweird .tooltip + .tooltip,
+#flex .tooltip + .tooltip {
+    margin-top: 0 !important;
+}
+
+/* Remove any browser default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

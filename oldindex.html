@@ -5,347 +5,774 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hire Jax!</title>
-    <link rel="icon" href="assets/cmy.png">
+    <link rel="icon" href="assets/sun.png">
     <link rel="stylesheet" href="newstyle.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/libgif-js@1.0.3/libgif.min.js"></script>
+
 </head>
 
-<body>
-    
-<div class="header" style="justify-content: flex-end;">
-    <!-- <div>
-        <a href="index.html">
-            home
-        </a>
-    </div>
-    <div>
-        <a href="works.html">
-            works
-        </a>
-    </div> -->
-    <!-- <div>
-        <a href="">
-            resume
-        </a>
-    </div> -->
-    <div >
-        <a href="/about.html">
-            about
-        </a>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-</div>
+        body {
+            font-family: 'Sneak', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 2%;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
 
+        /* Background image overlay */
+        .background-image {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60vw;
+            max-width: 1200px;
+            height: 60vh;
+            max-height: 800px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            pointer-events: none;
+            border-radius: 4px;
+            overflow: hidden;
+        }
 
-<!-- <div class="landing"> -->
+        .background-image.active {
+            opacity: 1;
+        }
 
-    <div class="thisis">
-        <p>
-            This is
-        </p>
-        <h1>
-            Jax Wong
-        </h1>
-        <p>
-            Graphic Communication Engineer
-        </p>
-        <!-- <br>
-        <br>
-        <br> -->
-    </div>
-    
-    
-    
-    <br><br>
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
-    <div class="receipt">
-        <div id="arrow">
-            <p>↑ ↑ ↑</p>
-        </div>
-        <div class="borderoutline">
-            <div class="block">
-                <h2>
-                    Selected Works
-                </h2>
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="time.html">Time</a>
-                        <img src="time/OTHER-small.gif" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Book / Promotional
-                        </p>
-                    </div>
-                </div>
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="thesis.html">Happiness is...</a>
-                        <img src="thesis/IMG_3870.gif" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            <!-- Thesis / Data Visualization -->
-                            Data Visualization / HTML / CSS / JS
+        .header {
+            display: grid;
+            grid-template-columns: 25vw repeat(8, calc((100vw - 25vw - 9%) / 8));
+            gap: 1%;
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            background-color: rgba(255,255,255,0.7);
+            z-index: 100;
+        }
 
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="eras.html">Taylor Swift: The Eras Tour</a>
-                        <img src="tswift/Horizontal Screen Billboard_3000_new.png" alt="" class="tooltiptext">    
-                    </div>
-                    <div class="right">
-                        <p>
-                            Visual Identity / Book
-                        </p>
-                    </div>
-                    
-                </div>
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="yosemite.html">Yosemite's Wilderness Symphony</a>
-                        <img src="yosemite/Screen Recording 2024-04-30 at 7.04.11 PM (1).gif" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Visual Identity / Book
-                        </p>    
-                    </div>
-                </div>
-                
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="fluxus.html">Fluxus and Design</a>
-                        <img src="fluxus/Screen Recording 2024-05-07 at 6.00.47 PM.gif" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Visual Identity / Book
-                        </p>
-                    </div>
-                </div>
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="fanfic.html">Ode to Fanfiction</a>
-                        <img src="fanfic/herocopy.webp" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Book
-                        </p>
-                    </div>
-                </div>
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="nsfp.html">New School Free Press</a>
-                        <img src="nsfp/nsfp-video.gif" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Visual Identity / Wordpress
-                        </p>
-                    </div>
-                </div>
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="inbetween.html">In Between</a>
-                        <img src="ib/hero.png" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Book 
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="tooltip">
-                    <div class="left" id="wip">
-                        <s>
+        .header-title {
+            font-weight: 500;
+            font-size: 16px;
+            text-align: left;
+            max-width: 25vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
 
-                            <a href="">Forceful Buddy</a>
-                        </s>
-                        <p class="tooltiptext">IN PROGRESS</p>
-                    </div>
-                    <div class="right">
-                        <p>
-                            Digital Product / UI / UX 
-                        </p>
-                    </div>
-                </div> -->
-                
-            </div>
-            <div class="block">
-                <h2>
-                    <!-- Discovery, Exploration, and Play -->
-                    <!-- Experiment, Exploration, and Play -->
-                     <!-- Experiments and Explorations -->
-                      Exploration & Play
-                </h2>
-                <div class="tooltip">
-                    <div class="left">
-                        <a  class="left" href="dlsignage.html">Design Lab Signage</a>
-                        <img src="dlsign/ooo.webp" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p class="right">
-                            Letterpress / Screenprint
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- <div class="tooltip">
-                    <div class="left">
-                        <a href="256.html">256 Images</a>
-                        <img src="" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Thesis / Book
-                        </p>
-                    </div>
-                </div> -->
-            <!-- DISPLAYS -->
-                <!-- <div class="tooltip">
-                    <div class="left">
-                        <a href="">Displays</a>
-                    </div>
-                    <div class="right">
-                        <p>
-                            Thesis / Experiment / Screenprint / Print
-                        </p>
-                    </div>
-                </div> -->
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="incentivizedreading.html">Incentivized Reading</a>
-                        <img src="ir/2accounting-book2.gif" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            <!-- Thesis / Experiment / Book -->
-                            Experiment / Book
+        .header-column {
+            font-weight: 500;
+            color: black;
+            text-align: left;
+            font-size: 12px;
+            text-transform: uppercase;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 2%;
+        }
 
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="tooltip">
-                    <div class="left">
-                        <a href="">Punk Goes Pop Festival</a>
-                    </div>
-                    <div class="right">
-                        <p>
-                            Poster / Typeface
-                        </p>
-                    </div>
-                </div> -->
-                
-            <!-- CODING -->
-             <!--
-                
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="">The Everchanging Mane</a>
-                    </div>
-                    <div class="right">
-                        <p>
-                            HTML / CSS / JSON
-                        </p>
-                    </div>
-                </div>
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="">CMYK vs RGB</a>
-                    </div>
-                    <div class="right">
-                        <p>
-                            HTML / CSS / Javascript
-                        </p>
-                    </div>
-                </div>
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="">MTA Art</a>
-                    </div>
-                    <div class="right">
-                        <p>
-                            HTML / CSS / Javascript
-                        </p>
-                    </div>
-                </div> -->
-    
-                <!-- <div class="tooltip">
-                    <div class="left">
-                        <a href="ikeapopup.html">Ikea Pop-Up</a>
-                        <img src="ikea/variation.gif" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Screenprint
-                        </p>
-                    </div>
-                </div> -->
+        .projects {
+            padding-top: 10px;
+        }
 
-                <div class="tooltip">
-                    <div class="left">
-                        <a href="commandtattoos.html">Adobe Command Tattoos</a>
-                        <img src="ct/jazzcloseup.gif" alt="" class="tooltiptext">
-                    </div>
-                    <div class="right">
-                        <p>
-                            Screenprint
-                        </p>
-                    </div>
-                </div>
-            <!-- SAVE A HORSE RIDE A COWBOY -->
-                <!-- <div class="tooltip">
-                    <div class="left">
-                        <a href="">Save a Horse, Ride a Cowboy</a>
-                    </div>
-                    <div class="right">
-                        <p>
-                            Letterpress
-                        </p>
-                    </div>
-                </div> -->
-    
-                <div id="also">
-                    <div class="right">
-                        <p>
-                            <br>
-                            This website is also coded by Jax!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        .project-row {
+            display: grid;
+            grid-template-columns: 25vw repeat(8, calc((100vw - 25vw - 9%) / 8));
+            gap: 1%;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.2s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-row:hover {
+            background-color: rgba(255, 166, 0, 0.1);
+        }
+
+        .project-title {
+            font-weight: 500;
+            text-align: left;
+            max-width: 25vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 2%;
+        }
+
+        .project-characteristic {
+            color: #acacac;
+            transition: all 0.3s ease;
+            text-align: left;
+            padding: 4px 2%;
+            border-radius: 2px;
+            min-height: 24px;
+            display: flex;
+            align-items: flex-start;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+            font-size: 0.9vw;
+            line-height: 1.3;
+            word-spacing: normal;
+            letter-spacing: normal;
+        }
+
+        /* Only apply hover/active styles to characteristics that have content */
+        .project-characteristic.has-content {
+            /* Base style for cells with content */
+        }
+
+        .project-row:hover .project-title {
+            color: #000;
+            background-color: rgba(255, 166, 0, 0.7);
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 2%;
+            border-radius: 2px;
+            max-width: 25vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
         
+        .project-row.active .project-title {
+            color: #000;
+            background-color: rgba(255, 166, 0, 0.7);
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 2%;
+            border-radius: 2px;
+            max-width: 25vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
 
+        /* Only highlight characteristic cells that have content on hover/active */
+        .project-row:hover .project-characteristic.has-content {
+            color: #000;
+            background-color: rgba(255, 166, 0, 0.7);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
 
-<div class="worksbody">
-    <div class="flex">
+        .project-row.active .project-characteristic.has-content {
+            color: #000;
+            background-color: rgba(255, 166, 0, 0.7);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
 
+        /* Project detail overlay */
+        .project-detail {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: white;
+            border-left: 1px solid #e5e5e5;
+            padding: 40px;
+            overflow-y: auto;
+            z-index: 1000;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.05);
+        }
+
+        .project-detail.active {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        .close-detail {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 0.2s ease;
+        }
+
+        .close-detail:hover {
+            background-color: #f0f0f0;
+        }
+
+        .detail-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding-right: 40px;
+            text-align: left;
+        }
+
+        .detail-image {
+            width: 100%;
+            height: 300px;
+            background-color: #f5f5f5;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .detail-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .detail-characteristics {
+            margin-top: 30px;
+        }
+
+        .characteristic-row {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .characteristic-label {
+            font-weight: 500;
+            width: 120px;
+            color: #666;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .characteristic-value {
+            flex: 1;
+            text-align: left;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive adjustments using vw and % */
+        @media (max-width: 1600px) {
+            .header, .project-row {
+                grid-template-columns: 25vw repeat(8, calc((100vw - 25vw - 9%) / 8));
+            }
+            
+            .project-characteristic {
+                font-size: 1vw;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .header, .project-row {
+                grid-template-columns: 25vw repeat(8, calc((100vw - 25vw - 9%) / 8));
+            }
+            
+            .project-detail {
+                width: 50%;
+            }
+            
+            .background-image {
+                width: 85vw;
+                height: 70vh;
+            }
+            
+            .project-characteristic {
+                font-size: 1.1vw;
+                line-height: 1.4;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .header, .project-row {
+                grid-template-columns: 30vw repeat(6, calc((100vw - 30vw - 7%) / 6));
+            }
+            
+            .header-title, .project-title {
+                max-width: 30vw;
+            }
+            
+            .header-column:nth-child(9),
+            .header-column:nth-child(10),
+            .project-characteristic:nth-child(9),
+            .project-characteristic:nth-child(10) {
+                display: none;
+            }
+            
+            .project-characteristic {
+                font-size: 1.3vw;
+                line-height: 1.4;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header, .project-row {
+                grid-template-columns: 40vw repeat(4, calc((100vw - 40vw - 5%) / 4));
+                gap: 1%;
+            }
+            
+            .project-detail {
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .header-title, .project-title {
+                max-width: 40vw;
+            }
+            
+            .header-column:nth-child(7),
+            .header-column:nth-child(8),
+            .header-column:nth-child(9),
+            .header-column:nth-child(10),
+            .project-characteristic:nth-child(7),
+            .project-characteristic:nth-child(8),
+            .project-characteristic:nth-child(9),
+            .project-characteristic:nth-child(10) {
+                display: none;
+            }
+            
+            .detail-image {
+                height: 200px;
+            }
+            
+            .background-image {
+                width: 90vw;
+                height: 50vh;
+                opacity: 1 !important;
+            }
+            
+            .project-characteristic {
+                font-size: 1.5vw;
+                line-height: 1.5;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header, .project-row {
+                grid-template-columns: 50vw repeat(2, calc((100vw - 50vw - 3%) / 2));
+                gap: 1%;
+            }
+            
+            .header-title, .project-title {
+                max-width: 50vw;
+            }
+            
+            .header-column:nth-child(5),
+            .header-column:nth-child(6),
+            .header-column:nth-child(7),
+            .header-column:nth-child(8),
+            .header-column:nth-child(9),
+            .header-column:nth-child(10),
+            .project-characteristic:nth-child(5),
+            .project-characteristic:nth-child(6),
+            .project-characteristic:nth-child(7),
+            .project-characteristic:nth-child(8),
+            .project-characteristic:nth-child(9),
+            .project-characteristic:nth-child(10) {
+                display: none;
+            }
+            
+            .detail-image {
+                height: 150px;
+            }
+            
+            .background-image {
+                width: 95vw;
+                height: 40vh;
+            }
+            
+            .project-characteristic {
+                font-size: 2vw;
+                line-height: 1.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background image container -->
+    <div class="background-image" id="backgroundImage"></div>
+    
+    <div class="bigheader">
+        <div class="header" id="name">
+            <div style="text-align: left; font-family: 'Mincho';">
+                <a href="index.html">
+                    <span class="ABI" id="jaxwong">Jax</span> of all trades
+                </a>
+            </div>
+        </div>
     </div>
-</div>
 
+    <div class="container">
+        <!-- <div class="header">
+            <div class="header-title">Portfolio</div>
+            <div class="header-column">VI</div>
+            <div class="header-column">BOOK</div>
+            <div class="header-column">MERCH</div>
+            <div class="header-column">MOTION</div>
+            <div class="header-column">PROMO</div>
+            <div class="header-column">WEB</div>
+            <div class="header-column">PRINT</div>
+            <div class="header-column">ETC</div>
+        </div> -->
+        
+        <div class="projects" id="projectsContainer">
+            <!-- Projects will be loaded here by JavaScript -->
+        </div>
+    </div>
+    
+    <div class="project-detail" id="projectDetail">
+        <div class="close-detail" id="closeDetail">×</div>
+        <div class="detail-content">
+            <h2 class="detail-title" id="detailTitle"></h2>
+            <div class="detail-image" id="detailImage"></div>
+            <div class="detail-description" id="detailDescription"></div>
+            <div class="detail-characteristics" id="detailCharacteristics"></div>
+        </div>
+    </div>
 
+    <script>
+        // Project data - updated with 7 characteristics
+        const projects = [
+            {
+                id: 1,
+                title: "Taylor Swift: The Eras Tour",
+                description: "",
+                imageUrl: "homeasset/ts-2.png",
+                characteristics: {
+                    VI: "Visual Identity",
+                    BOOK: "Booklet",
+                    MERCH: "Apparel",
+                    MOTION: "Motion",
+                    PROMO: "Social Post, Promotional Material",
+                    PRINT: "",
+                    WEB: "",
+                    ETC: "Packaging, Poster"
+                }
+            },
+            {
+                id: 2,
+                title: "Time",
+                description: "",
+                imageUrl: "homeasset/t-0.gif",
+                characteristics: {
+                    VI: "",
+                    BOOK: "Book",
+                    MERCH: "",
+                    MOTION: "Motion",
+                    PROMO: "Promotional Material",
+                    PRINT: "",
+                    WEB: "",
+                    ETC: ""
+                }
+            },
+            {
+                id: 3,
+                title: "✧EXPERIMENTAL✧ Adobe Command Tattoos",
+                description: "",
+                imageUrl: "homeasset/ct-0.gif",
+                characteristics: {
+                    VI: "",
+                    BOOK: "",
+                    MERCH: "Apparel",
+                    MOTION: "",
+                    PROMO: "",
+                    PRINT: "Screenprint",
+                    WEB: "",
+                    ETC: ""
+                }
+            }, 
+            {
+                id: 4,
+                title: "Happiness is...",
+                description: "",
+                imageUrl: "homeasset/thesis-0.gif",
+                characteristics: {
+                    VI: "",
+                    BOOK: "Books",
+                    MERCH: "",
+                    MOTION: "",
+                    PROMO: "",
+                    PRINT: "",
+                    WEB: "HTML, CSS, JS",
+                    ETC: "Data Visualization"
+                }
+            }, 
+            {
+                id: 5,
+                title: "Yosemite's Wilderness Symphony",
+                description: "",
+                imageUrl: "homeasset/y-3.webp",
+                characteristics: {
+                    VI: "Visual Identity",
+                    BOOK: "Book",
+                    MERCH: "Merchandise",
+                    MOTION: "",
+                    PROMO: "Social Post",
+                    PRINT: "",
+                    WEB: "Web",
+                    ETC: "Poster"
+                }
+            }, 
+            // {
+            //     id: 6,
+            //     title: "Fluxus and Design",
+            //     description: "",
+            //     imageUrl: "homeasset/f-0.webp",
+            //     characteristics: {
+            //         VI: "Visual Identity",
+            //         BOOK: "Book, Brochure",
+            //         MERCH: "",
+            //         MOTION: "",
+            //         PROMO: "Social Post",
+            //         PRINT: "",
+            //         WEB: "",
+            //         ETC: "Wall Title, Poster"
+            //     }
+            // }, 
+            {
+                id: 7,
+                title: "✧EXPERIMENTAL✧ Design Lab Signage",
+                description: "",
+                imageUrl: "homeasset/dl-0.webp",
+                characteristics: {
+                    VI: "",
+                    BOOK: "",
+                    MERCH: "Apparel",
+                    MOTION: "",
+                    PROMO: "",
+                    PRINT: "Letterpress, Screenprint",
+                    WEB: "",
+                    ETC: ""
+                }
+            }, 
+            {
+                id: 8,
+                title: "✧PLAY✧ In Between",
+                description: "",
+                imageUrl: "homeasset/ib-0.png",
+                characteristics: {
+                    VI: "",
+                    BOOK: "Book",
+                    MERCH: "",
+                    MOTION: "",
+                    PROMO: "Promotional Material",
+                    PRINT: "",
+                    WEB: "",
+                    ETC: ""
+                }
+            }, 
+        ];
 
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
-    <script src="script.js"></script>
+        // DOM elements
+        const projectsContainer = document.getElementById('projectsContainer');
+        const projectDetail = document.getElementById('projectDetail');
+        const closeDetail = document.getElementById('closeDetail');
+        const detailTitle = document.getElementById('detailTitle');
+        const detailImage = document.getElementById('detailImage');
+        const detailDescription = document.getElementById('detailDescription');
+        const detailCharacteristics = document.getElementById('detailCharacteristics');
+        const backgroundImage = document.getElementById('backgroundImage');
+
+        // Initialize projects
+        function initializeProjects() {
+            projects.forEach(project => {
+                const projectRow = document.createElement('div');
+                projectRow.className = 'project-row';
+                projectRow.dataset.id = project.id;
+                
+                // Create project title cell
+                const titleCell = document.createElement('div');
+                titleCell.className = 'project-title';
+                titleCell.textContent = project.title;
+                
+                // Create characteristic cells - 8 columns (VI, BOOK, MERCH, MOTION, PROMO, PRINT, WEB, ETC)
+                const characteristics = [
+                    project.characteristics.VI || "",
+                    project.characteristics.BOOK || "",
+                    project.characteristics.MERCH || "",
+                    project.characteristics.MOTION || "",
+                    project.characteristics.PROMO || "",
+                    project.characteristics.WEB || "",
+                    project.characteristics.PRINT || "",
+                    project.characteristics.ETC || ""
+                ];
+                
+                // Append title cell
+                projectRow.appendChild(titleCell);
+                
+                // Append characteristic cells (8 total: 7 characteristics + ETC)
+                characteristics.forEach(char => {
+                    const charCell = document.createElement('div');
+                    charCell.className = 'project-characteristic';
+                    
+                    // Create a span for better text control
+                    const textSpan = document.createElement('span');
+                    textSpan.textContent = char;
+                    textSpan.style.display = 'inline-block';
+                    textSpan.style.maxWidth = '100%';
+                    charCell.appendChild(textSpan);
+                    
+                    // Add has-content class if there's content
+                    if (char.trim() !== "") {
+                        charCell.classList.add('has-content');
+                    }
+                    
+                    projectRow.appendChild(charCell);
+                });
+                
+                // Add hover effect for background image
+                projectRow.addEventListener('mouseenter', function() {
+                    // Update background image
+                    backgroundImage.style.backgroundImage = `url('${project.imageUrl}')`;
+                    backgroundImage.classList.add('active');
+                    
+                    // Highlight row and characteristics
+                    document.querySelectorAll('.project-row').forEach(row => {
+                        row.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+                
+                projectRow.addEventListener('mouseleave', function() {
+                    // Only fade out background if not in detail view
+                    if (!projectDetail.classList.contains('active') || 
+                        parseInt(this.dataset.id) !== getActiveProjectId()) {
+                        backgroundImage.classList.remove('active');
+                        this.classList.remove('active');
+                    }
+                });
+                
+                // Add click event to show detail
+                projectRow.addEventListener('click', function() {
+                    showProjectDetail(project.id);
+                });
+                
+                projectsContainer.appendChild(projectRow);
+            });
+        }
+
+        // Get active project ID from detail view
+        function getActiveProjectId() {
+            const activeRow = document.querySelector('.project-row.active');
+            return activeRow ? parseInt(activeRow.dataset.id) : null;
+        }
+
+        // Show project detail
+        function showProjectDetail(projectId) {
+            const project = projects.find(p => p.id === projectId);
+            if (!project) return;
+            
+            // Update detail content
+            detailTitle.textContent = project.title;
+            
+            // Set image for detail view
+            detailImage.style.backgroundImage = `url('${project.imageUrl}')`;
+            detailDescription.textContent = project.description;
+            
+            // Update characteristics
+            detailCharacteristics.innerHTML = '';
+            for (const [key, value] of Object.entries(project.characteristics)) {
+                if (value) { // Only show characteristics that have values
+                    const row = document.createElement('div');
+                    row.className = 'characteristic-row';
+                    row.innerHTML = `
+                        <div class="characteristic-label">${key}</div>
+                        <div class="characteristic-value">${value}</div>
+                    `;
+                    detailCharacteristics.appendChild(row);
+                }
+            }
+            
+            // Keep background image visible for active project
+            backgroundImage.style.backgroundImage = `url('${project.imageUrl}')`;
+            backgroundImage.classList.add('active');
+            
+            // Highlight the clicked row
+            document.querySelectorAll('.project-row').forEach(row => {
+                row.classList.remove('active');
+                if (parseInt(row.dataset.id) === projectId) {
+                    row.classList.add('active');
+                }
+            });
+            
+            // Show detail panel
+            projectDetail.classList.add('active');
+        }
+
+        // Close project detail
+        closeDetail.addEventListener('click', function() {
+            projectDetail.classList.remove('active');
+            backgroundImage.classList.remove('active');
+            document.querySelectorAll('.project-row').forEach(row => {
+                row.classList.remove('active');
+            });
+        });
+
+        // Close detail when clicking outside
+        projectDetail.addEventListener('click', function(e) {
+            if (e.target === projectDetail) {
+                projectDetail.classList.remove('active');
+                backgroundImage.classList.remove('active');
+                document.querySelectorAll('.project-row').forEach(row => {
+                    row.classList.remove('active');
+                });
+            }
+        });
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', initializeProjects);
+    </script>
 </body>
-
-
-
-
-
-
+</html>
