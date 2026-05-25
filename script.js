@@ -555,3 +555,52 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+
+
+ document.getElementById('works-link-fix').onclick = function() {
+      window.location.href = 'index.html';
+  };
+
+
+  (function() {
+    // Helper to show/hide popup based on screen width
+    function checkMobileAndShow() {
+        var overlay = document.getElementById('mobile-warning-overlay');
+        if (!overlay) return;
+
+        // Use matchMedia for reliable breakpoint detection
+        var isMobile = window.matchMedia("(max-width: 768px)").matches;
+        
+        // Check if user dismissed it during this session
+        var dismissed = sessionStorage.getItem('mobileWarningDismissed');
+        
+        if (isMobile && !dismissed) {
+            overlay.style.display = 'flex';
+            console.log('Mobile popup shown'); // Debug log (remove later)
+        } else {
+            overlay.style.display = 'none';
+        }
+    }
+
+    // Close button handler
+    var closeBtn = document.getElementById('close-mobile-warning-btn');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            var overlay = document.getElementById('mobile-warning-overlay');
+            if (overlay) overlay.style.display = 'none';
+            sessionStorage.setItem('mobileWarningDismissed', 'true');
+        });
+    }
+
+    // Run on initial load and on window resize
+    window.addEventListener('load', checkMobileAndShow);
+    window.addEventListener('resize', checkMobileAndShow);
+    
+    // Also run immediately if DOM is already ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', checkMobileAndShow);
+    } else {
+        checkMobileAndShow();
+    }
+})();

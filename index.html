@@ -1,479 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hire Jax!</title>
-    <link rel="icon" href="assets/sun.png">
-    <link rel="stylesheet" href="newstyle.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hire Jax!</title>
+  <link rel="icon" href="assets/nne.png">
+  <link rel="stylesheet" href="newstyle.css">
+  
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"> -->
 
-    <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/libgif-js@1.0.3/libgif.min.js"></script>
+  <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/libgif-js@1.0.3/libgif.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+  <style>
+
+    .cursor .cursor-state {
+      display: none;
+    }
+
+    body.cursor-state-next-active .cursor .cursor-next,
+    body.cursor-state-previous-active .cursor .cursor-prev,
+    body.cursor-state-view-active .cursor .cursor-view {
+      display: block;
+    }
+
+    /* Custom Cursor */
+    .cursor {
+      position: fixed;
+      z-index: 999999999;
+      transform: translate(-50%, -50%);
+      width: 5rem;
+      text-align: center;
+      pointer-events: none;
+      font-size: 0.875rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #fff;
+      mix-blend-mode: difference;
+      font-weight: 500;
+      font-family: 'WorkSans', sans-serif;
+    }
+
+
+    .flickity-prev-next-button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 999;
+      width: 33.333vw;
+      height: auto;
+      transform: none;
+      border-radius: 0;
+      background: transparent;
+      opacity: 1;
+    }
+
+    .flickity-prev-next-button:hover {
+      background: transparent;
+    }
+
+    .flickity-prev-next-button.previous {
+      left: 0;
+    }
+
+    .flickity-prev-next-button.next {
+      right: 0;
+    }
+
+    .flickity-prev-next-button svg {
+      display: none;
+    }
+
+    /* GLOBAL: hide default cursor everywhere with highest priority */
+    body, 
+    body *,
+    .slideshow-selected-container,
+    .slideshow-selected,
+    .slide,
+    .slide-link,
+    .flickity-viewport,
+    .flickity-slider,
+    .flickity-prev-next-button,
+    .flickity-prev-next-button * {
+      cursor: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .cursor {
+        display: none;
+      }
+    }
+  </style>
 
 </head>
-
 <body>
-    
-<!-- <div class="header" style="justify-content: flex-end;">
-    
-    <div >
-        <a href="/about.html">
-            about
-        </a>
-    </div>
 
-</div> -->
-
-<div class="bigheader">
-    <div class="header" id="name">
-        <!-- <div>
-            <a href="index.html">
-                this is 
-                <img src="tswift/booklet5.gif" alt=""> 
-                .com
-            </a>
-        </div> -->
-        <div style="text-align: right; font-family: 'Mincho';">
-            <a href="index.html">
-                <span class="ABI" id="jaxwong">Jax</span> of all trades
-            </a>
+  <!-- <input type="checkbox" id="mobile-popup-toggle" style="display: none;"> -->
+    <div class="mobile-popup">
+        <div class="mobile-popup-inner">
+          <p>Sorry! This site is in progress right now.<br>For the full experience, please visit on desktop.</p>
+          <!-- <button id="close-mobile-warning">Continue anyway →</button> -->
         </div>
     </div>
-    <div class="header">
-                
-        <div>
-                <a href="index.html">
-                    works
-                </a>
-                
-            </div>
-            &emsp;
-            <div >
-                <a href="/about.html">
-                    about
-                </a>
-                
-            </div>
-            &emsp;
-            <div>
-                <a href="https://drive.google.com/file/d/1F9aWRgnczzVvytmsIQnflSUmueQMBcBq/view?usp=sharing" target="_blank">
-                    resume
-                </a>
-            </div>
-        <!-- &emsp;
 
-        <div>
-            <a href="mailto:thisisjaxwong@gmail.com" target="_blank">Email me!</a>
-        </div>
-        &emsp;
-        <div>
-            <a href="https://drive.google.com/file/d/1pwcNWIWlWXa-tTFZzcRTorZPKweCzmaO/view?usp=sharing" target="_blank">Resume</a>
-        </div> -->
+<div class="slideshow-selected-container">
+  <div class="slideshow-selected" id="mainCarousel"></div>
+</div>
+<div class="slideshow-selected-headers-container" id="headersContainer"></div>
+
+<div class="nav-panel">
+  <div class="top-bar">
+    <div class="logo"><a href="#">Jax Wong</a></div>
+    <div class="controls">
+      <a href="#" id="viewLink" class="view-link"></a>
+      <button class="toggle-btn active" data-view="selected">Selected Works</button>
+      <button class="toggle-btn"><a href="about.html">About</a></button>
     </div>
-    
-    
+  </div>
+  
+  <!-- Selected Projects (original content will be restructured by JS) -->
+  <ul class="selected-list active" id="selectedList">
+    <li class="project-item" data-id="1" data-media-type="video" data-media-url="homeasset/time.mp4" data-link-url="time.html" data-title="Time" data-year="2023" data-subtitle="Book / Promotional">
+      <span class="project-title">Time</span>
+      <span class="project-year"></span>
+      <div class="project-sub">Book / Promotional</div>
+    </li>
+    <li class="project-item" data-id="2" data-media-type="video" data-media-url="homeasset/eras.mp4" data-link-url="eras.html" data-title="Taylor Swift: The Eras Tour" data-year="" data-subtitle="Visual Identity / Apparel / Book / Motion / Social">
+      <span class="project-title">Taylor Swift: The Eras Tour</span>
+      <span class="project-year"></span>
+      <div class="project-sub">Visual Identity / Apparel / Book / Motion / Social</div>
+    </li>
+    <li class="project-item" data-id="3" data-media-type="video" data-media-url="homeasset/ct.mp4" data-link-url="commandtattoos.html" data-title="Adobe Command Tattoos" data-year="" data-subtitle="Screenprint / Apparel">
+      <span class="project-title">Adobe Command Tattoos</span>
+      <span class="project-year"></span>
+      <div class="project-sub">Screenprint / Apparel</div>
+    </li>
+    <li class="project-item" data-id="4" data-media-type="video" data-media-url="homeasset/thesis.mp4" data-link-url="thesis.html" data-title="Happiness is..." data-year="" data-subtitle="Data Visualization / HTML / CSS / JS / Book">
+      <span class="project-title">Happiness is...</span>
+      <span class="project-year"></span>
+      <div class="project-sub">Data Visualization / HTML / CSS / JS / Book</div>
+    </li>
+    <li class="project-item" data-id="5" data-media-type="video" data-media-url="homeasset/yosemite.mp4" data-link-url="yosemite.html" data-title="Yosemite's Wilderness Symphony" data-year="" data-subtitle="Visual Identity / Book / Merchandise / Web">
+      <span class="project-title">Yosemite's Wilderness Symphony</span>
+      <span class="project-year"></span>
+      <div class="project-sub">Visual Identity / Book / Merchandise / Web</div>
+    </li>
+    <li class="project-item" data-id="6" data-media-type="video" data-media-url="homeasset/fluxus.mp4" data-link-url="fluxus.html" data-title="Fluxus and Design" data-year="" data-subtitle="Visual Identity / Book / Social">
+      <span class="project-title">Fluxus and Design</span>
+      <span class="project-year"></span>
+      <div class="project-sub">Visual Identity / Book / Social</div>
+    </li>
+    <li class="project-item" data-id="7" data-media-type="video" data-media-url="homeasset/dl.mp4" data-link-url="dlsignage.html" data-title="Design Lab Signage" data-year="" data-subtitle="Letterpress / Screenprint / Apparel">
+      <span class="project-title">Design Lab Signage</span>
+      <span class="project-year"></span>
+      <div class="project-sub">Letterpress / Screenprint / Apparel</div>
+    </li>
+    <li class="project-item" data-id="8" data-media-type="image" data-media-url="homeasset/ib-1.gif" data-link-url="inbetween.html" data-title="In Between" data-year="" data-subtitle="Book / Promotional">
+      <span class="project-title">In Between</span>
+      <span class="project-year"></span>
+      <div class="project-sub">Book / Promotional</div>
+    </li>
+  </ul>
 
+  <ul class="archive-list" id="archiveList"></ul>
 </div>
 
-
-
-
-<div id="works-popup" class="works-popup">
-    <button class="popup-close">×</button>
-    <h2 class="popup-title">WORKS</h2>
-    
-    <div class="popup-grid">
-        <div class="popup-item">
-            <span class="popup-category">Book</span>
-            <span class="popup-projects"><a href="time.html">Time</a>, <a href="eras.html">Taylor Swift: The Eras Tour</a>, <a href="yosemite.html">Yosemite's Wilderness Symphony</a>, <a href="fluxus.html">Fluxus and Design</a>, <a href="inbetween.html">In Between</a>, <a href="fanfic.html">Ode to Fanfiction</a></span>
-        </div>
-        
-        <div class="popup-item">
-            <span class="popup-category">visual identity</span>
-            <span class="popup-projects"><a href="eras.html">Taylor Swift: The Eras Tour</a>, <a href="yosemite.html">Yosemite's Wilderness Symphony</a>, <a href="fluxus.html">Fluxus and Design</a></span>
-        </div>
-        
-        <div class="popup-item">
-            <span class="popup-category">apparel</span>
-            <span class="popup-projects"><a href="eras.html">Taylor Swift: The Eras Tour</a>, <a href="commandtattoos.html">Adobe Command Tattoos</a>, <a href="dlsignage.html">Design Lab Signage</a></span>
-        </div>
-        
-        <div class="popup-item">
-            <span class="popup-category">printmaking</span>
-            <span class="popup-projects"><a href="commandtattoos.html">Adobe Command Tattoos</a>, <a href="dlsignage.html">Design Lab Signage</a></span>
-        </div>
-        
-        <!-- <div class="popup-item">
-            <span class="popup-category">data viz</span>
-            <span class="popup-projects">Happiness is...</span>
-        </div> -->
-        
-        <div class="popup-item">
-            <span class="popup-category">html / css / js</span>
-            <span class="popup-projects"><a href="thesis.html">Happiness is...</a>, <a href="index.html">This site :)</a></span>
-        </div>
-        
-        <div class="popup-item">
-            <span class="popup-category">promotional</span>
-            <span class="popup-projects"><a href="time.html">Time</a>, <a href="eras.html">Taylor Swift: The Eras Tour</a>, <a href="yosemite.html">Yosemite's Wilderness Symphony</a></span>
-        </div>
-    </div>
-    
-    <!-- <p class="popup-footer">jax of all trades ✦ graphic communication engineer</p> -->
-    <p class="popup-footer"></p>
-</div>
-<div id="popup-overlay" class="popup-overlay"></div>
-
-
-
-
-
-
-
-<!-- <div class="landing"> -->
-
-    <!-- <div class="thisis">
-        <p>
-            This is
-        </p>
-        <h1>
-            Jax Wong
-        </h1>
-        <p>
-            Graphic Communication Engineer
-        </p>
-    </div> -->
-    
-    
-    
-    <br><br>
-
-
-<!-- <div class="homepage" id="flex2">
-    <iframe src="time.html" frameborder="2"></iframe>
-    <iframe src="eras.html" frameborder="2"></iframe>
-    <iframe src="fluxus.html" frameborder="2"></iframe>
-</div> -->
-
-
-
-<div class="homeweird">
-
-    <div class="tooltip">
-        <a href="time.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/t-0.gif" alt=""  style="border: .5px black solid;">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/t-1.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/t-2.webp" alt="">
-            </div>
-    
-        </div>
-        <div class="tooltiptext">
-            <!-- <p class="tooltiptext"> -->
-                <p>
-                Time
-                <!-- <br> -->
-                </p> 
-                <p class="tttsmall">
-                Book / Promotional
-            </p>
-        </div>
-        </a>
-    </div>
-
-    <div class="tooltip">
-        <a href="eras.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/ts-2.png" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/ts-0.gif" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/ts-3.png" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/ts-1.gif" alt="">
-            </div>
-            <!-- <div class="otherimg">
-                <img src="homeasset/ts-4.png" alt="">
-            </div> -->
-            <div class="otherimg">
-                <img src="homeasset/ts-5.png" alt="">
-            </div>
-        </div>
-        <div class="tooltiptext" >
-            <p>
-                Taylor Swift: The Eras Tour
-            </p>
-            <p class="tttsmall">
-                Visual Identity / Apparel / Book / Motion / Social
-            </p>
-        </div>
-        </a>
-    </div>
-
-    <div class="tooltip">
-        <a href="commandtattoos.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/ct-0.gif" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/ct-1.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/ct-2.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/ct-3.webp" alt="">
-            </div>    
-        </div>
-        <div class="tooltiptext">
-            <p>
-                Adobe Command Tattoos
-            </p>
-            <p class="tttsmall">
-                Screenprint / Apparel
-            </p>
-        </div>
-        </a>
-    </div>
-    
-    <div class="tooltip">
-        <a href="thesis.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/thesis-0.gif" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/thesis-1.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/thesis-2.gif" alt="">
-            </div>  
-        </div>
-        <div class="tooltiptext">
-            <p>
-                Happiness is...
-            </p>
-            <p class="tttsmall">
-                Data Visualization / HTML / CSS / JS / Book
-            </p>
-        </div>
-        </a>
-    </div>
-
-    <div class="tooltip">
-        <a href="yosemite.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/y-3.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/y-0.gif" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/y-2.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/y-4.gif" alt="">
-            </div>  
-            <div class="otherimg">
-                <img src="homeasset/y-1.gif" alt="">
-            </div>  
-        </div>
-        <div class="tooltiptext">
-            <p>
-                Yosemite's Wilderness Symphony
-            </p>
-            <p class="tttsmall">
-                Visual Identity / Book / Merchandise / Web
-            </p>
-        </div>
-        </a>
-    </div>
-
-    <div class="tooltip">
-        <a href="fluxus.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/f-0.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/f-1.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/f-2.png" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/f-3.gif" alt="">
-            </div>  
-            <div class="otherimg">
-                <img src="homeasset/f-4.png" alt="">
-            </div>  
-        </div>
-        <div class="tooltiptext">
-            <p>
-                Fluxus and Design
-            </p>
-            <p class="tttsmall">
-                Visual Identity / Book / Social
-            </p>
-        </div>
-        </a>
-    </div>
-
-    <div class="tooltip">
-        <a href="dlsignage.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/dl-0.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/dl-1.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/dl-2.webp" alt="">
-            </div>  
-            <div class="otherimg">
-                <img src="homeasset/dl-4.webp" alt="">
-            </div>  
-            <div class="otherimg">
-                <img src="homeasset/dl-3.webp" alt="">
-            </div>
-        </div>
-        <div class="tooltiptext">
-            <p>
-                Design Lab Signage
-            </p>
-            <p class="tttsmall">
-                Letterpress / Screenprint / Apparel
-            </p>
-        </div>
-        </a>
-    </div>
-
-    <div class="tooltip">
-        <a href="inbetween.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/ib-0.png" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/ib-1.gif" alt="" style="border: .5px black solid;">
-            </div>
-        </div>
-        <div class="tooltiptext">
-            <p>
-                In Between
-            </p>
-            <p class="tttsmall">
-                Book / Promotional
-            </p>
-        </div>
-        </a>
-    </div>
-
-    <div class="tooltip">
-        <a href="fanfic.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/fan-0.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/fan-1.webp" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/fan-2.webp" alt="">
-            </div>
-        </div>
-        <div class="tooltiptext">
-            <p>
-                Ode to Fanfiction
-            </p>
-            <p class="tttsmall">
-                Book
-            </p>
-        </div>
-        </a>
-    </div>
-
-    <!-- <div class="tooltip">
-        <a href="nsfp.html">
-        <div class="proj">
-            <div class="heroimg">
-                <img src="homeasset/nsfp-0.png" alt="">
-            </div>
-            <div class="otherimg">
-                <img src="homeasset/nsfp-1.gif" alt="">
-            </div>
-        </div>
-        <div class="tooltiptext">
-            <p>
-                New School Free Press
-            </p>
-            <p class="tttsmall">
-                Visual Identity / Wordpress CMS
-            </p>
-        </div>
-        </a>
-    </div> -->
-
-
-    
+<div class="cursor" id="customCursor">
+  <div class="cursor-state cursor-prev">← Previous</div>
+  <div class="cursor-state cursor-next">Next →</div>
+  <div class="cursor-state cursor-view">View</div>
 </div>
 
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+  // DOM elements
+  const mainCarousel = document.getElementById('mainCarousel');
+  const selectedList = document.getElementById('selectedList');
+  const archiveList = document.getElementById('archiveList');
+  const viewLink = document.getElementById('viewLink');
+  const headersContainer = document.getElementById('headersContainer');
+  const toggleBtns = document.querySelectorAll('.toggle-btn');
+  const customCursor = document.getElementById('customCursor');
+
+  let currentView = 'selected';
+  let currentIndex = 0;
+  let flkty = null;
+  let projects = [];
+  let isTransitioning = false;
+
+  // Restructure each <li> into: <li class="project-item"> <div class="project-details">...</div> <button>View</button> </li>
+  function restructureProjectItem(li) {
+    if (li.hasAttribute('data-restructured')) return;
+    
+    const titleSpan = li.querySelector('.project-title');
+    const yearSpan = li.querySelector('.project-year');
+    const subDiv = li.querySelector('.project-sub');
+    
+    // Create wrapper div for text content
+    const detailsDiv = document.createElement('div');
+    detailsDiv.className = 'project-details';
+    
+    // Move existing children into detailsDiv (except any potential button)
+    const childrenToMove = [];
+    for (let child of li.childNodes) {
+      if (child.nodeType === Node.ELEMENT_NODE && child.classList && child.classList.contains('inline-view-btn')) continue;
+      childrenToMove.push(child);
+    }
+    childrenToMove.forEach(child => detailsDiv.appendChild(child));
+    
+    // Create button
+    const viewBtn = document.createElement('button');
+    viewBtn.className = 'inline-view-btn';
+    viewBtn.textContent = 'View';
+    viewBtn.setAttribute('aria-label', 'View project details');
+    viewBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const linkUrl = li.dataset.linkUrl;
+      if (linkUrl && linkUrl !== '#') window.location.href = linkUrl;
+    });
+    
+    // Clear li and append new structure
+    li.innerHTML = '';
+    li.appendChild(detailsDiv);
+    li.appendChild(viewBtn);
+    
+    li.setAttribute('data-restructured', 'true');
+  }
+
+  function setupAllProjectItems() {
+    const allItems = document.querySelectorAll('.project-item');
+    allItems.forEach(item => restructureProjectItem(item));
+  }
+
+  function getCurrentProjectsFromDOM() {
+    const items = currentView === 'selected' 
+      ? selectedList.querySelectorAll('.project-item')
+      : archiveList.querySelectorAll('.project-item');
+    return Array.from(items).map(li => ({
+      id: li.dataset.id,
+      title: li.dataset.title,
+      year: li.dataset.year,
+      subtitle: li.dataset.subtitle,
+      mediaType: li.dataset.mediaType,
+      mediaUrl: li.dataset.mediaUrl,
+      linkUrl: li.dataset.linkUrl,
+      element: li
+    }));
+  }
+
+  function updateProjectsArray() {
+    projects = getCurrentProjectsFromDOM();
+  }
+
+  function handleVideoPlayback() {
+    if (!flkty) return;
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach((slide, idx) => {
+      const video = slide.querySelector('video');
+      if (!video) return;
+      if (idx === currentIndex) {
+        video.muted = true;
+        video.play().catch(e => console.log("Video play resume:", e));
+        video.loop = true;
+      } else {
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
+  }
+
+  function updateHeaders() {
+    headersContainer.innerHTML = `<div class="slide slide-active"></div>`;
+  }
+
+  function updateViewLink() {
+    const project = projects[currentIndex];
+    if (project && project.linkUrl && project.linkUrl !== '#') {
+      viewLink.href = project.linkUrl;
+      viewLink.style.opacity = '1';
+      viewLink.style.pointerEvents = 'auto';
+      // viewLink.textContent = 'View Project →';
+    } else {
+      viewLink.href = '#';
+      viewLink.style.opacity = '0.5';
+      viewLink.style.pointerEvents = 'none';
+      // viewLink.textContent = 'View Project';
+    }
+  }
+
+  function updateActiveProjectInList() {
+    // Remove active class from all project items
+    const allItems = document.querySelectorAll('.project-item');
+    allItems.forEach(item => item.classList.remove('active'));
+    
+    // Activate the current project element
+    if (projects[currentIndex] && projects[currentIndex].element) {
+      const target = projects[currentIndex].element;
+      // Only activate if it belongs to the currently visible list (selected or archive)
+      if ((currentView === 'selected' && selectedList.contains(target)) || 
+          (currentView === 'archive' && archiveList.contains(target))) {
+        target.classList.add('active');
+        // Ensure the view button becomes visible (CSS handles it)
+        // Scroll into view if needed, but avoid aggressive scroll on initial load
+        if (target && target.scrollIntoView) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    }
+  }
+
+  function updateCurrentSlide(index) {
+    currentIndex = index;
+    updateHeaders();
+    updateActiveProjectInList();
+    updateViewLink();
+    handleVideoPlayback();
+  }
+
+  function buildCarousel() {
+    updateProjectsArray();
+    mainCarousel.innerHTML = '';
+    projects.forEach((project) => {
+      const slideDiv = document.createElement('div');
+      slideDiv.className = 'slide';
+      const link = document.createElement('a');
+      link.href = 'javascript:void(0);';
+      link.className = 'slide-link';
+      if (project.mediaType === 'video') {
+        const video = document.createElement('video');
+        video.src = project.mediaUrl;
+        video.autoplay = false;
+        video.loop = true;
+        video.muted = true;
+        video.playsInline = true;
+        video.className = 'slide-media';
+        video.setAttribute('preload', 'auto');
+        video.load();
+        link.appendChild(video);
+      } else {
+        const img = document.createElement('img');
+        img.src = project.mediaUrl;
+        img.alt = project.title;
+        img.className = 'slide-media';
+        img.loading = 'eager';
+        link.appendChild(img);
+      }
+      slideDiv.appendChild(link);
+      mainCarousel.appendChild(slideDiv);
+    });
+
+    if (flkty) flkty.destroy();
+    flkty = new Flickity(mainCarousel, {
+      cellAlign: 'left',
+      contain: false,
+      prevNextButtons: true,
+      pageDots: false,
+      wrapAround: true,
+      imagesLoaded: true,
+      adaptiveHeight: false,
+      freeScroll: false,
+      friction: 0.28,
+      selectedAttraction: 0.03
+    });
+    
+    // === CRITICAL FIX: ensure first project gets active class on load ===
+    flkty.on('ready', () => {
+      // Set slide 0 as active
+      updateCurrentSlide(0);
+      // Double-guarantee the first list item gets active class (in case any DOM timing shifts)
+      setTimeout(() => {
+        if (projects.length > 0 && projects[0] && projects[0].element) {
+          const firstElem = projects[0].element;
+          if (!firstElem.classList.contains('active')) {
+            // Remove any leftover active class and set fresh
+            document.querySelectorAll('.project-item').forEach(el => el.classList.remove('active'));
+            firstElem.classList.add('active');
+          }
+        }
+        // Also ensure view link points correctly
+        updateViewLink();
+        flkty.resize();
+      }, 30);
+    });
+    
+    flkty.on('change', (index) => updateCurrentSlide(index));
+    flkty.on('settle', () => {
+      isTransitioning = false;
+      handleVideoPlayback();
+    });
+
+    const originalNext = flkty.next;
+    const originalPrevious = flkty.previous;
+    flkty.next = function() { if (!isTransitioning) { isTransitioning = true; originalNext.call(flkty); setTimeout(() => { if (flkty) isTransitioning = false; }, 300); } };
+    flkty.previous = function() { if (!isTransitioning) { isTransitioning = true; originalPrevious.call(flkty); setTimeout(() => { if (flkty) isTransitioning = false; }, 300); } };
+    
+    // In case flkty ready already fired before this point? Force extra fallback after short delay
+    setTimeout(() => {
+      if (flkty && projects.length && !document.querySelector('.project-item.active')) {
+        if (projects[0] && projects[0].element) {
+          projects[0].element.classList.add('active');
+          updateCurrentSlide(0);
+          if (flkty.selectedIndex !== 0) flkty.selectCell(0, false);
+        }
+      }
+    }, 100);
+  }
+
+  function switchView(view) {
+    if (isTransitioning) return;
+    currentView = view;
+    toggleBtns.forEach(btn => {
+      if (btn.getAttribute('data-view') === view) btn.classList.add('active');
+      else btn.classList.remove('active');
+    });
+    if (view === 'selected') {
+      selectedList.classList.add('active');
+      archiveList.classList.remove('active');
+    } else {
+      selectedList.classList.remove('active');
+      archiveList.classList.add('active');
+    }
+    // Re-structure any new items (archive might have items later, but for now just selected)
+    setupAllProjectItems();
+    buildCarousel();
+    // Force active class after carousel rebuild
+    setTimeout(() => {
+      if (flkty && projects.length && projects[0] && projects[0].element) {
+        document.querySelectorAll('.project-item').forEach(el => el.classList.remove('active'));
+        projects[0].element.classList.add('active');
+        if (flkty.selectedIndex !== 0) flkty.selectCell(0, false);
+        updateCurrentSlide(0);
+      }
+    }, 50);
+  }
+
+  function handleProjectClick(event) {
+    event.stopPropagation();
+    const li = event.target.closest('.project-item');
+    if (!li || isTransitioning) return;
+    if (event.target.classList && event.target.classList.contains('inline-view-btn')) return;
+    let clickedIndex = projects.findIndex(p => p.element === li);
+    if (clickedIndex === -1) clickedIndex = projects.findIndex(p => p.id === li.dataset.id);
+    if (clickedIndex !== -1 && flkty && clickedIndex !== currentIndex) {
+      isTransitioning = true;
+      flkty.selectCell(clickedIndex, false);
+    } else if (clickedIndex !== -1 && clickedIndex === currentIndex) {
+      // Already active, ensure visual active stays (might have been lost)
+      updateActiveProjectInList();
+    }
+  }
+
+  // Custom cursor + global navigation
+  function handleMouseMove(e) {
+    const x = e.clientX;
+    const winW = window.innerWidth;
+    document.body.classList.remove('cursor-state-next-active', 'cursor-state-previous-active', 'cursor-state-view-active');
+    if (x < winW/3) document.body.classList.add('cursor-state-previous-active');
+    else if (x > 2*winW/3) document.body.classList.add('cursor-state-next-active');
+    else document.body.classList.add('cursor-state-view-active');
+    if (customCursor) {
+      customCursor.style.left = `${x}px`;
+      customCursor.style.top = `${e.clientY}px`;
+    }
+  }
+
+  function handleGlobalClick(e) {
+    if (e.target.closest('.project-item') || e.target.closest('.nav-panel') || e.target.closest('.view-link') || e.target.closest('.toggle-btn')) return;
+    const x = e.clientX, winW = window.innerWidth;
+    if (x < winW/3) { if (flkty && !isTransitioning) flkty.previous(); }
+    else if (x > 2*winW/3) { if (flkty && !isTransitioning) flkty.next(); }
+    else { const proj = projects[currentIndex]; if (proj && proj.linkUrl && proj.linkUrl !== '#') window.location.href = proj.linkUrl; }
+  }
+
+  // Event listeners
+  document.addEventListener('mousemove', handleMouseMove);
+  document.addEventListener('click', handleGlobalClick);
+  selectedList.addEventListener('click', handleProjectClick);
+  archiveList.addEventListener('click', handleProjectClick);
+  toggleBtns.forEach(btn => btn.addEventListener('click', (e) => { 
+    e.stopPropagation(); 
+    const v = btn.getAttribute('data-view'); 
+    if (v) switchView(v); 
+  }));
+  viewLink.addEventListener('click', (e) => { 
+    e.preventDefault(); 
+    const p = projects[currentIndex]; 
+    if (p && p.linkUrl && p.linkUrl !== '#') window.location.href = p.linkUrl; 
+  });
+
+  // INITIALIZATION
+  setupAllProjectItems();    // restructure .project-item layout (adds view button structure)
+  buildCarousel();           // builds flickity + ensures first active
+
+  // Extra guarantee after everything loads (DOM + media)
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      if (projects.length > 0 && projects[0] && projects[0].element && !projects[0].element.classList.contains('active')) {
+        document.querySelectorAll('.project-item').forEach(el => el.classList.remove('active'));
+        projects[0].element.classList.add('active');
+        if (flkty && flkty.selectedIndex !== 0) flkty.selectCell(0, false);
+        updateCurrentSlide(0);
+      }
+      // Force video playback for first slide if needed
+      handleVideoPlayback();
+    }, 50);
+  });
+  
+  document.body.style.cursor = 'none';
+  document.addEventListener('mouseenter', () => document.body.style.cursor = 'none');
+</script>
 
 
-
-<br>
-
-
-
-        
-
-
-<!-- <p>
-    (c) graphic communication engineer
-</p> -->
-<!-- <div class="bigheader"> -->
-
-    <div class="worksproj">
-        <div class="fuckthis">
-            <div class="info" >
-                <div class="desc">
-                    <p class="" style="font-size: 1rem;">
-                        Site by Jax Wong © 2026
-                    </p>
-        
-                </div>
-                <div class="titledeets">
-                    <p class="" style="font-size: 1rem; text-align: right;">
-                        <a href="mailto:thisisjaxwong@gmail.com" target="_blank">thisisjaxwong@gmail.com</a>
-        
-                    </p>
-                </div>
-        
-            </div>
-        </div>
-    </div>
-
-
-<!-- </div> -->
-
-
-    <script src="script.js" defer></script>
+<script src="script.js" defer></script>
 </body>
